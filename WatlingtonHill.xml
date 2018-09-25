@@ -63,7 +63,7 @@
 			<epigraph>
 				<cit>
 					<quote>
-						<l>"Rememberest thou my greyhounds true?"</l>
+						<l>“Rememberest thou my greyhounds true?”</l>
 					</quote>
 					<bibl>
 						<title>Marmion</title>
@@ -72,11 +72,11 @@
 				</cit>
 				<cit>
 					<quote>
-		<l>"Straight mine eye hath caught new pleausres</l>
-		<l>"Whilst the landscape round it measures."</l>
+		<l>“Straight mine eye hath caught new pleausres</l>
+		<l>“Whilst the landscape round it measures.”</l>
 					</quote>
 					<bibl>
-						<title>"L’Allegro"</title>
+						<title>“L’Allegro”</title>
 						<author>--John Milton.</author>
 					</bibl>
 				</cit>
@@ -88,41 +88,43 @@
 				<docDate>1812</docDate>
 			</docImprint>
 		</titlePage>
-	<div type="dedication">
-		<salute><app>
+	
+		<app>
 			<rdg wit="#WH1812">
-				<lb/>
-				<emph rend="smallcaps">to</emph><lb/>
+				<ab type="dedication"><hi rend="smallcaps">to</hi><lb/>
 				JAMES WEBB, ESQ.<lb/>
 				<emph rend="smallcaps">and</emph><lb/>
 				WILLIAM HAYWARD, ESQ.<lb/>
 				THIS POEM,<lb/>
-				<emph rend="smallcaps">written chiefly for their amusement</emph><lb/>
-				<emph rend="smallcaps">is enscribed</emph><lb/>
-				<emph rend="smallcaps">by</emph><lb/>
-				THE AUTHOR.<lb/>
+				<hi rend="smallcaps">written chiefly for their amusement</hi><lb/>
+				<hi rend="smallcaps">is enscribed</hi><lb/>
+				<hi rend="smallcaps">by</hi><lb/>
+				THE AUTHOR.
+				</ab>
 			</rdg>
-		</app></salute>
-	</div>
+		</app>
+	
 </front>	
 		
-		<body><p>
+		<body>
 			<app>
 				<rdg wit="#WH1827">
-			<pb xml:id="p346"/>
-					<app><rdg wit="#WH1827"><note resp="#MRM">The two following poems, slight and imperfect as they are, require, 
+					
+			<pb edRef="#WH1827" xml:id="p346"/>
+					<note resp="#MRM">The two following poems, slight and imperfect as they are, require, 
 						perhaps even more than the rest of this little volume, the kind indulgence of the reader. They were written 
 						many years ago, and are inserted chiefly from a wish to preserve some sketch, however rude, of very beautiful 
-						scenery, and some memorial, however inadequate, of very dear and valuable friends.</note></rdg></app>
+						scenery, and some memorial, however inadequate, of very dear and valuable friends.</note>
 			<pb xml:id="p347"/>
 			</rdg>
-			</app></p>
-			<p>WATLINGTON HILL,</p>
-			<p><emph rend="smallcaps">A POEM.</emph></p>
+			</app>
+
+			<head>WATLINGTON HILL,</head>
+			<head><hi rend="smallcaps">A POEM.</hi></head>
 			
 			<div type="section">
 				<head>I.</head>
-<!--Need to handle indentations as an attribute of line variation of <l rend="indent(+1)" Is this it? #jjr>-->
+<!--Need to handle indentations as an attribute of line variation of <l rend="indent(+1)" Is this it? #jjr>--><!--2018-09-25 ebb: Looks good to me, but DO check the values to make sure they're consistent. What values should be used throughout? (I can add a Schematron rule to help check just for this file.) -->
 				<l rend="indent(+1)" xml:id="WH1"><app><rdg wit="#WH1812 #WH1827">’Tis pleasant to dance in lordly hall</rdg></app></l>
 				<l rend="indent(+3)" xml:id="WH2"><app><rdg wit="#WH1812 #WH1827">When the merry harp is ringing;</rdg></app></l>
 				<l rend="indent(+1)" xml:id="WH3"><app>
@@ -284,7 +286,7 @@
 					<rdg wit="#WH1812">Nor thou, <emph>Prince Hal</emph>, thy name-sake old,</rdg>
 					<rdg wit="#WH1827">Nor thou <emph>Prince Hal</emph>, thy name-sake old</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH66"><app><rdg wit="#WH1812 #WH1827">"The nimble-footed madcap" bold;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH66"><app><rdg wit="#WH1812 #WH1827">“The nimble-footed madcap” bold;</rdg></app></l>
 							<l><app><rdg wit="#WH1812"><pb xml:id="p351"/></rdg></app></l>
 				<l rend="indent(+1)" xml:id="WH67"><app><rdg wit="#WH1812 #WH1827">Nor thou the meed thy mother won,</rdg></app></l>
 				<l rend="indent(+3)" xml:id="WH68"><app>
@@ -673,7 +675,7 @@
 		 		<l rend="indent(+1)" xml:id="WH196.15"><app><rdg wit="#WH1812">Victress, where’er thy armies roam,</rdg></app></l>
 		 		<l rend="indent(+1)" xml:id="WH196.16"><app><rdg wit="#WH1812">But chiefly conqueror at home.</rdg></app></l>
 		 		<l rend="indent(+1)" xml:id="WH196.17"><app><rdg wit="#WH1812">A truth most rare thy urn might tell,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.18"><app><rdg wit="#WH1812">"Her people lov’d Queen Anna well!"</rdg></app></l>
+		 		<l rend="indent(+1)" xml:id="WH196.18"><app><rdg wit="#WH1812">“Her people lov’d Queen Anna well!”</rdg></app></l>
 		 		<l rend="indent(+1)" xml:id="WH196.19"><app><rdg wit="#WH1812">And Almshouses thy pity lent,</rdg></app></l>
 		 		<l rend="indent(+1)" xml:id="WH196.20"><app><rdg wit="#WH1812">And Churches form thy monument.</rdg></app></l>
 		 	</div>
@@ -781,9 +783,9 @@
 						account of this delightful village, from which Milton married his first wife, Miss Mary 
 						Powel. Its length is indeed disproportioned to the other notes; but from such a man, and on
 						such a subject, no one, it is presumed, will think it too long.</p>
-						<l rend="indent(+6)">"To Lady Spencer.</l>
-						<l rend="indent(+12)">"<emph>7th Sept.</emph> 1769.</l>
-						<p>"The necessary trouble of correcting the first printed sheets of my history,
+						<l rend="indent(+6)">“To Lady Spencer.</l>
+						<l rend="indent(+12)">“<emph>7th Sept.</emph> 1769.</l>
+						<p>“The necessary trouble of correcting the first printed sheets of my history,
 						prevented me to-day from paying a proper respect to the memory of Shakespeare, by attending his
 						jubilee. But I was resolved to do all the honor in my power to as great a poet, and set out 
 						in the morning, in company with a friend, to visit a place, where Milton spent some part of his life,
@@ -818,7 +820,7 @@
 						of circumstances, we were saluted, on our approach to the village, with the music of the mower
 						and his scythe; we saw the ploughman intent upon his labor, and the milkmaid returning from
 						her country employment.</p>
-						<p>"As we ascended the hill, the variety of beautiful objects, the agreeable stillness and natural
+						<p>“As we ascended the hill, the variety of beautiful objects, the agreeable stillness and natural
 						simplicity of the whole scene, gave us the highest pleasure. We at length reached the spot, whence
 						Milton undoubtedly took most of his images; it is on the top of the hill, from which there is a
 						most extensive prospect on all sides: the distant mountains, that seemed to support the clouds, the 
@@ -829,7 +831,7 @@
 						nature. Thus will this fine passage, which has always been admired for its elegance, receive an additional beauty
 						from its exactness. After we had walked, with a kind of poetical enthusiasm, over this enchanted ground,
 						we returned to the village.</p>
-						<p>"The poet’s house was close to the church; the greatest part of it has been pulled down, and what
+						<p>“The poet’s house was close to the church; the greatest part of it has been pulled down, and what
 						remains belongs to an adjacent farm. I am informed that several papers in Milton’s own hard were found
 						by the gentleman, who was last in possession of the estate. The tradition of his having lived there is current
 						among the villagers: one of them showed us a ruinous wall that made part of his chamber, and I was much
@@ -842,12 +844,12 @@
 						<l rend="indent(+5)">Or the twisted eglantine;</l>
 						<p>for it is evident, that he meant a sort of honey-suckle by the eglantine; though that word
 						is commonly used for the sweet-briar, which he could not mention twice in the same couplet.</p>
-						<p>"If I ever pass a month or six weeks at Oxford in the summer, I shall be inclined to hire and repair this
+						<p>“If I ever pass a month or six weeks at Oxford in the summer, I shall be inclined to hire and repair this
 						venerable mansion, and to make a festival for a circle of friends in honor of Milton, the most perfect scholar,
 						as well as the sublimest poet, that our country ever produced. Such an honor will be less splendid, but more
 						sincere and respectful, than all the pomp and ceremony on the banks of the Avon.</p>
-						<l rend="indent(+8)">"I have the honor, &amp;c.</l>
-						<l rend="indent(+12)">"W. Jones."</l>
+						<l rend="indent(+8)">“I have the honor, &amp;c.</l>
+						<l rend="indent(+12)">“W. Jones.”</l>
 						<l rend="center"><emph>Lord Teignmouth’s Edition of Sir William Jones’s</emph></l>
 						<l rend="center"><emph>Works</emph>, Vol. I. p. 118.</l></note>!</rdg>
 					<rdg wit="#WH1827">’Tis Milton’s home, ’tis Forest Hill<note resp="#MRM">The village
@@ -868,18 +870,18 @@
 				</app></l>
 				<l rend="indent(+1)" xml:id="WH233"><app><rdg wit="#WH1812 #WH1827">He won his half-disdainful bride;</rdg></app></l>
 				<l rend="indent(+1)" xml:id="WH234"><app>
-					<rdg wit="#WH1812">And there the lark, "in spite of sorrow,"</rdg>
-					<rdg wit="#WH1827">And there the lark "in spite of sorrow,"</rdg>
+					<rdg wit="#WH1812">And there the lark, “in spite of sorrow,”</rdg>
+					<rdg wit="#WH1827">And there the lark “in spite of sorrow,”</rdg>
 				</app></l>
 				<l rend="indent(+1)" xml:id="WH235"><app>
-					<rdg wit="#WH1812">Still at his "window bade good morrow,</rdg>
-					<rdg wit="#WH1827">Still at his "window bade good morrow</rdg>
+					<rdg wit="#WH1812">Still at his “window bade good morrow,</rdg>
+					<rdg wit="#WH1827">Still at his “window bade good morrow</rdg>
 				</app></l>
 					<l><app><rdg wit="#WH1812"><pb xml:id="p25"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH236"><app><rdg wit="#WH1812 #WH1827">"Through the sweet-briar, or the vine,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH236"><app><rdg wit="#WH1812 #WH1827">“Through the sweet-briar, or the vine,</rdg></app></l>
 				<l rend="indent(+1)" xml:id="WH237"><app>
-					<rdg wit="#WH1812">Or the twisted eglantine."</rdg>
-					<rdg wit="#WH1827">"Or the twisted eglantine."</rdg>
+					<rdg wit="#WH1812">Or the twisted eglantine.”</rdg>
+					<rdg wit="#WH1827">“Or the twisted eglantine.”</rdg>
 				</app></l> 
 					<l><app><rdg wit="#WH1827"><pb xml:id="p361"/></rdg></app></l>
 				<l rend="indent(+1)" xml:id="WH238"><app><rdg wit="#WH1812 #WH1827">Oh happy hill! thy summer vest</rdg></app></l>
@@ -950,8 +952,8 @@
 					<rdg wit="#WH1827">Thou didst not hear his anguished lays</rdg>
 				</app></l>
 				<l rend="indent(+1)" xml:id="WH258"><app>
-					<rdg wit="#WH1812">Of "evil tongues and evil days."</rdg>
-					<rdg wit="#WH1827">Of "evil tongues and evil days;"</rdg>
+					<rdg wit="#WH1812">Of “evil tongues and evil days.”</rdg>
+					<rdg wit="#WH1827">Of “evil tongues and evil days;”</rdg>
 				</app></l>
 				<l rend="indent(+1)" xml:id="WH259"><app>
 					<rdg wit="#WH1812">Thou saw’st but his gay youth, sweet spot!</rdg>
