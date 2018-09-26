@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?><!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
-
-<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -122,16 +117,16 @@
 			<head>WATLINGTON HILL,</head>
 			<head><hi rend="smallcaps">A POEM.</hi></head>
 			
-			<div type="section">
-				<head>I.</head>
+			<lg type="section">
+				<label>I.</label>
 <!--Need to handle indentations as an attribute of line variation of <l rend="indent(+1)" Is this it? #jjr>--><!--2018-09-25 ebb: Looks good to me, but DO check the values to make sure they're consistent. What values should be used throughout? (I can add a Schematron rule to help check just for this file.) -->
-				<l rend="indent(+1)" xml:id="WH1"><app><rdg wit="#WH1812 #WH1827">’Tis pleasant to dance in lordly hall</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH2"><app><rdg wit="#WH1812 #WH1827">When the merry harp is ringing;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH1">’Tis pleasant to dance in lordly hall</l>
+				<l rend="indent(+3)" xml:id="WH2">When the merry harp is ringing;</l>
 				<l rend="indent(+1)" xml:id="WH3"><app>
 					<rdg wit="#WH1812">’Tis sweet in the bow’r at ev’ning’s fall</rdg>
 					<rdg wit="#WH1827">’Tis sweet in the bower at evening’s fall</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH4"><app><rdg wit="#WH1812 #WH1827"> To list to the night-bird’s singing;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH4"> To list to the night-bird’s singing;</l>
 				<l rend="indent(+1)" xml:id="WH5">
 					’Tis lovely to view <app><rdg wit="#WH1812">th’</rdg><rdg wit="#WH1827">the</rdg></app> autumnal hue,
 					
@@ -139,7 +134,7 @@
 					<rdg wit="#WH1812">’Tis lovely to view th’ autumnal hue,</rdg>
 					<rdg wit="#WH1827">’Tis lovely to view the autumnal hue</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH6"><app><rdg wit="#WH1812 #WH1827">As it gilds the woodland mountain;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH6">As it gilds the woodland mountain;</l>
 				<l rend="indent(+1)" xml:id="WH7"><app>
 					<rdg wit="#WH1812">Or when summer glows, to pluck the rose,</rdg>
 					<rdg wit="#WH1827">Or when summer glows to pluck the rose</rdg>
@@ -148,68 +143,68 @@
 					<rdg wit="#WH1812">And quaff from the dew’s pure fountain.</rdg>
 					<rdg wit="#WH1827">And quaff from the sparkling fountain.</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p8"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH9"><app><rdg wit="#WH1812 #WH1827">But fatigue in pleasure’s guise is clad;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH10"><app><rdg wit="#WH1812 #WH1827">And the song so sweet makes the light heart sad;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH11"><app><rdg wit="#WH1812 #WH1827">And autumn tells of joys that fly;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH12"><app><rdg wit="#WH1812 #WH1827">And summer’s charms in languor die:</rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p348"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH13"><app><rdg wit="#WH1812 #WH1827">If ye would have all hope can bring,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH14"><app><rdg wit="#WH1812 #WH1827">Take the first morn of early spring!</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH15"><app><rdg wit="#WH1812 #WH1827">If ye would warm your life-blood chill,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH16"><app><rdg wit="#WH1812 #WH1827">Go course on Watlington’s fair hill!</rdg></app></l>
-			</div>
+					<pb xml:id="p8" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH9">But fatigue in pleasure’s guise is clad;</l>
+				<l rend="indent(+1)" xml:id="WH10">And the song so sweet makes the light heart sad;</l>
+				<l rend="indent(+1)" xml:id="WH11">And autumn tells of joys that fly;</l>
+				<l rend="indent(+1)" xml:id="WH12">And summer’s charms in languor die:</l>
+					<pb xml:id="p348" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH13">If ye would have all hope can bring,</l>
+				<l rend="indent(+1)" xml:id="WH14">Take the first morn of early spring!</l>
+				<l rend="indent(+1)" xml:id="WH15">If ye would warm your life-blood chill,</l>
+				<l rend="indent(+1)" xml:id="WH16">Go course on Watlington’s fair hill!</l>
+			</lg>
 
-			<div type="section">
-				<head>II.</head>
+			<lg type="section">
+				<label>II.</label>
 
 				<l rend="indent(+1)" xml:id="WH17"> <app>
 						<rdg wit="#WH1812">The mountain gale the vapour flings</rdg>
 						<rdg wit="#WH1827">The mountain gale the vapor flings</rdg>
 					</app></l>
-				<l rend="indent(+1)" xml:id="WH18"><app><rdg wit="#WH1812 #WH1827">Aloft upon his giant wings:</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH18">Aloft upon his giant wings:</l>
 				<l rend="indent(+1)" xml:id="WH19"><app>
 						<rdg wit="#WH1812">And now the sun, in high career,</rdg>
 						<rdg wit="#WH1827">And now the sun in high career,</rdg>
 					</app></l>
-				<l rend="indent(+1)" xml:id="WH20"><app><rdg wit="#WH1812 #WH1827">Wakens a thousand dew-drops clear,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH21"><app><rdg wit="#WH1812 #WH1827">That in their downy moss-couch sleep,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH22"><app><rdg wit="#WH1812 #WH1827">Or from the trembling grass-top weep.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p9"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH23"><app><rdg wit="#WH1812 #WH1827">O lovelier than the brightest gem</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH24"><app><rdg wit="#WH1812 #WH1827">That shines in princely diadem,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH20">Wakens a thousand dew-drops clear,</l>
+				<l rend="indent(+1)" xml:id="WH21">That in their downy moss-couch sleep,</l>
+				<l rend="indent(+1)" xml:id="WH22">Or from the trembling grass-top weep.</l>
+					<pb xml:id="p9" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH23">O lovelier than the brightest gem</l>
+				<l rend="indent(+1)" xml:id="WH24">That shines in princely diadem,</l>
 				<l rend="indent(+3)" xml:id="WH25"><app>
 						<rdg wit="#WH1812">How transient is thy sway;</rdg>
 						<rdg wit="#WH1827">How transient is thy sway!</rdg>
 					</app></l>
-				<l rend="indent(+1)" xml:id="WH26"><app><rdg wit="#WH1812 #WH1827">Sportsmen and steeds, and hounds and hare,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH27"><app><rdg wit="#WH1812 #WH1827">Hunters and hunted from thy lair</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH26">Sportsmen and steeds, and hounds and hare,</l>
+				<l rend="indent(+1)" xml:id="WH27">Hunters and hunted from thy lair</l>
 				<l rend="indent(+1)" xml:id="WH28">
 					<app>
 						<rdg wit="#WH1812">Shall drive thee, Diamond of the air,</rdg>
 						<rdg wit="#WH1827">Shall drive thee, diamond of the air,</rdg>
 					</app></l>
-				<l rend="indent(+3)" xml:id="WH29"><app><rdg wit="#WH1812 #WH1827">And sweep thy charms away.</rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p349"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH30"><app><rdg wit="#WH1812 #WH1827">And yet, in sooth, upon the hill</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH29">And sweep thy charms away.</l>
+					<pb xml:id="p349" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH30">And yet, in sooth, upon the hill</l>
 				<l rend="indent(+1)" xml:id="WH31"><app>
 						<rdg wit="#WH1812">Thy glit’ring place they better fill:</rdg>
 						<rdg wit="#WH1827">Thy glittering place they better fill:</rdg>
 					</app></l>
-				<l rend="indent(+3)" xml:id="WH32"><app><rdg wit="#WH1812 #WH1827">Upon the shelving mossy side,</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH33"><app><rdg wit="#WH1812 #WH1827">And on the furze-clad steep,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH32">Upon the shelving mossy side,</l>
+				<l rend="indent(+5)" xml:id="WH33">And on the furze-clad steep,</l>
 				<l rend="indent(+3)" xml:id="WH34"><app>
 						<rdg wit="#WH1812">Th’ impatient horsemen gaily ride,</rdg>
 						<rdg wit="#WH1827">The impatient horsemen gaily ride,</rdg>
 					</app></l>
-				<l rend="indent(+3)" xml:id="WH35"><app><rdg wit="#WH1812 #WH1827">The gallant dogs reluctant bide,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH36"><app><rdg wit="#WH1812 #WH1827">And ladies fair, though storms betide,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH37"><app><rdg wit="#WH1812 #WH1827">Their anxious station keep.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p10"/></rdg></app></l>
-			</div>
+				<l rend="indent(+3)" xml:id="WH35">The gallant dogs reluctant bide,</l>
+				<l rend="indent(+3)" xml:id="WH36">And ladies fair, though storms betide,</l>
+				<l rend="indent(+3)" xml:id="WH37">Their anxious station keep.</l>
+					<pb xml:id="p10" edRef="#WH1812"/>
+			</lg>
 			
-						<div type="section">
-				<head>III.</head>
+						<lg type="section">
+				<label>III.</label>
 				
 				<l rend="indent(+1)" xml:id="WH38"><app>
 						<rdg wit="#WH1812">Greyhounds were there of noble name;</rdg>
@@ -219,9 +214,9 @@
 						<rdg wit="#WH1812">Coursers who equal praise may claim;</rdg>
 						<rdg wit="#WH1827">Coursers who equal praise may claim,</rdg>
 					</app></l>
-				<l rend="indent(+1)" xml:id="WH40"><app><rdg wit="#WH1812 #WH1827">And many a bright and gentle dame.</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH41"><app><rdg wit="#WH1812 #WH1827">Oh could my rustic string</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH42"><app><rdg wit="#WH1812 #WH1827">Their beauty and their feats proclaim,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH40">And many a bright and gentle dame.</l>
+				<l rend="indent(+3)" xml:id="WH41">Oh could my rustic string</l>
+				<l rend="indent(+1)" xml:id="WH42">Their beauty and their feats proclaim,</l>
 				<l rend="indent(+1)" xml:id="WH43"><app>
 						<rdg wit="#WH1812">And give and steal the minstrel’s fame,</rdg>
 						<rdg wit="#WH1827">And give and steal the minstrel’s fame</rdg>
@@ -230,9 +225,9 @@
 					<rdg wit="#WH1812">Of all, of each, my harp should ring!</rdg>
 					<rdg wit="#WH1827">Of all, of each my harp should ring!</rdg>
 					</app></l>
-				<l rend="indent(+3)" xml:id="WH45"><app><rdg wit="#WH1812 #WH1827">But light as he the strain should spring</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH46"><app><rdg wit="#WH1812 #WH1827">That sings the greyhound rare;</rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p350"/></rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH45">But light as he the strain should spring</l>
+				<l rend="indent(+5)" xml:id="WH46">That sings the greyhound rare;</l>
+					<pb xml:id="p350" edRef="#WH1827"/>
 				<l rend="indent(+3)" xml:id="WH47"><app>
 					<rdg wit="#WH1812">And soft as Beauty’s plumy wing</rdg>
 					<rdg wit="#WH1827">And soft as beauty’s plumy wing</rdg>
@@ -249,8 +244,8 @@
 					<rdg wit="#WH1812">Coursing nor Beauty dare I sing,</rdg>
 					<rdg wit="#WH1827">Coursing nor beauty dare I sing,</rdg>
 				</app></l>
-				<l rend="indent(+5)" xml:id="WH51"><app><rdg wit="#WH1812 #WH1827">The greyhound nor the hare.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p11"/></rdg></app></l>
+				<l rend="indent(+5)" xml:id="WH51">The greyhound nor the hare.</l>
+					<pb xml:id="p11" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH52"><app>
 					<rdg wit="#WH1812">Yet, gentle maids, ye well may spy</rdg>
 					<rdg wit="#WH1827">Yet well each gentle maid may spy</rdg>
@@ -259,7 +254,7 @@
 					<rdg wit="#WH1812">Your triumphs in your lovers’ eye:</rdg>
 					<rdg wit="#WH1827">Her triumphs in her lover’s eye;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH54"><app><rdg wit="#WH1812 #WH1827">And ye, kind sportsmen, well may claim</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH54">And ye, kind sportsmen, well may claim</l>
 				<l rend="indent(+1)" xml:id="WH55"><app>
 					<rdg wit="#WH1812">For gallant dogs scarce-rivall’d fame.</rdg>
 					<rdg wit="#WH1827">For gallant dogs scarce-rivalled fame.</rdg>
@@ -268,27 +263,27 @@
 					<rdg wit="#WH1812">And durst I sing, in vent’rous guise,</rdg>
 					<rdg wit="#WH1827">And durst I sing, in venturous guise,</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH57"><app><rdg wit="#WH1812 #WH1827">Of ricks and turns, and falls and byes,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH58"><app><rdg wit="#WH1812 #WH1827">And all the courser’s mysteries,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH57">Of ricks and turns, and falls and byes,</l>
+				<l rend="indent(+3)" xml:id="WH58">And all the courser’s mysteries,</l>
 				<l rend="indent(+3)" xml:id="WH59"><app>
 					<rdg wit="#WH1812">Then should the swan-neck’d <emph>Nancy</emph> show</rdg>
 					<rdg wit="#WH1827">Then should the swan-necked <emph>Nancy</emph> show</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH60"><app><rdg wit="#WH1812 #WH1827">As spotless as her fur of snow;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH60">As spotless as her fur of snow;</l>
 				<l rend="indent(+3)" xml:id="WH61">Then should the <emph>Sharks</emph> successive reign<app>
 					<rdg wit="#WH1812">,</rdg>
-					<rdg wit="#WH1827"></rdg>
+					<rdg wit="#WH1827"/>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH62"><app><rdg wit="#WH1812 #WH1827">And all their master’s fame sustain;</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH63"><app><rdg wit="#WH1812 #WH1827">Nor <emph>Windsor</emph> shame his breeding high;</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH64"><app><rdg wit="#WH1812 #WH1827">Nor tou thy name, Northumbrian <emph>Fly</emph>;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH62">And all their master’s fame sustain;</l>
+				<l rend="indent(+3)" xml:id="WH63">Nor <emph>Windsor</emph> shame his breeding high;</l>
+				<l rend="indent(+3)" xml:id="WH64">Nor tou thy name, Northumbrian <emph>Fly</emph>;</l>
 				<l rend="indent(+3)" xml:id="WH65"><app>
 					<rdg wit="#WH1812">Nor thou, <emph>Prince Hal</emph>, thy name-sake old,</rdg>
 					<rdg wit="#WH1827">Nor thou <emph>Prince Hal</emph>, thy name-sake old</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH66"><app><rdg wit="#WH1812 #WH1827">“The nimble-footed madcap” bold;</rdg></app></l>
-							<l><app><rdg wit="#WH1812"><pb xml:id="p351"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH67"><app><rdg wit="#WH1812 #WH1827">Nor thou the meed thy mother won,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH66">“The nimble-footed madcap” bold;</l>
+							<pb xml:id="p351" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH67">Nor thou the meed thy mother won,</l>
 				<l rend="indent(+3)" xml:id="WH68"><app>
 					<rdg wit="#WH1812">My golden-crested <emph>Marmion</emph><note resp="#MRM">Celebrated
 						greyhounds belonging to Messrs. Newell, Hayward, Webb, Hunt, and Mitford. Marmion is the son of Dr. 
@@ -297,46 +292,46 @@
 					<rdg wit="#WH1812">My golden crested <emph>Marmion</emph><note resp="#MRM">Celebrated
 						greyhounds belonging to different gentlemen who formed the party.</note>.</rdg>
 				</app></l>
-							<l><app><rdg wit="#WH1812"><pb xml:id="p12"/></rdg></app></l>
-			</div>
+							<pb xml:id="p12" edRef="#WH1812"/>
+			</lg>
 		
-			<div type="section">
-				<head>IV.</head>
+			<lg type="section">
+				<label>IV.</label>
 				
-				<l rend="indent(+1)" xml:id="WH69"><app><rdg wit="#WH1812 #WH1827">Leave we them all: to stand awhile</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH70"><app><rdg wit="#WH1812 #WH1827">Upon the tompost brow,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH69">Leave we them all: to stand awhile</l>
+				<l rend="indent(+3)" xml:id="WH70">Upon the tompost brow,</l>
 				<l rend="indent(+1)" xml:id="WH71"><app>
 					<rdg wit="#WH1812">And mark how many a length’ning mile</rdg>
 					<rdg wit="#WH1827">And mark how many a lengthening mile,</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH72"><app><rdg wit="#WH1812 #WH1827">The landscape spreads below.</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH73"><app><rdg wit="#WH1812 #WH1827">Here let us stand! The breezes chill</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH74"><app><rdg wit="#WH1812 #WH1827">A healthful freshness breathe,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH75"><app><rdg wit="#WH1812 #WH1827">The blood with stirring quickness fill,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH72">The landscape spreads below.</l>
+				<l rend="indent(+1)" xml:id="WH73">Here let us stand! The breezes chill</l>
+				<l rend="indent(+3)" xml:id="WH74">A healthful freshness breathe,</l>
+				<l rend="indent(+1)" xml:id="WH75">The blood with stirring quickness fill,</l>
 				<l rend="indent(+3)" xml:id="WH76"><app>
 					<rdg wit="#WH1812">And Fancy’s wildest garlands wreathe.</rdg>
 					<rdg wit="#WH1827">And fancy’s garlands aid to wreathe.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH77"><app><rdg wit="#WH1812 #WH1827">How pure, how transient is the storm!</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH77">How pure, how transient is the storm!</l>
 				<l rend="indent(+1)" xml:id="WH78">See in yon furze poor puss’s form<app>
 					<rdg wit="#WH1812">,</rdg>
-					<rdg wit="#WH1827"></rdg>
+					<rdg wit="#WH1827"/>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH79"><app><rdg wit="#WH1812 #WH1827">A vacant cradle seems,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH79">A vacant cradle seems,</l>
 				<l rend="indent(+1)" xml:id="WH80"><app>
 					<rdg wit="#WH1812">Rock’d by the loud wind to and fro;</rdg>
 					<rdg wit="#WH1827">Rocked by the loud wind to and fro;</rdg>
 				</app></l>
 				<l rend="indent(+1)" xml:id="WH81">Whilst the coy primrose blooms below<app>
 					<rdg wit="#WH1812">,</rdg>
-					<rdg wit="#WH1827"></rdg>
+					<rdg wit="#WH1827"/>
 				</app></l>
 				<l rend="indent(+3)" xml:id="WH82"><app>
 					<rdg wit="#WH1812">Nurs’d by the southern beams:</rdg>
 					<rdg wit="#WH1827">Nursed by the southern beams;</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p13"/></rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p352"/></rdg></app></l>
+					<pb xml:id="p13" edRef="#WH1812"/>
+					<pb xml:id="p352" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH83"><app>
 					<rdg wit="#WH1812">And over-head in richer gold</rdg>
 					<rdg wit="#WH1827">And overhead in richer gold</rdg>
@@ -353,12 +348,12 @@
 					<rdg wit="#WH1812">To hang around her mountain lair.</rdg>
 					<rdg wit="#WH1827">To hang above her mountain lair.</rdg>
 				</app></l>
-			</div>
+			</lg>
 			
-			<div type="section">
-				<head>V.</head>
+			<lg type="section">
+				<label>V.</label>
 
-				<l rend="indent(+1)" xml:id="WH87"><app><rdg wit="#WH1812 #WH1827">Methinks I too should love to dwell</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH87">Methinks I too should love to dwell</l>
 				<l rend="indent(+1)" xml:id="WH88"><app>
 					<rdg wit="#WH1812">Within this lone and cloud-capp’d cell:</rdg>
 					<rdg wit="#WH1827">Within this lone and cloud-capped cell:</rdg>
@@ -371,38 +366,38 @@
 					<rdg wit="#WH1812">!</rdg>
 					<rdg wit="#WH1827">;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH91"><app><rdg wit="#WH1812 #WH1827">With all below to charm the eye;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH91">With all below to charm the eye;</l>
 				<l rend="indent(+1)" xml:id="WH92"><app>
 					<rdg wit="#WH1812">With nought above me, but the sky.</rdg>
 					<rdg wit="#WH1827">With nought above me but the sky.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH93"><app><rdg wit="#WH1812 #WH1827">Here would I watch each sailing cloud</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH94"><app><rdg wit="#WH1812 #WH1827">Scudding along in grandeur proud;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH95"><app><rdg wit="#WH1812 #WH1827">And mark the varying shadows cast</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH96"><app><rdg wit="#WH1812 #WH1827">On down or fallow as it past;</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p14"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH97"><app><rdg wit="#WH1812 #WH1827">Or view the sudden catching light</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH98"><app><rdg wit="#WH1812 #WH1827">Now part the shades and now unite;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH99"><app><rdg wit="#WH1812 #WH1827">Till noon’s refulgent brightness spread</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH100"><app><rdg wit="#WH1812 #WH1827">Its glories o’er the mountain’s head:</rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p353"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH101"><app><rdg wit="#WH1812 #WH1827">Then would I bend from my high place</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH93">Here would I watch each sailing cloud</l>
+				<l rend="indent(+1)" xml:id="WH94">Scudding along in grandeur proud;</l>
+				<l rend="indent(+1)" xml:id="WH95">And mark the varying shadows cast</l>
+				<l rend="indent(+1)" xml:id="WH96">On down or fallow as it past;</l>
+					<pb xml:id="p14" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH97">Or view the sudden catching light</l>
+				<l rend="indent(+1)" xml:id="WH98">Now part the shades and now unite;</l>
+				<l rend="indent(+1)" xml:id="WH99">Till noon’s refulgent brightness spread</l>
+				<l rend="indent(+1)" xml:id="WH100">Its glories o’er the mountain’s head:</l>
+					<pb xml:id="p353" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH101">Then would I bend from my high place</l>
 				<l rend="indent(+1)" xml:id="WH102"><app>
 					<rdg wit="#WH1812">To gaze upon th’ horizon’s space,</rdg>
 					<rdg wit="#WH1827">To gaze upon the horizon’s space,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH103"><app><rdg wit="#WH1812 #WH1827">A tract sublime of various grace.</rdg></app></l>
-				</div>
+				<l rend="indent(+1)" xml:id="WH103">A tract sublime of various grace.</l>
+				</lg>
 			
-			<div type="section">
-				<head>VI.</head>
+			<lg type="section">
+				<label>VI.</label>
 				
-				<l rend="indent(+1)" xml:id="WH104"><app><rdg wit="#WH1812 #WH1827">Yet first the charmed eye would greet</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH104">Yet first the charmed eye would greet</l>
 				<l rend="indent(+1)" xml:id="WH105"><app>
 					<rdg wit="#WH1812">The lowland home-scene’s vallies sweet,</rdg>
 					<rdg wit="#WH1827">The lowland home-scenes vallies sweet,</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH106"><app><rdg wit="#WH1812 #WH1827">Of wood and turf and field;</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH106">Of wood and turf and field;</l>
 				<l rend="indent(+1)" xml:id="WH107"><app>
 					<rdg wit="#WH1812">Where the snug cot, the lordly seat,</rdg>
 					<rdg wit="#WH1827">Where the snug cot, the lordly seat</rdg>
@@ -411,9 +406,9 @@
 					<rdg wit="#WH1812">Like grandeur and contentment meet,</rdg>
 					<rdg wit="#WH1812">Like grandeur and contentment meet</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH109"><app><rdg wit="#WH1812 #WH1827">And mutual beauty yield.</rdg></app></l>
-						<l><app><rdg wit="#WH1812"><pb xml:id="p15"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH110"><app><rdg wit="#WH1812 #WH1827">And first would trace the winding road</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH109">And mutual beauty yield.</l>
+						<pb xml:id="p15" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH110">And first would trace the winding road</l>
 				<l rend="indent(+3)" xml:id="WH111"><app>
 					<rdg wit="#WH1812">Which through the beech-wood leads,</rdg>
 					<rdg wit="#WH1827">Which through the beech-wood leads</rdg>
@@ -422,8 +417,8 @@
 					<rdg wit="#WH1812">By red-cloak’d maids and ploughmen trod,</rdg>
 					<rdg wit="#WH1827">By red-cloaked maids and ploughmen trod,</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH113"><app><rdg wit="#WH1812 #WH1827">Rich wains and prancing steeds.</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH114"><app><rdg wit="#WH1812 #WH1827">And first admire those beechen trees,</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH113">Rich wains and prancing steeds.</l>
+				<l rend="indent(+1)" xml:id="WH114">And first admire those beechen trees,</l>
 				<l rend="indent(+1)" xml:id="WH115"><app>
 					<rdg wit="#WH1812">Whose upper branches in the breeze,</rdg>
 					<rdg wit="#WH1827">Whose upper branches in the breeze</rdg>
@@ -440,14 +435,14 @@
 					<rdg wit="#WH1812">Each lower bough, in saffron garb,</rdg>
 					<rdg wit="#WH1827">Each lower bough in saffron garb,</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p354"/></rdg></app></l>
+					<pb xml:id="p354" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH119"><app>
 					<rdg wit="#WH1812">Catches the rain-drops as they fall,</rdg>
 					<rdg wit="#WH1827">Catches the rain-drops as they fall</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH120"><app><rdg wit="#WH1812 #WH1827">And answers to the night-wind’s call.</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH121"><app><rdg wit="#WH1812 #WH1827">Among those woods one chimney white</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH122"><app><rdg wit="#WH1812 #WH1827">Just glances in the southern light,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH120">And answers to the night-wind’s call.</l>
+				<l rend="indent(+1)" xml:id="WH121">Among those woods one chimney white</l>
+				<l rend="indent(+1)" xml:id="WH122">Just glances in the southern light,</l>
 				<l rend="indent(+1)" xml:id="WH123"><app>
 					<rdg wit="#WH1812">Deep bosom’d in th’ impervious glades,</rdg>
 					<rdg wit="#WH1827">Deep bosomed in the impervious glades</rdg>
@@ -460,24 +455,24 @@
 						Nunnery. The retreat of several aged nuns, who were driven from France by
 						the Revolution.</note>.</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p16"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH125"><app><rdg wit="#WH1812 #WH1827">Is it the woodman’s fair retreat</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH126"><app><rdg wit="#WH1812 #WH1827">Where merry children sport?</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH127"><app><rdg wit="#WH1812 #WH1827">Or the rough keeper’s jovial seat,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH128"><app><rdg wit="#WH1812 #WH1827">Where hounds and huntsman frequent meet,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH129"><app><rdg wit="#WH1812 #WH1827">And hold their sylvan court?</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH130"><app><rdg wit="#WH1812 #WH1827">Is it the laugh of infants gay,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH131"><app><rdg wit="#WH1812 #WH1827">Shaking the forest with their play,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH132"><app><rdg wit="#WH1812 #WH1827">That wakes the echoes round?</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH133"><app><rdg wit="#WH1812 #WH1827">Or trampling steeds at break of day,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH134"><app><rdg wit="#WH1812 #WH1827">The noisy pack, the clarion’s lay?</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH135"><app><rdg wit="#WH1812 #WH1827">What wakes thy voice, coy echo, say?</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH136"><app><rdg wit="#WH1812 #WH1827">It is a holier sound.</rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p355"/></rdg></app></l>
-			</div>
+					<pb xml:id="p16" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH125">Is it the woodman’s fair retreat</l>
+				<l rend="indent(+3)" xml:id="WH126">Where merry children sport?</l>
+				<l rend="indent(+1)" xml:id="WH127">Or the rough keeper’s jovial seat,</l>
+				<l rend="indent(+1)" xml:id="WH128">Where hounds and huntsman frequent meet,</l>
+				<l rend="indent(+3)" xml:id="WH129">And hold their sylvan court?</l>
+				<l rend="indent(+1)" xml:id="WH130">Is it the laugh of infants gay,</l>
+				<l rend="indent(+1)" xml:id="WH131">Shaking the forest with their play,</l>
+				<l rend="indent(+3)" xml:id="WH132">That wakes the echoes round?</l>
+				<l rend="indent(+1)" xml:id="WH133">Or trampling steeds at break of day,</l>
+				<l rend="indent(+1)" xml:id="WH134">The noisy pack, the clarion’s lay?</l>
+				<l rend="indent(+1)" xml:id="WH135">What wakes thy voice, coy echo, say?</l>
+				<l rend="indent(+3)" xml:id="WH136">It is a holier sound.</l>
+					<pb xml:id="p355" edRef="#WH1827"/>
+			</lg>
 			
-			<div type="section">
-				<head>VII.</head>
+			<lg type="section">
+				<label>VII.</label>
 		
 				<l rend="indent(+1)" xml:id="WH137"><app>
 					<rdg wit="#WH1812">There, from their native country driv’n,</rdg>
@@ -487,15 +482,15 @@
 					<rdg wit="#WH1812">The Nuns’ sweet vespers rise to heav’n.</rdg>
 					<rdg wit="#WH1827">The nuns’ sweet vespers rise to heaven.</rdg>
 				</app></l>
-				<l><app><rdg wit="#WH1812"><pb xml:id="p17"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH139"><app><rdg wit="#WH1812 #WH1827">Exiles of France! in early life</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH140"><app><rdg wit="#WH1812 #WH1827">They fled the world’s tumultuous strife,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH141"><app><rdg wit="#WH1812 #WH1827">To find within a convent’s breast</rdg></app></l>
+				<pb xml:id="p17" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH139">Exiles of France! in early life</l>
+				<l rend="indent(+1)" xml:id="WH140">They fled the world’s tumultuous strife,</l>
+				<l rend="indent(+1)" xml:id="WH141">To find within a convent’s breast</l>
 				<l rend="indent(+1)" xml:id="WH142"><app>
 					<rdg wit="#WH1812">The Present calm, the Future blest.</rdg>
 					<rdg wit="#WH1827">The present calm, the future blest.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH143"><app><rdg wit="#WH1812 #WH1827">They sought for peace, and peace they found,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH143">They sought for peace, and peace they found,</l>
 				<l rend="indent(+1)" xml:id="WH144"><app>
 					<rdg wit="#WH1812">Till impious havock, glaring round,</rdg>
 					<rdg wit="#WH1827">Till impious Havock glaring round</rdg>
@@ -512,7 +507,7 @@
 					<rdg wit="#WH1812">But Freedom’s prostituted sound</rdg>
 					<rdg wit="#WH1827">But freedom’s prostituted sound</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH148"><app><rdg wit="#WH1812 #WH1827">To them was misery.</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH148">To them was misery.</l>
 				<l rend="indent(+1)" xml:id="WH149"><app>
 					<rdg wit="#WH1812">Chas’d from their voluntary prison,</rdg>
 					<rdg wit="#WH1827">Chased from their voluntary prison,</rdg>
@@ -529,18 +524,18 @@
 					<rdg wit="#WH1812">Had vanish’d from their tear-dimm’d view.</rdg>
 					<rdg wit="#WH1827">Had vanished from their tear-dimmed view.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH153"><app><rdg wit="#WH1812 #WH1827">Nor place to sit them down and pray,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH153">Nor place to sit them down and pray,</l>
 				<l rend="indent(+1)" xml:id="WH154"><app>
 					<rdg wit="#WH1812">Nor friends, nor home, nor grave, had they.</rdg>
 					<rdg wit="#WH1827">Nor friends, nor home, nor grave had they.</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1812"><pb xml:id="p18"/></rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p356"/></rdg></app></l>
+					<pb xml:id="p18" edRef="#WH1812"/>
+					<pb xml:id="p356" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH155"><app>
 					<rdg wit="#WH1812">Sick’ning at war’s tumultuous din</rdg>
 					<rdg wit="#WH1827">Sickening at war’s tumultuous din</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH156"><app><rdg wit="#WH1812 #WH1827">They fled that clime of woe and sin;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH156">They fled that clime of woe and sin;</l>
 				<l rend="indent(+1)" xml:id="WH157"><app>
 					<rdg wit="#WH1812">And here they dwell, the pious band!</rdg>
 					<rdg wit="#WH1827">And here they dwell, the pious band,</rdg>
@@ -549,25 +544,25 @@
 					<rdg wit="#WH1812">Honour’d and safe in Albion’s land.</rdg>
 					<rdg wit="#WH1827">Honoured and safe in Albion’s land;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH159"><app><rdg wit="#WH1812 #WH1827">And though perchance a casual tear</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH160"><app><rdg wit="#WH1812 #WH1827">Fall for the convent once so dear,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH159">And though perchance a casual tear</l>
+				<l rend="indent(+1)" xml:id="WH160">Fall for the convent once so dear,</l>
 				<l rend="indent(+1)" xml:id="WH161"><app>
 					<rdg wit="#WH1812">Yet sweet Contentment’s patient smile,</rdg>
 					<rdg wit="#WH1827">Yet sweet contentment’s patient smile</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH162"><app><rdg wit="#WH1812 #WH1827">Shall grace each placid cheek the while;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH163"><app><rdg wit="#WH1812 #WH1827">Here, where they keep their holy vow,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH164"><app><rdg wit="#WH1812 #WH1827">Here is their native country now:</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH165"><app><rdg wit="#WH1812 #WH1827">For here, though all unknown the tongue,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH166"><app><rdg wit="#WH1812 #WH1827">The tenderest sound of welcome rung;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH167"><app><rdg wit="#WH1812 #WH1827">Here pity beams in every eye;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH168"><app><rdg wit="#WH1812 #WH1827">Here blest they live--more blest shall die.</rdg></app>
-					<app><rdg wit="#WH1812"><pb xml:id="p19"/></rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH162">Shall grace each placid cheek the while;</l>
+				<l rend="indent(+1)" xml:id="WH163">Here, where they keep their holy vow,</l>
+				<l rend="indent(+1)" xml:id="WH164">Here is their native country now:</l>
+				<l rend="indent(+1)" xml:id="WH165">For here, though all unknown the tongue,</l>
+				<l rend="indent(+1)" xml:id="WH166">The tenderest sound of welcome rung;</l>
+				<l rend="indent(+1)" xml:id="WH167">Here pity beams in every eye;</l>
+				<l rend="indent(+1)" xml:id="WH168">Here blest they live--more blest shall die.
+					<pb xml:id="p19" edRef="#WH1812"/></l>
 				
-			</div>
+			</lg>
 			
-				<div type="section">
-				<head>VIII.</head>
+				<lg type="section">
+				<label>VIII.</label>
 					
 				<l rend="indent(+1)" xml:id="WH169"><app>
 					<rdg wit="#WH1812">From pious Brittwell pass we now,</rdg>
@@ -577,7 +572,7 @@
 					<rdg wit="#WH1812">At Freedom’s holy shrine to bow,</rdg>
 					<rdg wit="#WH1827">At freedom’s honoured shrine to bow</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p357"/></rdg></app></l>
+					<pb xml:id="p357" edRef="#WH1827"/>
 				<l rend="indent(+3)" xml:id="WH171"><app>
 					<rdg wit="#WH1812">On Chalgrove’s honor’d field<note xml:id="WHn4" resp="#MRM">The spot where
 						Hampden fell.</note>;</rdg>
@@ -608,20 +603,20 @@
 					<rdg wit="#WH1812">That tells of Chalgrove’s victory,</rdg></app></l>
 				<l rend="indent(+3)" xml:id="WH178"><app>
 					<rdg wit="#WH1812">Of Hampden’s virtuous rage.</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH179"><app><rdg wit="#WH1812 #WH1827">Hampden! thy name from age to age</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH180"><app><rdg wit="#WH1812 #WH1827">The patriot heart shall fire;</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH181"><app><rdg wit="#WH1812 #WH1827">The good, the fair, the brave, the sage</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH182"><app><rdg wit="#WH1812 #WH1827">All weep thy funeral pyre.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p20"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH183"><app><rdg wit="#WH1812 #WH1827">Thy very enemy confest</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH184"><app><rdg wit="#WH1812 #WH1827">The virtues of thy noble breast<note resp="#MRM">See the character
-						of Hampden in Lord Clarendon’s History.</note>;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH185"><app><rdg wit="#WH1812 #WH1827">Hard as it is amid the jar</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH179">Hampden! thy name from age to age</l>
+				<l rend="indent(+1)" xml:id="WH180">The patriot heart shall fire;</l>
+				<l rend="indent(+3)" xml:id="WH181">The good, the fair, the brave, the sage</l>
+				<l rend="indent(+1)" xml:id="WH182">All weep thy funeral pyre.</l>
+					<pb xml:id="p20" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH183">Thy very enemy confest</l>
+				<l rend="indent(+1)" xml:id="WH184">The virtues of thy noble breast<note resp="#MRM">See the character
+						of Hampden in Lord Clarendon’s History.</note>;</l>
+				<l rend="indent(+1)" xml:id="WH185">Hard as it is amid the jar</l>
 				<l rend="indent(+1)" xml:id="WH186"><app>
 					<rdg wit="#WH1812">Of falling thrones, of civil war,</rdg>
 					<rdg wit="#WH1827">Of falling thrones, of civil war</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p358"/></rdg></app></l>
+					<pb xml:id="p358" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH187"><app>
 					<rdg wit="#WH1812">To judge of Man’s inconstant state;</rdg>
 					<rdg wit="#WH1827">To judge of man’s inconstant state,</rdg>
@@ -642,56 +637,55 @@
 					<rdg wit="#WH1812">How rais’d, when Falkland by him stood,</rdg>
 					<rdg wit="#WH1827">How raised when Falkland by him stood</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH192"><app><rdg wit="#WH1812 #WH1827">As great as thou, as wise, as good!</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH193"><app><rdg wit="#WH1812 #WH1827">O who, by equal fame misled,</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH194"><app><rdg wit="#WH1812 #WH1827">Who shall the righteous cause decide,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH192">As great as thou, as wise, as good!</l>
+				<l rend="indent(+3)" xml:id="WH193">O who, by equal fame misled,</l>
+				<l rend="indent(+5)" xml:id="WH194">Who shall the righteous cause decide,</l>
 				<l rend="indent(+3)" xml:id="WH195"><app>
 					<rdg wit="#WH1812">When for his King, Lord Falkland bled,</rdg>
 					<rdg wit="#WH1827">When for his King Lord Falkland bled,</rdg>
 				</app></l>
-				<l rend="indent(+5)" xml:id="WH196"><app><rdg wit="#WH1812 #WH1827">When Hampden for his country died!</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p21"/></rdg></app></l>
-			</div>			
+				<l rend="indent(+5)" xml:id="WH196">When Hampden for his country died!</l>
+					<pb xml:id="p21" edRef="#WH1812"/>
+			</lg>			
 			
-			<div type="section">
-		 		<head><app><rdg wit="#WH1812">IX.</rdg></app></head>
+			<app><rdg wit="#WH1812"><lg type="section">
+		 		<label>IX.</label>
 		 		
-		 		<l rend="indent(+1)" xml:id="WH196.1"><app><rdg wit="#WH1812">Yet, field of blood! though Time has now</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.2"><app><rdg wit="#WH1812">Shed Fame’s bright glories on thy brow;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.3"><app><rdg wit="#WH1812">Though for the bones in whitening heaps,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.4"><app><rdg wit="#WH1812">The Peasant guiltless harvests reaps;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.5"><app><rdg wit="#WH1812">Yet, field of blood, in thee I see</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.6"><app><rdg wit="#WH1812">Naught but they gory victory:</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.7"><app><rdg wit="#WH1812">And joyful turn from targe and helm</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.8"><app><rdg wit="#WH1812">To thy calm precincts, sweet Ewelm;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.9"><app><rdg wit="#WH1812">Turn, joyful turn, from warring Man</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH196.10"><app><rdg wit="#WH1812">To think on thee, benignest Anne!<note resp="#MRM">Queen Anne had a palace
-					at Ewelm: and the almshouses, which still remain there, were founded by her munificence.</note></rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.11"><app><rdg wit="#WH1812">Here wert thou wont to swell, mild Queen!</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.12"><app><rdg wit="#WH1812">Pious, and happy, and serene!</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.13"><app><rdg wit="#WH1812">Rever’d, though oft by faction tost;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.14"><app><rdg wit="#WH1812">Lov’d, though by faithless ingrates crost;</rdg></app></l>
-		 			<l><app><rdg wit="#WH1812"><pb xml:id="p22"/></rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.15"><app><rdg wit="#WH1812">Victress, where’er thy armies roam,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.16"><app><rdg wit="#WH1812">But chiefly conqueror at home.</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.17"><app><rdg wit="#WH1812">A truth most rare thy urn might tell,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.18"><app><rdg wit="#WH1812">“Her people lov’d Queen Anna well!”</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.19"><app><rdg wit="#WH1812">And Almshouses thy pity lent,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.20"><app><rdg wit="#WH1812">And Churches form thy monument.</rdg></app></l>
-		 	</div>
+		 		<l rend="indent(+1)" xml:id="WH196.1">Yet, field of blood! though Time has now</l>
+		 		<l rend="indent(+1)" xml:id="WH196.2">Shed Fame’s bright glories on thy brow;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.3">Though for the bones in whitening heaps,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.4">The Peasant guiltless harvests reaps;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.5">Yet, field of blood, in thee I see</l>
+		 		<l rend="indent(+1)" xml:id="WH196.6">Naught but they gory victory:</l>
+		 		<l rend="indent(+1)" xml:id="WH196.7">And joyful turn from targe and helm</l>
+		 		<l rend="indent(+1)" xml:id="WH196.8">To thy calm precincts, sweet Ewelm;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.9">Turn, joyful turn, from warring Man</l>
+				<l rend="indent(+1)" xml:id="WH196.10">To think on thee, benignest Anne!<note resp="#MRM">Queen Anne had a palace
+					at Ewelm: and the almshouses, which still remain there, were founded by her munificence.</note></l>
+		 		<l rend="indent(+1)" xml:id="WH196.11">Here wert thou wont to swell, mild Queen!</l>
+		 		<l rend="indent(+1)" xml:id="WH196.12">Pious, and happy, and serene!</l>
+		 		<l rend="indent(+1)" xml:id="WH196.13">Rever’d, though oft by faction tost;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.14">Lov’d, though by faithless ingrates crost;</l>
+		 			<pb xml:id="p22" edRef="#WH1812"/>
+		 		<l rend="indent(+1)" xml:id="WH196.15">Victress, where’er thy armies roam,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.16">But chiefly conqueror at home.</l>
+		 		<l rend="indent(+1)" xml:id="WH196.17">A truth most rare thy urn might tell,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.18">“Her people lov’d Queen Anna well!”</l>
+		 		<l rend="indent(+1)" xml:id="WH196.19">And Almshouses thy pity lent,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.20">And Churches form thy monument.</l>
+		 	</lg></rdg></app>
 			
-			<div type="section">
-				<head><app><rdg wit="#WH1812">IX.</rdg></app></head>
-				<head><app><rdg wit="#WH1827">X.</rdg></app></head>
+			<lg type="section">
+				<label><app><rdg wit="#WH1812">IX.</rdg><rdg wit="#WH1827">X.</rdg></app></label>
 
-				<l rend="indent(+1)" xml:id="WH197"><app><rdg wit="#WH1812 #WH1827">How boldly yonder cloud so bright</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH198"><app><rdg wit="#WH1812 #WH1827">Throws out that clump of trees;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH197">How boldly yonder cloud so bright</l>
+				<l rend="indent(+3)" xml:id="WH198">Throws out that clump of trees;</l>
 				<l rend="indent(+1)" xml:id="WH199"><app>
 					<rdg wit="#WH1812">Scarce, till it crost th’ ethereal light,</rdg>
 					<rdg wit="#WH1827">Scarce, till it crost the ethereal light,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH200"><app><rdg wit="#WH1812 #WH1827">Like the wren’s plume on snow-ridge white,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH201"><app><rdg wit="#WH1812 #WH1827">The keenest eye that wood could seize.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH200">Like the wren’s plume on snow-ridge white,</l>
+				<l rend="indent(+3)" xml:id="WH201">The keenest eye that wood could seize.</l>
 				<l rend="indent(+1)" xml:id="WH202"><app>
 					<rdg wit="#WH1812">’Tis distant Farringdon, I deem;</rdg>
 					<rdg wit="#WH1827">’Tis distant Farringdon I deem;</rdg>
@@ -700,15 +694,15 @@
 					<rdg wit="#WH1812">And far below, Thames’ silver stream</rdg>
 					<rdg wit="#WH1827">And far below Thames’ silver stream</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p359"/></rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH204"><app><rdg wit="#WH1812 #WH1827">Thrids through the fair romantic bridge</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH205"><app><rdg wit="#WH1812 #WH1827">Of Wallingford’s old town;</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p23"/></rdg></app></l>
+					<pb xml:id="p359" edRef="#WH1827"/>
+				<l rend="indent(+3)" xml:id="WH204">Thrids through the fair romantic bridge</l>
+				<l rend="indent(+5)" xml:id="WH205">Of Wallingford’s old town;</l>
+					<pb xml:id="p23" edRef="#WH1812"/>
 				<l rend="indent(+3)" xml:id="WH206"><app>
 					<rdg wit="#WH1812">And high above, the Whittenham ridge</rdg>
 					<rdg wit="#WH1827">And high above the Whittenham ridge</rdg>
 				</app></l>
-				<l rend="indent(+5)" xml:id="WH207"><app><rdg wit="#WH1812 #WH1827">Seems the gay scene to crown.</rdg></app></l>
+				<l rend="indent(+5)" xml:id="WH207">Seems the gay scene to crown.</l>
 				<l rend="indent(+3)" xml:id="WH208"><app>
 					<rdg wit="#WH1812">But what is that which, to the right,</rdg>
 					<rdg wit="#WH1827">But what is that, which to the right,</rdg>
@@ -717,12 +711,12 @@
 					<rdg wit="#WH1812">Upon th’ horizon’s utmost verge,</rdg>
 					<rdg wit="#WH1827">Upon the horizon’s utmost verge,</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH210"><app><rdg wit="#WH1812 #WH1827">A fairy picture glitters bright,</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH211"><app><rdg wit="#WH1812 #WH1827">Like sea-foam on the crested surge?</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH212"><app><rdg wit="#WH1812 #WH1827">Is it the varying fleecy cloud</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH213"><app><rdg wit="#WH1812 #WH1827">That takes in sport the figure proud,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH214"><app><rdg wit="#WH1812 #WH1827">Where domes and turrets seem to rise,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH215"><app><rdg wit="#WH1812 #WH1827">And spiry steeples mock our eyes?</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH210">A fairy picture glitters bright,</l>
+				<l rend="indent(+5)" xml:id="WH211">Like sea-foam on the crested surge?</l>
+				<l rend="indent(+1)" xml:id="WH212">Is it the varying fleecy cloud</l>
+				<l rend="indent(+1)" xml:id="WH213">That takes in sport the figure proud,</l>
+				<l rend="indent(+1)" xml:id="WH214">Where domes and turrets seem to rise,</l>
+				<l rend="indent(+1)" xml:id="WH215">And spiry steeples mock our eyes?</l>
 				<l rend="indent(+1)" xml:id="WH216"><app>
 					<rdg wit="#WH1812">No; real is that lovely scene!</rdg>
 					<rdg wit="#WH1827">No; real is that lovely scene,</rdg>
@@ -739,23 +733,22 @@
 					<rdg wit="#WH1812">May dare approach her hallow’d shade;</rdg>
 					<rdg wit="#WH1827">May dare approach her hallowed shade;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH220"><app><rdg wit="#WH1812 #WH1827">Nor chant a requiem to each name</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH220">Nor chant a requiem to each name</l>
 				<l rend="indent(+1)" xml:id="WH221"><app>
 					<rdg wit="#WH1812">That waken’d there to deathless fame</rdg>
 					<rdg wit="#WH1827">That wakened there to deathless fame;</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p24"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH222"><app><rdg wit="#WH1812 #WH1827">Nor bid the Muse’s blessing rest</rdg></app></l>
+					<pb xml:id="p24" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH222">Nor bid the Muse’s blessing rest</l>
 				<l rend="indent(+1)" xml:id="WH223"><app>
 					<rdg wit="#WH1812">For ever in her honor’d breast.</rdg>
 					<rdg wit="#WH1827">For ever in her honoured breast.</rdg>
 				</app></l>
-				<l><app><rdg wit="#WH1827"><pb xml:id="p360"/></rdg></app></l>
-			</div>
+				<pb xml:id="p360" edRef="#WH1827"/>
+			</lg>
 			
-			<div type="section">
-				<head><app><rdg wit="#WH1812">X.</rdg></app></head>
-				<head><app><rdg wit="#WH1827">XI.</rdg></app></head>
+			<lg type="section">
+				<label><app><rdg wit="#WH1812">X.</rdg><rdg wit="#WH1827">XI.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH224"><app>
 					<rdg wit="#WH1812">Oh, when I dared the Muse to name,</rdg>
@@ -862,13 +855,13 @@
 					<rdg wit="#WH1812">Yes; there he liv’d, and there he sung,</rdg>
 					<rdg wit="#WH1827">Yes, there he lived, and there he sung,</rdg>
 				</app></l>				
-				<l rend="indent(+1)" xml:id="WH231"><app>
-					<rdg wit="#WH1812 #WH1827">When life and hope and love were young;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH231">
+					When life and hope and love were young;</l>
 				<l rend="indent(+1)" xml:id="WH232"><app>
 					<rdg wit="#WH1812">There, Grace and Genius at his side,</rdg>
 					<rdg wit="#WH1827">There, grace and genius at his side,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH233"><app><rdg wit="#WH1812 #WH1827">He won his half-disdainful bride;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH233">He won his half-disdainful bride;</l>
 				<l rend="indent(+1)" xml:id="WH234"><app>
 					<rdg wit="#WH1812">And there the lark, “in spite of sorrow,”</rdg>
 					<rdg wit="#WH1827">And there the lark “in spite of sorrow,”</rdg>
@@ -877,20 +870,20 @@
 					<rdg wit="#WH1812">Still at his “window bade good morrow,</rdg>
 					<rdg wit="#WH1827">Still at his “window bade good morrow</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p25"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH236"><app><rdg wit="#WH1812 #WH1827">“Through the sweet-briar, or the vine,</rdg></app></l>
+					<pb xml:id="p25" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH236">“Through the sweet-briar, or the vine,</l>
 				<l rend="indent(+1)" xml:id="WH237"><app>
 					<rdg wit="#WH1812">Or the twisted eglantine.”</rdg>
 					<rdg wit="#WH1827">“Or the twisted eglantine.”</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p361"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH238"><app><rdg wit="#WH1812 #WH1827">Oh happy hill! thy summer vest</rdg></app></l>
+					<pb xml:id="p361" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH238">Oh happy hill! thy summer vest</l>
 				<l rend="indent(+1)" xml:id="WH239"><app>
 					<rdg wit="#WH1812">Lives in his richest coloring drest;</rdg>
 					<rdg wit="#WH1827">Lives in his richest colouring drest;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH240"><app><rdg wit="#WH1812 #WH1827">Oh happy hill! thou saw’st him blest.</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH241"><app><rdg wit="#WH1812 #WH1827">Thou saw’st him blest, the greatest man</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH240">Oh happy hill! thou saw’st him blest.</l>
+				<l rend="indent(+1)" xml:id="WH241">Thou saw’st him blest, the greatest man</l>
 				<l rend="indent(+1)" xml:id="WH242"><app>
 					<rdg wit="#WH1812">That ever trod life’s grovelling span;---</rdg>
 					<rdg wit="#WH1827">That ever trod life’s grovelling span---</rdg>
@@ -903,9 +896,9 @@
 					<rdg wit="#WH1812">Undazzled and untir’d, the sky.</rdg>
 					<rdg wit="#WH1827">Undazzled and untired the sky.</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH245"><app><rdg wit="#WH1812 #WH1827">And thou didst view his blooming charm,</rdg></app></l>
-				<l rend="indent(+5)" xml:id="WH246"><app><rdg wit="#WH1812 #WH1827">That eagle plumed like the dove,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH247"><app><rdg wit="#WH1812 #WH1827">Whose very sleeping grace could warm</rdg></app></l>
+				<l rend="indent(+3)" xml:id="WH245">And thou didst view his blooming charm,</l>
+				<l rend="indent(+5)" xml:id="WH246">That eagle plumed like the dove,</l>
+				<l rend="indent(+3)" xml:id="WH247">Whose very sleeping grace could warm</l>
 				<l rend="indent(+5)" xml:id="WH248"><app>
 					<rdg wit="#WH1812">Th’ Italian maiden’s heart to love.<note resp="#MRM">
 						There is somewhere extant a wild romantic story of an Italian lady of high
@@ -925,24 +918,24 @@
 						cultivation of Italian literature, afterwards so dear to him for its own
 						sake.</note></rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH249"><app><rdg wit="#WH1812 #WH1827">Thou saw’st him in his happier hour,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH249">Thou saw’st him in his happier hour,</l>
 				<l rend="indent(+1)" xml:id="WH250"><app>
 					<rdg wit="#WH1812">When life was love, and genius, power;</rdg>
 					<rdg wit="#WH1827">When life was love, and genius power;</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1812"><pb xml:id="p26"/></rdg></app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p362"/></rdg></app></l>
+					<pb xml:id="p26" edRef="#WH1812"/>
+					<pb xml:id="p362" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH251"><app>
 					<rdg wit="#WH1812">When at his touch th’ awaken’d string</rdg>
 					<rdg wit="#WH1827">When at his touch the awakened string</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH252"><app><rdg wit="#WH1812 #WH1827">All joyous hailed the laughing spring;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH253"><app><rdg wit="#WH1812 #WH1827">And, like the sun, his radiant eyes</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH252">All joyous hailed the laughing spring;</l>
+				<l rend="indent(+1)" xml:id="WH253">And, like the sun, his radiant eyes</l>
 				<l rend="indent(+1)" xml:id="WH254"><app>
 					<rdg wit="#WH1812">Glanc’d on thy earthly Paradise.</rdg>
 					<rdg wit="#WH1827">Glanced on thy earthly Paradise.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH255"><app><rdg wit="#WH1812 #WH1827">Thou didst not see those eyes so bright</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH255">Thou didst not see those eyes so bright</l>
 				<l rend="indent(+1)" xml:id="WH256"><app>
 					<rdg wit="#WH1812">For ever quench’d in cheerless night;</rdg>
 					<rdg wit="#WH1827">For ever quenched in cheerless night;</rdg>
@@ -967,21 +960,21 @@
 					<rdg wit="#WH1812">And happy still!---Though in thy sod</rdg>
 					<rdg wit="#WH1827">And happy still! Though in thy sod</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH262"><app><rdg wit="#WH1812 #WH1827">No blade remain by Milton trod;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH263"><app><rdg wit="#WH1812 #WH1827">Though the sweet gale that sweeps thy plain</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH264"><app><rdg wit="#WH1812 #WH1827">No touch of Milton’s breath retain;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH265"><app><rdg wit="#WH1812 #WH1827">Yet here the bards of later days</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH266"><app><rdg wit="#WH1812 #WH1827">Shall roam to view thee and to praise.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p27"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH267"><app><rdg wit="#WH1812 #WH1827">Here Jones, ere yet his voice was fame,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH268"><app><rdg wit="#WH1812 #WH1827">A lone romantic votary came;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH269"><app><rdg wit="#WH1812 #WH1827">He too is gone, untimely gone!</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH262">No blade remain by Milton trod;</l>
+				<l rend="indent(+1)" xml:id="WH263">Though the sweet gale that sweeps thy plain</l>
+				<l rend="indent(+1)" xml:id="WH264">No touch of Milton’s breath retain;</l>
+				<l rend="indent(+1)" xml:id="WH265">Yet here the bards of later days</l>
+				<l rend="indent(+1)" xml:id="WH266">Shall roam to view thee and to praise.</l>
+					<pb xml:id="p27" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH267">Here Jones, ere yet his voice was fame,</l>
+				<l rend="indent(+1)" xml:id="WH268">A lone romantic votary came;</l>
+				<l rend="indent(+1)" xml:id="WH269">He too is gone, untimely gone!</l>
 				<l rend="indent(+1)" xml:id="WH270"><app>
 					<rdg wit="#WH1812">But, lur’d by him, full many a one</rdg>
 					<rdg wit="#WH1827">But lured by him full many a one</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p363"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH271"><app><rdg wit="#WH1812 #WH1827">Shall tread thy hill on pilgrimage;</rdg></app></l>
+					<pb xml:id="p363" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH271">Shall tread thy hill on pilgrimage;</l>
 				<l rend="indent(+1)" xml:id="WH272"><app>
 					<rdg wit="#WH1812">And Minstrel, Patriot, or Sage,</rdg>
 					<rdg wit="#WH1827">And minstrel, patriot, or sage,</rdg>
@@ -994,22 +987,21 @@
 					<rdg wit="#WH1812">Shall mourn him with his Milton here.</rdg>
 					<rdg wit="#WH1827">Shall mourn him with his Milton here:</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH275"><app><rdg wit="#WH1812 #WH1827">For till our English tongue be dead,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH275">For till our English tongue be dead,</l>
 				<l rend="indent(+1)" xml:id="WH276"><app>
 					<rdg wit="#WH1812">From Freedom’s breast till life be fled,</rdg>
 					<rdg wit="#WH1827">From freedom’s breast till life be fled,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH277"><app><rdg wit="#WH1812 #WH1827">Till Poesy’s quick pulse be still</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH278"><app><rdg wit="#WH1812 #WH1827">None shall forsake thee, Forest Hill.</rdg></app></l>
-			</div>
+				<l rend="indent(+1)" xml:id="WH277">Till Poesy’s quick pulse be still</l>
+				<l rend="indent(+1)" xml:id="WH278">None shall forsake thee, Forest Hill.</l>
+			</lg>
 			
-			<div type="section">
-				<head><app><rdg wit="#WH1812">XI.</rdg></app></head>
-				<head><app><rdg wit="#WH1827">XII.</rdg></app></head>
+			<lg type="section">
+				<label><app><rdg wit="#WH1812">XI.</rdg><rdg wit="#WH1827">XII.</rdg></app></label>
 				
-				<l rend="indent(+1)" xml:id="WH279"><app><rdg wit="#WH1812 #WH1827">Few are the scenes of power to chain</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH280"><app><rdg wit="#WH1812 #WH1827">The rapt enthusiast’s mind,</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p28"/></rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH279">Few are the scenes of power to chain</l>
+				<l rend="indent(+3)" xml:id="WH280">The rapt enthusiast’s mind,</l>
+					<pb xml:id="p28" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH281"><app>
 					<rdg wit="#WH1812">Like that where Milton’s wond’rous strain</rdg>
 					<rdg wit="#WH1827">Like that where Milton’s wondrous strain</rdg>
@@ -1022,7 +1014,7 @@
 					<rdg wit="#WH1812">Or whisper in the wind:</rdg>
 					<rdg wit="#WH1827">Or whisper in the wind.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH284"><app><rdg wit="#WH1812 #WH1827">Not pent within the crowded town,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH284">Not pent within the crowded town,</l>
 				<l rend="indent(+1)" xml:id="WH285"><app>
 					<rdg wit="#WH1812">Where meanness sweeps away renown:</rdg>
 					<rdg wit="#WH1827">Where meanness sweeps away renown;</rdg>
@@ -1031,12 +1023,12 @@
 					<rdg wit="#WH1812">But fresh and innocent and fair,</rdg>
 					<rdg wit="#WH1827">But fresh, and innocent, and fair,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH287"><app><rdg wit="#WH1812 #WH1827">As if the mighty master there</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH287">As if the mighty master there</l>
 				<l rend="indent(+1)" xml:id="WH288"><app>
 					<rdg wit="#WH1812">Still flung his witch-notes on the air!</rdg>
 					<rdg wit="#WH1827">Still flung his witch-notes on the air.</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p364"/></rdg></app></l>
+					<pb xml:id="p364" edRef="#WH1827"/>
 				<l rend="indent(+3)" xml:id="WH289"><app>
 					<rdg wit="#WH1812">Yet Taste and Fancy’s visions gay</rdg>
 					<rdg wit="#WH1827">Yet taste and fancy’s visions gay</rdg>
@@ -1049,7 +1041,7 @@
 					<rdg wit="#WH1812">And fade at Feeling’s light away,</rdg>
 					<rdg wit="#WH1827">And fade at friendship’s light away,</rdg>
 				</app></l>
-				<l rend="indent(+5)" xml:id="WH292"><app><rdg wit="#WH1812 #WH1827">Like stars before the sun.</rdg></app></l>
+				<l rend="indent(+5)" xml:id="WH292">Like stars before the sun.</l>
 				<l rend="indent(+1)" xml:id="WH293"><app>
 					<rdg wit="#WH1812">The spirits of the honor’d dead</rdg>
 					<rdg wit="#WH1827">The spirits of the honour’d dead</rdg>
@@ -1072,7 +1064,7 @@
 					<rdg wit="#WH1812">My Zosia dwelt, my Polish maid!</rdg>
 					<rdg wit="#WH1827">My Zosia dwelt, my Polish maid,</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p29"/></rdg></app></l>
+					<pb xml:id="p29" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH297"><app>
 					<rdg wit="#WH1812">My friend most tender and most true!</rdg>
 					<rdg wit="#WH1827">My friend most tender and most true,</rdg>
@@ -1097,14 +1089,14 @@
 					<rdg wit="#WH1812">And Love, a rose without a thorn.</rdg>
 					<rdg wit="#WH1827">And love a rose without a thorn.</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH303"><app><rdg wit="#WH1812 #WH1827">Fleeting as that illusive day,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH303">Fleeting as that illusive day,</l>
 				<l rend="indent(+1)" xml:id="WH304"><app>
 					<rdg wit="#WH1812">Was Friendship’s joy, was Zosia’s stay:</rdg>
 					<rdg wit="#WH1827">Was friendship’s joy, was Zosia’s stay;</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p365"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH305"><app><rdg wit="#WH1812 #WH1827">For when o’er her majestic form</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH306"><app><rdg wit="#WH1812 #WH1827">Youth shed his mantling roses warm,</rdg></app></l>
+					<pb xml:id="p365" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH305">For when o’er her majestic form</l>
+				<l rend="indent(+1)" xml:id="WH306">Youth shed his mantling roses warm,</l>
 				<l rend="indent(+1)" xml:id="WH307"><app>
 					<rdg wit="#WH1812">When Beauty saw her work matur’d,</rdg>
 					<rdg wit="#WH1827">When beauty saw her work matured,</rdg>
@@ -1121,9 +1113,9 @@
 					<rdg wit="#WH1812">The finish’d charmer from our shore;</rdg>
 					<rdg wit="#WH1827">The finished charmer from our shore;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH311"><app><rdg wit="#WH1812 #WH1827">Bore her from friendship, bliss, and love,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH312"><app><rdg wit="#WH1812 #WH1827">Envy, neglect, contempt to prove</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p30"/></rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH311">Bore her from friendship, bliss, and love,</l>
+				<l rend="indent(+1)" xml:id="WH312">Envy, neglect, contempt to prove</l>
+					<pb xml:id="p30" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH313"><app>
 					<rdg wit="#WH1812">From hearts who, frozen as their clime,</rdg>
 					<rdg wit="#WH1827">From hearts, who frozen as their clime,</rdg>
@@ -1132,24 +1124,24 @@
 					<rdg wit="#WH1812">Would antedate the work of Time,</rdg>
 					<rdg wit="#WH1827">Would antedate the work of time,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH315"><app><rdg wit="#WH1812 #WH1827">And nip her beauties in their prime.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH315">And nip her beauties in their prime.</l>
 				<l rend="indent(+1)" xml:id="WH316"><app>
 					<rdg wit="#WH1812">O ever-lov’d! return again!</rdg>
 					<rdg wit="#WH1827">Oh, ever-loved, return again!</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH317"><app><rdg wit="#WH1812 #WH1827">Return! and soon the blooming train</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH318"><app><rdg wit="#WH1812 #WH1827">Of childish friends shall meet to share</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH319"><app><rdg wit="#WH1812 #WH1827">Thy soft caress, my Polish fair!</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH320"><app><rdg wit="#WH1812 #WH1827">Again shall view thy sparkling eye</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH321"><app><rdg wit="#WH1812 #WH1827">And Empress-form admiringly;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH322"><app><rdg wit="#WH1812 #WH1827">Each emulously crowding round;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH317">Return! and soon the blooming train</l>
+				<l rend="indent(+1)" xml:id="WH318">Of childish friends shall meet to share</l>
+				<l rend="indent(+1)" xml:id="WH319">Thy soft caress, my Polish fair!</l>
+				<l rend="indent(+1)" xml:id="WH320">Again shall view thy sparkling eye</l>
+				<l rend="indent(+1)" xml:id="WH321">And Empress-form admiringly;</l>
+				<l rend="indent(+1)" xml:id="WH322">Each emulously crowding round;</l>
 				<l rend="indent(+1)" xml:id="WH323"><app>
 					<rdg wit="#WH1812">Each list’ning for one silver sound;</rdg>
 					<rdg wit="#WH1827">Each listening for one silver sound;</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p366"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH324"><app><rdg wit="#WH1812 #WH1827">And thou to all, with Queen-like smile,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH325"><app><rdg wit="#WH1812 #WH1827">Wilt sweet attention shew the while,</rdg></app></l>
+					<pb xml:id="p366" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH324">And thou to all, with Queen-like smile,</l>
+				<l rend="indent(+1)" xml:id="WH325">Wilt sweet attention shew the while,</l>
 				<l rend="indent(+1)" xml:id="WH326"><app>
 					<rdg wit="#WH1812">Of kindness full and courtesy;---</rdg>
 					<rdg wit="#WH1827">Of kindness full and courtesy;</rdg>
@@ -1158,9 +1150,9 @@
 					<rdg wit="#WH1812">Though one alone (O happiest she!)</rdg>
 					<rdg wit="#WH1827">Though one alone,--- happiest she!---</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p31"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH328"><app><rdg wit="#WH1812 #WH1827">Scarce from thy tongue shall greeting hear,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH329"><app><rdg wit="#WH1812 #WH1827">Or find thy love, but in thy tear.</rdg></app></l>
+					<pb xml:id="p31" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH328">Scarce from thy tongue shall greeting hear,</l>
+				<l rend="indent(+1)" xml:id="WH329">Or find thy love, but in thy tear.</l>
 				<l rend="indent(+1)" xml:id="WH330"><app>
 					<rdg wit="#WH1812">The dews of Heav’n fall not so sweet</rdg>
 					<rdg wit="#WH1827">The dews of heaven fall not so sweet</rdg>
@@ -1177,11 +1169,10 @@
 					<rdg wit="#WH1812">My ever-lov’d, return again!</rdg>
 					<rdg wit="#WH1827">My ever-loved, return again!</rdg>
 				</app></l>
-			</div>
+			</lg>
 			
-			<div type="section">
-				<head><app><rdg wit="#WH1812">XII.</rdg></app></head>
-				<head><app><rdg wit="#WH1827">XIII.</rdg></app></head>
+			<lg type="section">
+				<label><app><rdg wit="#WH1812">XII.</rdg><rdg wit="#WH1827">XIII.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH334"><app>
 					<rdg wit="#WH1812">The pause hath check’d my spirit glad;</rdg>
@@ -1191,8 +1182,8 @@
 					<rdg wit="#WH1812">Deep, doubting hope is ever sad;</rdg>
 					<rdg wit="#WH1827">Deep doubting hope is ever sad;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH336"><app><rdg wit="#WH1812 #WH1827">But sadder thoughts now intervene</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH337"><app><rdg wit="#WH1812 #WH1827">To cloud that sweet and tranquil scene.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH336">But sadder thoughts now intervene</l>
+				<l rend="indent(+1)" xml:id="WH337">To cloud that sweet and tranquil scene.</l>
 				<l rend="indent(+1)" xml:id="WH338"><app>
 					<rdg wit="#WH1812">Direr than absence is the foe,</rdg>
 					<rdg wit="#WH1827">Direr than absence is the foe</rdg>
@@ -1201,16 +1192,16 @@
 					<rdg wit="#WH1812">Who waits to give the fatal blow:</rdg>
 					<rdg wit="#WH1827">Who waits to give the fatal blow;</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1827"><pb xml:id="p367"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH340"><app><rdg wit="#WH1812 #WH1827">Weeping within that mansion fair</rdg></app></l>
+					<pb xml:id="p367" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH340">Weeping within that mansion fair</l>
 				<l rend="indent(+1)" xml:id="WH341"><app>
 					<rdg wit="#WH1812">Sits Filial Love---Death hovers there.</rdg>
 					<rdg wit="#WH1827">Sits filial love, Death hovers there.</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p32"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH342"><app><rdg wit="#WH1812 #WH1827">He comes not now to lead the bloom</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH343"><app><rdg wit="#WH1812 #WH1827">Of youth to an undreaded tomb;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH344"><app><rdg wit="#WH1812 #WH1827">He comes not now to tame the pride</rdg></app></l>
+					<pb xml:id="p32" edRef="#WH1812"/>
+				<l rend="indent(+1)" xml:id="WH342">He comes not now to lead the bloom</l>
+				<l rend="indent(+1)" xml:id="WH343">Of youth to an undreaded tomb;</l>
+				<l rend="indent(+1)" xml:id="WH344">He comes not now to tame the pride</l>
 				<l rend="indent(+1)" xml:id="WH345"><app>
 					<rdg wit="#WH1812">Of matron health confirm’d and tried;</rdg>
 					<rdg wit="#WH1827">Of matron health confirmed and tried;</rdg>
@@ -1219,7 +1210,7 @@
 					<rdg wit="#WH1812">Not tow’ring man provokes his rage;</rdg>
 					<rdg wit="#WH1827">Not towering man provokes his rage;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH347"><app><rdg wit="#WH1812 #WH1827">’Tis woman, feebleness, and age.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH347">’Tis woman, feebleness, and age.</l>
 				<l rend="indent(+1)" xml:id="WH348"><app>
 					<rdg wit="#WH1812">And yet nor beauty early cropped,</rdg>
 					<rdg wit="#WH1827">And yet nor beauty early cropped,</rdg>
@@ -1228,9 +1219,9 @@
 					<rdg wit="#WH1812">Nor manhood’s strength untimely dropp’d,</rdg>
 					<rdg wit="#WH1827">Nor manhood’s strength untimely dropped,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH350"><app><rdg wit="#WH1812 #WH1827">Could waken more regretful sighs</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH351"><app><rdg wit="#WH1812 #WH1827">Or more with sorrow blend surprise.</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH352"><app><rdg wit="#WH1812 #WH1827">For she, his noble prey, had stood</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH350">Could waken more regretful sighs</l>
+				<l rend="indent(+1)" xml:id="WH351">Or more with sorrow blend surprise.</l>
+				<l rend="indent(+1)" xml:id="WH352">For she, his noble prey, had stood</l>
 				<l rend="indent(+1)" xml:id="WH353"><app>
 					<rdg wit="#WH1812">Like an old oak in Sherburn wood,</rdg>
 					<rdg wit="#WH1827">Like an old oak in Sherburn wood.</rdg>
@@ -1243,9 +1234,9 @@
 					<rdg wit="#WH1812">Whose ample branches wav’d uncheck’d;</rdg>
 					<rdg wit="#WH1827">Whose ample branches waved unchecked;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH356"><app><rdg wit="#WH1812 #WH1827">And though dead boughs commingling grew,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH357"><app><rdg wit="#WH1812 #WH1827">Abrupt and bare, of darker hue;</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p33"/></rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH356">And though dead boughs commingling grew,</l>
+				<l rend="indent(+1)" xml:id="WH357">Abrupt and bare, of darker hue;</l>
+					<pb xml:id="p33" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH358"><app>
 					<rdg wit="#WH1812">Though weeds minute and yellow moss,</rdg>
 					<rdg wit="#WH1827">Though weeds minute and yellow moss</rdg>
@@ -1254,7 +1245,7 @@
 					<rdg wit="#WH1812">With varied tints, the bark emboss;</rdg>
 					<rdg wit="#WH1827">With varied tints the bark emboss;---</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p368"/></rdg></app></l>
+					<pb xml:id="p368" edRef="#WH1827"/>
 				<l rend="indent(+1)" xml:id="WH360"><app>
 					<rdg wit="#WH1812">Yet lovely was its pleasant shade,</rdg>
 					<rdg wit="#WH1827">Yet lovely was its pleasant shade;</rdg>
@@ -1267,7 +1258,7 @@
 					<rdg wit="#WH1812">Lovely the long-hair’d lichens grey,</rdg>
 					<rdg wit="#WH1827">Lovely the long-haired lichens grey;</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH363"><app><rdg wit="#WH1812 #WH1827">Lovely its pride and its decay.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH363">Lovely its pride and its decay.</l>
 				<l rend="indent(+1)" xml:id="WH364"><app>
 					<rdg wit="#WH1812">Such, Macclesfield, thou wert! Old Time</rdg>
 					<rdg wit="#WH1827">Such Macclesfield thou wast! Old Time</rdg>
@@ -1290,7 +1281,7 @@
 					<rdg wit="#WH1812">And bids the sun, the dews, the air</rdg>
 					<rdg wit="#WH1827">And bids the sun, the dews, the air,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH369"><app><rdg wit="#WH1812 #WH1827">Perfection’s noblest image spare.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH369">Perfection’s noblest image spare.</l>
 				<l rend="indent(+1)" xml:id="WH370"><app>
 					<rdg wit="#WH1812">So Time had passed o’er thee, bright dame;</rdg>
 					<rdg wit="#WH1827">So time had passed o’er thee, bright dame;</rdg>
@@ -1299,7 +1290,7 @@
 					<rdg wit="#WH1812">All chang’d, but thou wert still the same.</rdg>
 					<rdg wit="#WH1827">All changed, but thou wast still the same,</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p34"/></rdg></app></l>
+					<pb xml:id="p34" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH372"><app>
 					<rdg wit="#WH1812">Still skill’d to give the fading flower</rdg>
 					<rdg wit="#WH1827">Still skilled to give the fading flower</rdg>
@@ -1332,11 +1323,11 @@
 					<rdg wit="#WH1812">The fire of youth thou hadst not lost;</rdg>
 					<rdg wit="#WH1827">The fire of youth thou had’st not lost;</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p369"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH380"><app><rdg wit="#WH1812 #WH1827">Still at another’s bliss could’st glow;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH381"><app><rdg wit="#WH1812 #WH1827">Still melt to hear another’s woe;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH382"><app><rdg wit="#WH1812 #WH1827">Still give the poor man’s cares relief;</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH383"><app><rdg wit="#WH1812 #WH1827">Still bend to soothe the mourner’s grief.</rdg></app></l>
+					<pb xml:id="p369" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH380">Still at another’s bliss could’st glow;</l>
+				<l rend="indent(+1)" xml:id="WH381">Still melt to hear another’s woe;</l>
+				<l rend="indent(+1)" xml:id="WH382">Still give the poor man’s cares relief;</l>
+				<l rend="indent(+1)" xml:id="WH383">Still bend to soothe the mourner’s grief.</l>
 				<l rend="indent(+1)" xml:id="WH384"><app>
 					<rdg wit="#WH1812">Though near a century’s course had sped,</rdg>
 					<rdg wit="#WH1827">Though near a century’s course had sped</rdg>
@@ -1345,22 +1336,22 @@
 					<rdg wit="#WH1812">And bleach’d thy venerable head,</rdg>
 					<rdg wit="#WH1827">And bleached thy venerable head,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH386"><app><rdg wit="#WH1812 #WH1827">By age’s vice and woe untold</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH386">By age’s vice and woe untold</l>
 				<l rend="indent(+1)" xml:id="WH387"><app>
 					<rdg wit="#WH1812">Thy years remain’d---Thou wert not old!</rdg>
 					<rdg wit="#WH1827">Thy years remained---thou wast not old!</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p35"/></rdg></app></l>
+					<pb xml:id="p35" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH388"><app>
 					<rdg wit="#WH1812">And so to live and so to die,</rdg>
 					<rdg wit="#WH1827">And so to live, and so to die,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH389"><app><rdg wit="#WH1812 #WH1827">Is endless rare felicity.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH389">Is endless rare felicity.</l>
 				<l rend="indent(+1)" xml:id="WH390"><app>
 					<rdg wit="#WH1812">But there is one<note resp="#MRM">The Right Hon. Lady Mary Parker.</note>, whose ready tear</rdg>
 					<rdg wit="#WH1827">But there is one<note resp="#MRM">The Right Honourable Lady Mary Parker; now, alas! also dead.</note>, whose ready tear</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH391"><app><rdg wit="#WH1812 #WH1827">Bedews thy pale cheek on thy bier;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH391">Bedews thy pale cheek on thy bier;</l>
 				<l rend="indent(+1)" xml:id="WH392"><app>
 					<rdg wit="#WH1812">One, whom mmy heart, my tongue, my lays,</rdg>
 					<rdg wit="#WH1827">One shrinking from the admiring gaze,</rdg>
@@ -1373,7 +1364,7 @@
 					<rdg wit="#WH1812">O friend of Zosia! friend of all,</rdg>
 					<rdg wit="#WH1827">Oh friend of Zosia! friend of all</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH395"><app><rdg wit="#WH1812 #WH1827">Whom misery, pain, and want enthral!</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH395">Whom misery, pain, and want enthral!</l>
 				<l rend="indent(+1)" xml:id="WH396"><app>
 					<rdg wit="#WH1812">Be comforted! Though ne’er again</rdg>
 					<rdg wit="#WH1827">Be comforted. Though ne’er again</rdg>
@@ -1382,8 +1373,8 @@
 					<rdg wit="#WH1812">Thy mother’s hand thy hand shall strain;</rdg>
 					<rdg wit="#WH1827">Thy mother’s hand thy hand shall strain,</rdg>
 				</app></l> 
-					<l><app><rdg wit="#WH1827"><pb xml:id="p370"/></rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH398"><app><rdg wit="#WH1812 #WH1827">Though never shall she feel thy cares,</rdg></app></l>
+					<pb xml:id="p370" edRef="#WH1827"/>
+				<l rend="indent(+1)" xml:id="WH398">Though never shall she feel thy cares,</l>
 				<l rend="indent(+1)" xml:id="WH399"><app>
 					<rdg wit="#WH1812">Congenial joys her spirit shares:</rdg>
 					<rdg wit="#WH1827">Congenial joys her spirit shares,---</rdg>
@@ -1404,12 +1395,11 @@
 					<rdg wit="#WH1812">When death is bliss! be comforted.</rdg>
 					<rdg wit="#WH1827">When death is bliss! Be comforted.</rdg>
 				</app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p36"/></rdg></app></l>
-			</div>
+					<pb xml:id="p36" edRef="#WH1812"/>
+			</lg>
 			
-			<div type="section">
-				<head><app><rdg wit="#WH1812">XIII.</rdg></app></head>
-				<head><app><rdg wit="#WH1827">XIV.</rdg></app></head>
+			<lg type="section">
+				<label><app><rdg wit="#WH1812">XIII.</rdg><rdg wit="#WH1827">XIV.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH404"><app>
 					<rdg wit="#WH1812">Why thus in fond, though vain, relief,</rdg>
@@ -1427,12 +1417,12 @@
 					<rdg wit="#WH1812">And joy from present friends refuse!</rdg>
 					<rdg wit="#WH1827">And joy from present friends refuse?</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH408"><app><rdg wit="#WH1812 #WH1827">Why dwell on yonder mournful dome,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH408">Why dwell on yonder mournful dome,</l>
 				<l rend="indent(+1)" xml:id="WH409"><app>
 					<rdg wit="#WH1812">And shun those friends’ delightful home?!</rdg>
 					<rdg wit="#WH1827">And shun those friends’ delightful home?</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH410"><app><rdg wit="#WH1812 #WH1827">’Twere hard to sing thy varying charm,</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH410">’Twere hard to sing thy varying charm,</l>
 				<l rend="indent(+1)" xml:id="WH411"><app>
 					<rdg wit="#WH1812">Thou Cottage, Mansion, Village, Farm<note resp="#MRM">Watlington
 						Farm: the residence of William Hayward, Esq.</note>.</rdg>
@@ -1446,21 +1436,21 @@
 					<rdg wit="#WH1812">Thou beautiful Epitome</rdg>
 					<rdg wit="#WH1827">Thou beautiful epitome</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH413"><app><rdg wit="#WH1812 #WH1827">Of all that useful is and rare,</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH414"><app><rdg wit="#WH1812 #WH1827">Where Comfort sits with smiling air,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH415"><app><rdg wit="#WH1812 #WH1827">And laughing Hospitality.</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH413">Of all that useful is and rare,</l>
+				<l rend="indent(+1)" xml:id="WH414">Where Comfort sits with smiling air,</l>
+				<l rend="indent(+3)" xml:id="WH415">And laughing Hospitality.</l>
 				<l rend="indent(+1)" xml:id="WH416"><app>
 					<rdg wit="#WH1812">’Twere hard to sing---And harder still</rdg>
 					<rdg wit="#WH1827">’Twere hard to sing,---and harder still</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH417"><app><rdg wit="#WH1812 #WH1827">The dearer charms those halls that fill.</rdg></app></l>
-					<l><app><rdg wit="#WH1812"><pb xml:id="p37"/></rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH417">The dearer charms those halls that fill.</l>
+					<pb xml:id="p37" edRef="#WH1812"/>
 				<l rend="indent(+1)" xml:id="WH418"><app>
 					<rdg wit="#WH1812">’Twere hard to sing---The sun is low;</rdg>
 					<rdg wit="#WH1827">’Twere hard to sing,---the sun is low,</rdg>
 				</app></l>
-				<l rend="indent(+1)" xml:id="WH419"><app><rdg wit="#WH1812 #WH1827">Quick to the lovely Farm we go,</rdg></app></l>
-				<l rend="indent(+3)" xml:id="WH420"><app><rdg wit="#WH1812 #WH1827">Its strongest spells to find;</rdg></app></l>
+				<l rend="indent(+1)" xml:id="WH419">Quick to the lovely Farm we go,</l>
+				<l rend="indent(+3)" xml:id="WH420">Its strongest spells to find;</l>
 				<l rend="indent(+1)" xml:id="WH421"><app>
 					<rdg wit="#WH1812">And cluster’d round the blazing fire,</rdg>
 					<rdg wit="#WH1827">And clustered round the blazing fire,</rdg>
@@ -1473,9 +1463,9 @@
 					<rdg wit="#WH1812">O they that learn not to admire,</rdg>
 					<rdg wit="#WH1827">Oh they that learn not to admire</rdg>
 				</app></l>
-				<l rend="indent(+3)" xml:id="WH424"><app><rdg wit="#WH1812 #WH1827">Dull must they be, and deaf, and blind!</rdg></app></l>
-			</div>
+				<l rend="indent(+3)" xml:id="WH424">Dull must they be, and deaf, and blind!</l>
+			</lg>
 		</body>
-	<back></back>
+	<back/>
 	</text>
 </TEI>
