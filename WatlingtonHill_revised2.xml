@@ -648,36 +648,35 @@
 					<pb xml:id="p21" edRef="#WH1812"/>
 			</lg>			
 			
-			<lg type="section">
-		 		<label><app><rdg wit="#WH1812">IX.</rdg></app></label>
+			<app><rdg wit="#WH1812"><lg type="section">
+		 		<label>IX.</label>
 		 		
-		 		<l rend="indent(+1)" xml:id="WH196.1"><app><rdg wit="#WH1812">Yet, field of blood! though Time has now</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.2"><app><rdg wit="#WH1812">Shed Fame’s bright glories on thy brow;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.3"><app><rdg wit="#WH1812">Though for the bones in whitening heaps,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.4"><app><rdg wit="#WH1812">The Peasant guiltless harvests reaps;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.5"><app><rdg wit="#WH1812">Yet, field of blood, in thee I see</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.6"><app><rdg wit="#WH1812">Naught but they gory victory:</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.7"><app><rdg wit="#WH1812">And joyful turn from targe and helm</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.8"><app><rdg wit="#WH1812">To thy calm precincts, sweet Ewelm;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.9"><app><rdg wit="#WH1812">Turn, joyful turn, from warring Man</rdg></app></l>
-				<l rend="indent(+1)" xml:id="WH196.10"><app><rdg wit="#WH1812">To think on thee, benignest Anne!<note resp="#MRM">Queen Anne had a palace
-					at Ewelm: and the almshouses, which still remain there, were founded by her munificence.</note></rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.11"><app><rdg wit="#WH1812">Here wert thou wont to swell, mild Queen!</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.12"><app><rdg wit="#WH1812">Pious, and happy, and serene!</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.13"><app><rdg wit="#WH1812">Rever’d, though oft by faction tost;</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.14"><app><rdg wit="#WH1812">Lov’d, though by faithless ingrates crost;</rdg></app></l>
+		 		<l rend="indent(+1)" xml:id="WH196.1">Yet, field of blood! though Time has now</l>
+		 		<l rend="indent(+1)" xml:id="WH196.2">Shed Fame’s bright glories on thy brow;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.3">Though for the bones in whitening heaps,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.4">The Peasant guiltless harvests reaps;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.5">Yet, field of blood, in thee I see</l>
+		 		<l rend="indent(+1)" xml:id="WH196.6">Naught but they gory victory:</l>
+		 		<l rend="indent(+1)" xml:id="WH196.7">And joyful turn from targe and helm</l>
+		 		<l rend="indent(+1)" xml:id="WH196.8">To thy calm precincts, sweet Ewelm;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.9">Turn, joyful turn, from warring Man</l>
+				<l rend="indent(+1)" xml:id="WH196.10">To think on thee, benignest Anne!<note resp="#MRM">Queen Anne had a palace
+					at Ewelm: and the almshouses, which still remain there, were founded by her munificence.</note></l>
+		 		<l rend="indent(+1)" xml:id="WH196.11">Here wert thou wont to swell, mild Queen!</l>
+		 		<l rend="indent(+1)" xml:id="WH196.12">Pious, and happy, and serene!</l>
+		 		<l rend="indent(+1)" xml:id="WH196.13">Rever’d, though oft by faction tost;</l>
+		 		<l rend="indent(+1)" xml:id="WH196.14">Lov’d, though by faithless ingrates crost;</l>
 		 			<pb xml:id="p22" edRef="#WH1812"/>
-		 		<l rend="indent(+1)" xml:id="WH196.15"><app><rdg wit="#WH1812">Victress, where’er thy armies roam,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.16"><app><rdg wit="#WH1812">But chiefly conqueror at home.</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.17"><app><rdg wit="#WH1812">A truth most rare thy urn might tell,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.18"><app><rdg wit="#WH1812">“Her people lov’d Queen Anna well!”</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.19"><app><rdg wit="#WH1812">And Almshouses thy pity lent,</rdg></app></l>
-		 		<l rend="indent(+1)" xml:id="WH196.20"><app><rdg wit="#WH1812">And Churches form thy monument.</rdg></app></l>
-		 	</lg>
+		 		<l rend="indent(+1)" xml:id="WH196.15">Victress, where’er thy armies roam,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.16">But chiefly conqueror at home.</l>
+		 		<l rend="indent(+1)" xml:id="WH196.17">A truth most rare thy urn might tell,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.18">“Her people lov’d Queen Anna well!”</l>
+		 		<l rend="indent(+1)" xml:id="WH196.19">And Almshouses thy pity lent,</l>
+		 		<l rend="indent(+1)" xml:id="WH196.20">And Churches form thy monument.</l>
+		 	</lg></rdg></app>
 			
 			<lg type="section">
-				<label><app><rdg wit="#WH1812">IX.</rdg></app></label>
-				<label><app><rdg wit="#WH1827">X.</rdg></app></label>
+				<label><app><rdg wit="#WH1812">IX.</rdg><rdg wit="#WH1827">X.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH197">How boldly yonder cloud so bright</l>
 				<l rend="indent(+3)" xml:id="WH198">Throws out that clump of trees;</l>
@@ -749,8 +748,7 @@
 			</lg>
 			
 			<lg type="section">
-				<label><app><rdg wit="#WH1812">X.</rdg></app></label>
-				<label><app><rdg wit="#WH1827">XI.</rdg></app></label>
+				<label><app><rdg wit="#WH1812">X.</rdg><rdg wit="#WH1827">XI.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH224"><app>
 					<rdg wit="#WH1812">Oh, when I dared the Muse to name,</rdg>
@@ -999,8 +997,7 @@
 			</lg>
 			
 			<lg type="section">
-				<label><app><rdg wit="#WH1812">XI.</rdg></app></label>
-				<label><app><rdg wit="#WH1827">XII.</rdg></app></label>
+				<label><app><rdg wit="#WH1812">XI.</rdg><rdg wit="#WH1827">XII.</rdg></app></label>
 				
 				<l rend="indent(+1)" xml:id="WH279">Few are the scenes of power to chain</l>
 				<l rend="indent(+3)" xml:id="WH280">The rapt enthusiast’s mind,</l>
@@ -1175,8 +1172,7 @@
 			</lg>
 			
 			<lg type="section">
-				<label><app><rdg wit="#WH1812">XII.</rdg></app></label>
-				<label><app><rdg wit="#WH1827">XIII.</rdg></app></label>
+				<label><app><rdg wit="#WH1812">XII.</rdg><rdg wit="#WH1827">XIII.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH334"><app>
 					<rdg wit="#WH1812">The pause hath check’d my spirit glad;</rdg>
@@ -1403,8 +1399,7 @@
 			</lg>
 			
 			<lg type="section">
-				<label><app><rdg wit="#WH1812">XIII.</rdg></app></label>
-				<label><app><rdg wit="#WH1827">XIV.</rdg></app></label>
+				<label><app><rdg wit="#WH1812">XIII.</rdg><rdg wit="#WH1827">XIV.</rdg></app></label>
 
 				<l rend="indent(+1)" xml:id="WH404"><app>
 					<rdg wit="#WH1812">Why thus in fond, though vain, relief,</rdg>
