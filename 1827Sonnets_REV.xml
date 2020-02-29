@@ -443,16 +443,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					
 				<p><l><app><rdg wit="#Sonnets1827">Wherefore this stir? 'Tis but a common cause</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">Of Cottage plunder: yet in every eye</rdg></app></l>
-				<l style="indent"><app><rdg wit="#Sonnets1827">Sits expectation;—murmuring whispers fly</rdg></app></l>
-				<l><app><rdg wit="#Sonnets1827">Along the crowded court;—and then a pause;--</rdg></app></l>
+					<l style="indent"><app><rdg wit="#Sonnets1827">Sits expectation;--murmuring whispers fly</rdg></app></l>
+					<l><app><rdg wit="#Sonnets1827">Along the crowded court;--and then a pause;--</rdg></app></l>
 				<l><app><rdg wit="#Sonnets1827">And then a clear crisp voice invokes the laws,</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">With such a full and rapid mastery</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">Of sound and sense, such nice propriety,</rdg></app></l>
 				<l><app><rdg wit="#Sonnets1827">Such pure and perfect taste, that scarce the applause</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">Can be to low triumphant words chained down</rdg></app></l>
-				<l><app><rdg wit="#Sonnets1827">Or more triumphant smiles.  Yes, this is he,</rdg></app></l>
-				<l style="indent"><app><rdg wit="#Sonnets1827">The young and eloquent spirit whose renown</rdg></app></l>							                      			
-				<l><app><rdg wit="#Sonnets1827">Makes proud <rs type="place" ref="#Reading_city">his birth-place</rs>! a high destiny</rdg></app></l>
+				<l><app><rdg wit="#Sonnets1827">Or more triumphant smiles. Yes, this is he,</rdg></app></l>
+				<l style="indent"><app><rdg wit="#Sonnets1827">The young and eloquent spirit whose renown</rdg></app></l>							                      	<l><app><rdg wit="#Sonnets1827">Makes proud <rs type="place" ref="#Reading_city">his birth-place</rs>! a high destiny</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">Is his;  to climb to honour's palmy crown</rdg></app></l>
 				<l><app><rdg wit="#Sonnets1827">By the <choice><sic>strait</sic><reg>straight</reg></choice> path of truth and honesty.</rdg></app></l>
 			</p>
@@ -464,7 +463,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<pb xml:id="p307"/></rdg>
 				</app></p>
 				
-				<p><lb/>XIV.  THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.<!-- LMW: use existing xml:id, add to? Research date of this poem. Does it coincide with the Hofland's book on Whiteknights? Is there an engraving of the Fishing Seat? I think there might be.--></p>
+				<p><lb/>XIV.  THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.<note resp="#lmw">Mitford encloses a copy of this poem in her <date when="1817-10-11">October 11, 1617</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>. </note></p>
 				
 				<p><l><app><rdg wit="#Sonnets1827">There is a sweet according harmony</rdg></app></l>
 				<l style="indent"><app><rdg wit="#Sonnets1827">In this fair scene: this quaintly fluted bower,</rdg></app></l>
