@@ -210,12 +210,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p297"/></rdg>
 				</app></fw>
-				<lg><l n="1"><app><rdg wit="#Sonnets1827">Thy genius was a language; voice and look,</rdg></app></l>
-				<l n="2"><app><rdg wit="#Sonnets1827">Gesture and stillness the deep mystery</rdg></app></l>
-				<l n="3"><app><rdg wit="#Sonnets1827">Of a strong grief unveiled. As lightnings dart</rdg></app></l>
-				<l n="4"><app><rdg wit="#Sonnets1827">Their quivering brightness o’er the world, each nook</rdg></app></l>
-				<l n="5"><app><rdg wit="#Sonnets1827">Illumining and thrilling, so from thee</rdg></app></l>
-				<l n="6"><app><rdg wit="#Sonnets1827">Burst the storm-cloud of passion on the heart.</rdg></app></l>
+				<lg><l n="9"><app><rdg wit="#Sonnets1827">Thy genius was a language; voice and look,</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">Gesture and stillness the deep mystery</rdg></app></l>
+				<l n="11"><app><rdg wit="#Sonnets1827">Of a strong grief unveiled. As lightnings dart</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Their quivering brightness o’er the world, each nook</rdg></app></l>
+				<l n="13"><app><rdg wit="#Sonnets1827">Illumining and thrilling, so from thee</rdg></app></l>
+				<l n="14"><app><rdg wit="#Sonnets1827">Burst the storm-cloud of passion on the heart.</rdg></app></l>
 				</lg>
 			</div>
 				
