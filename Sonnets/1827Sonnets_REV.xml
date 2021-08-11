@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>--><!--<?xml-model href="http://ebeshero.github.io/MRMValidate.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
-type="application/xml"> 
-schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng"
 type="application/xml" 
-schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitalmitford.github.io/DM_documentation/MitfordODD/out/mitfordODD.rng" 
+type="application/xml" 
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -353,7 +353,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<pb xml:id="p303"/></rdg>
 				</app></fw>
 				
-				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Benyon_R">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
+				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Beny">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a pride, as of an elder day</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">About thee, <placeName ref="#Englefield_House">Englefield</placeName>! Midway thy steep</rdg></app></l>
