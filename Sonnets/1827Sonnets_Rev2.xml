@@ -13,7 +13,6 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<editor ref="#lmw">Lisa M. Wilson</editor>
 				<sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
 					Project</orgName></sponsor>
-				<sponsor>University of Pittsburgh at Greensburg</sponsor>
 				<principal>Elisa Beshero-Bondar</principal>
 				<respStmt>
 					
@@ -26,13 +25,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<resp>Proofing and corrections by</resp>
 					<persName ref="#lmw">Lisa M. Wilson</persName>
 					<persName ref="#slc">Sara Cantwell</persName>
-					
-					<!--LMW: last worked on in Sept. 2016. Need to check this version against most immediate previous version and version EBB worked on?? where?. -->
-					<!--EBB: My version is just an ms I found of the Englefield House sonnet, which I'll poke in the GitHub repo. In Sharepoint: it's in Mitford_Digital_Archives > Mitford_Letters_Collated > 1822 > Berkshire_Record_Office > Englefield_House_June1822_ms_poem.  -->
-
-					<!--LMW: beginning work again  2017-07 SLC, HSar, and SSC-->
-					<!--LMW: updating tagging, adding context tags updating backlist..-->
-					<!--LMW: adding indents, checking formatting to add italics and small caps, working on backlist-->
+					<persName ref="#ebb">Elisa Beshero-Bondar</persName>
 				</respStmt>
 			</titleStmt>
 			<editionStmt>
@@ -60,8 +53,17 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p>TEI P5 conformant: We are coding this to compare the 1827 edition of the sonnets in Dramatic Scenes, Sonnets, and Other Poems to other versions, using the witness encoding apparatus provided by the TEI. Page breaks recorded here are shown in each version. <!-- fix. Explain which version--></p>
+			<p>TEI P5 conformant: We have prepared this encoding to compare the 1827 edition of the sonnets in <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl> to other versions, using the witness encoding apparatus provided by the TEI. Page breaks recorded here are shown in the 1827 publication of <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl>.</p>
 		</encodingDesc>
+		<revisionDesc>
+			<change when="2021-08-10" who="#ebb">Revised encoding of linegroups, pagination of 1827, and footnotes. Spot corrections to some refs to the site index.</change>
+			<!--LMW: last worked on in Sept. 2016. Need to check this version against most immediate previous version and version EBB worked on?? where?. -->
+			<!--EBB: My version is just an ms I found of the Englefield House sonnet, which I'll poke in the GitHub repo. In Sharepoint: it's in Mitford_Digital_Archives > Mitford_Letters_Collated > 1822 > Berkshire_Record_Office > Englefield_House_June1822_ms_poem.  -->
+			
+			<change notBefore="2017-07" who="#lmw">updating tagging, adding context tags updating backlist.</change>
+			<change notBefore="2017-07" who="#lmw">adding indents, checking formatting to add italics and small caps, working on backlist</change>
+			<change when="2017-07" who="#lmw #slc #hsar #ssc">beginning work again</change>
+		</revisionDesc>
 	</teiHeader>
 <text>
 <front>
@@ -195,13 +197,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="4"><app><rdg wit="#Sonnets1827">Of wordless <name ref="#nightingale">nightingale</name>s, for us again</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">I thank thee, wondrous <rs type="person" ref="#Richardson_H">boy</rs>! that not in vain</rdg></app></l>
 				<l n="6"><app><rdg wit="#Sonnets1827">The scene hath overpast which held in thrall</rdg></app></l>
-				<l n="7"><app><rdg wit="#Sonnets1827"><persName ref="#Milton">Milton</persName> * and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
+					<l n="7"><app><rdg wit="#Sonnets1827"><persName ref="#Milton">Milton</persName> <metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>Milton’s allusion to the <title ref="#Alcestis_play">ALCESTIS</title> in the <title ref="#Methought_sonnet23">sonnet</title> on his wife is well known. <persName ref="#Wordsworth_Wm">Mr. Wordsworth</persName> in his <title ref="#Laodamia_WW">Laodamia</title> has the following exquisite lines on the same subject.
+						 <metamark function="ellipsis">——</metamark><q><lg><l>Did not <persName ref="#Hercules">Hercules</persName> by force</l>
+							<l>Wrest from the guardian monster of the tomb</l>
+							<l><persName ref="#Alcestis">Alcestis</persName> a reanimated corse,</l>
+							<l>Given back to dwell on earth in beauty’s bloom?</l></lg></q>
+					</note><note resp="#lmw">Lines 79 to 82.</note> and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
 				<l n="8"><app><rdg wit="#Sonnets1827">Living or dead that haunt the <orgName ref="#Muses">Muses</orgName>’ fane!</rdg></app></l></lg>
-				<p><note resp="#MRM">*Milton’s allusion to the <title ref="#Alcestis_play">ALCESTIS</title> in the <title ref="#Methought_sonnet23">sonnet</title> on his wife is well known. <persName ref="#Wordsworth_Wm">Mr. Wordsworth</persName> in his <title ref="#Laodamia_WW">Laodamia</title> has the following exquisite lines on the same subject.
-					<lb/>—<q>Did not <persName ref="#Hercules">Hercules</persName> by force
-					<lb/>Wrest from the guardian monster of the tomb
-					<lb/><persName ref="#Alcestis">Alcestis</persName> a reanimated corse,
-						<lb/>Given back to dwell on earth in beauty’s bloom?</q></note><note resp="#lmw">Lines 79 to 82.</note></p>
+			
 				
 				<fw type="pageNum"><app>
 					<rdg wit="#Sonnets1827">
@@ -227,7 +230,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<lb/>WRITTEN <date when="1824-07">JULY, 1824</date>.</head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">How oft amid the heaped and bedded hay,</rdg></app></l>
-				<l n="2"><app><rdg wit="#Sonnets1827">Under the <name ref="#oak_tree">oak</name>’s broad shadow deep and strong,</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Under the <name ref="#oak">oak</name>’s broad shadow deep and strong,</rdg></app></l>
 				<l n="3"><app><rdg wit="#Sonnets1827">Have we sate listening to the noonday song</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">(If song it were monotonously gay)</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">Which crept along the field, the summer lay</rdg></app></l>
@@ -288,9 +291,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="11"><app><rdg wit="#Sonnets1827">Divinest purity, and the bright look</rdg></app></l>
 				<l n="12"><app><rdg wit="#Sonnets1827">Of genius. Much is she in mind and face</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">Like the fair blossom of some woodland nook</rdg></app></l>
-				<l n="14"><app><rdg wit="#Sonnets1827">The <name ref="#anemone">wind-flower</name>*,—delicate and full of grace.</rdg></app></l></lg>
-				
-				<head><lb/><note resp="#MRM">*The <placeName ref="#Hampshire_county">Hampshire</placeName> name of the <name ref="#anemone">wood-anemone</name>.</note></head>
+					<l n="14"><app><rdg wit="#Sonnets1827">The <name ref="#anemone">wind-flower</name><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>The <placeName ref="#Hampshire_county">Hampshire</placeName> name of the <name ref="#anemone">wood-anemone</name>.</note>,—delicate and full of grace.</rdg></app></l></lg>
 			</div>
 					
 			<div type="section" n="8">
@@ -300,7 +301,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 				<head> <!-- on poem in Notes and Queries, 1880s:https://books.google.com/books?id=gEhDAQAAMAAJ&newbks=1&newbks_redir=0&dq=%22Proudly%20thy%20sex%20may%20claim%20thee%2C%20young%20and%20fair%22&pg=PA192#v=onepage&q=%22Proudly%20thy%20sex%20may%20claim%20thee,%20young%20and%20fair%22&f=false -->
 					<lb/>VIII.
-						<lb/>TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName>*,
+					<lb/>TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">*</metamark> My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note>,
 						<lb/><emph rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</emph></head>
 					<lg><l n="1"><app><rdg wit="#Sonnets1827">Proudly thy sex may claim thee, young and fair</rdg></app></l>
 					<l n="2"><app><rdg wit="#Sonnets1827">And lofty poetess! proudly may tell</rdg></app></l>
@@ -310,14 +311,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<l n="6"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Palestine">Palestine</placeName>, triumphant; or the spell</rdg></app></l>
 					<l n="7"><app><rdg wit="#Sonnets1827">Of poor <persName ref="#Maimoune">Maimoune</persName>; or the thoughts that swell</rdg></app></l>
 					<l n="8"><app><rdg wit="#Sonnets1827">When suddenly the old remembered air</rdg></app></l>
-					<l n="9"><app><rdg wit="#Sonnets1827">Rings from the harp of <persName ref="#Blondel">Blondel</persName>; or the bright</rdg></app></l>
+					<l n="9"><app><rdg wit="#Sonnets1827">Rings from the harp of <persName ref="#Blondel_fict">Blondel</persName>; or the bright</rdg></app></l>
 					<l n="10"><app><rdg wit="#Sonnets1827">And gorgeous train of <placeName ref="#England">England</placeName>’s chivalry;</rdg></app></l>
 					<l n="11"><app><rdg wit="#Sonnets1827">Or, worthy of his kingly foe, the might</rdg></app></l>
 					<l n="12"><app><rdg wit="#Sonnets1827">Of paynim <persName ref="#Saladin">Saladin</persName>. Oh, proud of thee</rdg></app></l>
 					<l n="13"><app><rdg wit="#Sonnets1827">Is woman! proud of thy bold muse’s flight!</rdg></app></l>
 					<l n="14"><app><rdg wit="#Sonnets1827">Proud of thy gentle spirit’s purity.</rdg></app></l></lg>
-					
-					<head><lb/>*<note resp="#MRM">My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note></head>
 				</div>
 			
 			<div type="section" n="9">
@@ -366,11 +365,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="8"><app><rdg wit="#Sonnets1827">I’ the sunshine. How thou tower’st above the gay</rdg></app></l>
 				<l n="9"><app><rdg wit="#Sonnets1827">And lovely landscape, in the majesty</rdg></app></l>
 				<l n="10"><app><rdg wit="#Sonnets1827">Of thy old beauty! Even those mansions bright,</rdg></app></l>
-				<l n="11"><app><rdg wit="#Sonnets1827">That pretty town, that gothic chapelry *</rdg></app></l>
+					<l n="11"><app><rdg wit="#Sonnets1827">That pretty town, that gothic chapelry <metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>The <placeName ref="#Theale_church">new Church at Theale</placeName>, a beautiful specimen of modern Gothic.</note></rdg></app></l>
 				<l n="12"><app><rdg wit="#Sonnets1827">With front and pinnacle so rich and light,</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">Seem all as toys and costly pageantry</rdg></app></l>
 				<l n="14"><app><rdg wit="#Sonnets1827">Made but for thy proud halls and their delight.</rdg></app></l></lg>
-				<head><lb/>* <note resp="#MRM">The <placeName ref="#Theale_church">new Church at <placeName ref="#Theale">Theale</placeName></placeName>, a beautiful specimen of modern Gothic.</note></head>
+				
 			</div>
 						
 			<div type="section" n="11">
@@ -471,7 +470,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="7"><app><rdg wit="#Sonnets1827">When some proud <name ref="#swan">swan</name> majestically bright</rdg></app></l>
 				<l n="8"><app><rdg wit="#Sonnets1827">Flashes her snowy beauty on the eye;</rdg></app></l>
 				<l n="9"><app><rdg wit="#Sonnets1827">Shines all unbroken, save with sudden shade</rdg></app></l>
-				<l n="10"><app><rdg wit="#Sonnets1827">When from the delicate <name ref="#birch">birch</name> a dewy tear</rdg></app></l>
+				<l n="10"><app><rdg wit="#Sonnets1827">When from the delicate <name ref="#birch_weep">birch</name> a dewy tear</rdg></app></l>
 				<l n="11"><app><rdg wit="#Sonnets1827">The west-wind brushes. Even the <name ref="#bee">bee</name>’s blithe trade,</rdg></app></l>
 				<l n="12"><app><rdg wit="#Sonnets1827">The <name ref="#lark">lark</name>’s clear carols, sound too loudly here;</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">A spot it is for far-off music made,</rdg></app></l>
@@ -497,7 +496,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<l n="8"><app><rdg wit="#Sonnets1827">My lovely <persName ref="#Webb_Jane">Jane</persName>, it gave thee to the earth.</rdg></app></l>
 						<l n="9"><app><rdg wit="#Sonnets1827">And thou hast trodden life’s path with a wise glee,</rdg></app></l>
 						<l n="10"><app><rdg wit="#Sonnets1827">Maid of the laughing eye! Were I the Queen</rdg></app></l><!--LMW: could this be a Spenser Faery Queen ref, or more general one?-->
-						<l n="11"><app><rdg wit="#Sonnets1827">Of that so famous <placeName ref="#Fairyland">land of of Faëry</placeName> </rdg></app></l>
+						<l n="11"><app><rdg wit="#Sonnets1827">Of that so famous <placeName ref="#FairyLand">land of of Faëry</placeName> </rdg></app></l>
 						<l n="12"><app><rdg wit="#Sonnets1827">Where quaintest spirits weave their spells unseen,</rdg></app></l>
 						<l n="13"><app><rdg wit="#Sonnets1827">No better benison I’d pour on thee</rdg></app></l>
 						<l n="14"><app><rdg wit="#Sonnets1827">Than to be happy still as thou hast been.</rdg></app></l>	
@@ -571,12 +570,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="8"><app><rdg wit="#Sonnets1827">And garlanded with <name ref="#mayflower">May</name>, sinks dimpling round</rdg></app></l>
 				<l n="9"><app><rdg wit="#Sonnets1827">A very spot for youthful lover’s dreams</rdg></app></l>
 				<l n="10"><app><rdg wit="#Sonnets1827">In the prime hour. <persName ref="#Grisildi">Grisildi</persName>’s mournful lay,</rdg></app></l>
-				<l n="11"><app><rdg wit="#Sonnets1827">The <q>half-told tale*</q> would sound still sweeter here.</rdg></app></l> 
+					<l n="11"><app><rdg wit="#Sonnets1827">The <q>half-told tale<metamark function="fn">*</metamark><note place="bottom" resp="#MRM">
+						<quote>
+							<l>Or call up him who left half told</l>
+							<l>The story of Cambuscan bold.</l>
+						</quote>—<hi rend="italics"><bibl><author ref="#Milton">Milton</author> of <persName ref="#Chaucer">Chaucer</persName>.—<title ref="#Il_Pensoroso">Il Pensoroso</title></bibl>.</hi></note></q> would sound still sweeter here.</rdg></app></l> 
 				<l n="12"><app><rdg wit="#Sonnets1827">Oh for some hand to hide with <name ref="#ivy">ivy</name> spray</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">War’s ravages, and chase the jarring themes</rdg></app></l>
 				<l n="14"><app><rdg wit="#Sonnets1827">Of King and State, <orgName ref="#Parliamentarians">Roundhead</orgName> and <orgName ref="#Royalists">Cavalier</orgName>!</rdg></app></l></lg>
-				
-				<head><lb/><note resp="#MRM">* <quote>Or call up him who left half told/The story of Cambuscan bold.</quote>—<emph rend="italics"><persName ref="#Milton">Milton</persName> of <persName ref="#Chaucer">Chaucer</persName>.—<title ref="#Il_Pensoroso">Il Pensoroso</title>.</emph></note></head>
 </div>
 					
 			<div type="section" n="19">
@@ -674,7 +675,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<l n="11"><app><rdg wit="#Sonnets1827">Fold their enamelled wings as if to pray.</rdg></app></l> 
 				<l n="12"><app><rdg wit="#Sonnets1827">Home-loving pretty ones! would that I might</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">For richer gifts as cheerful tribute pay,</rdg></app></l> 
-				<l n="14"><app><rdg wit="#Sonnets1827">So meet the rising dawn, so hail the parting ray!</rdg></app></l>&gt;</lg>
+				<l n="14"><app><rdg wit="#Sonnets1827">So meet the rising dawn, so hail the parting ray!</rdg></app></l></lg>
 				</div>
 		</body>
 	<back>
