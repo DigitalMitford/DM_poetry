@@ -85,14 +85,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 		<salute><app>
 			<rdg wit="#Sonnets1827">
 				<lb/>
-				<emph rend="smallcaps">TO</emph><lb/>
-				<emph rend="smallcaps">HER KIND AND EARLY FRIEND</emph><lb/>
+				<hi rend="smallcaps">TO</hi><lb/>
+				<hi rend="smallcaps">HER KIND AND EARLY FRIEND</hi><lb/>
 				<persName ref="#Chamberlayne_Wm">WILLIAM CHAMBERLAYNE</persName>, ESQ. M.P.,<lb/>
-					<emph rend="changefont">This Volume,</emph><lb/>
+					<hi rend="changefont">This Volume,</hi><lb/>
 			
-				<emph rend="smallcaps">IS RESPECTFULLY ENSCRIBED</emph><lb/>
-				<emph rend="smallcaps">BY</emph><lb/>
-				<emph rend="smallcaps">THE AUTHOR.</emph><lb/>	
+				<hi rend="smallcaps">IS RESPECTFULLY ENSCRIBED</hi><lb/>
+				<hi rend="smallcaps">BY</hi><lb/>
+				<hi rend="smallcaps">THE AUTHOR.</hi><lb/>	
 			</rdg>
 		</app></salute>
 	</div>
@@ -103,13 +103,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<!-- LMW: Need to research the original publication dates and locations (annuals? journals?) See my spreadsheet file for details; write headnote for each.-->
 
 				
-							<div type="section" n="1">
+			<div type="section" n="1">
 								<fw type="pageNum"><app>
 									<rdg wit="#Sonnets1827">
 										<pb xml:id="p293"/></rdg>
 								</app></fw>
 								<head><lb/>I.
-									<lb/>WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.<note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
+									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.</title><note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
 							
 							<lg><l n="1"><app><rdg wit="#Sonnets1827">My little book, as o’er thy page so white.</rdg></app></l>
 								<l n="2"><app><rdg wit="#Sonnets1827">With half-closed eyes in idlest mood I lean,</rdg></app></l> 
@@ -123,7 +123,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 							<l n="10"><app><rdg wit="#Sonnets1827">Thy mistress? She it is, the only she!</rdg></app></l>
 									<l n="11"><app><rdg wit="#Sonnets1827">Dost thou not listen for the one sweet tone</rdg></app></l>
 							<l n="12"><app><rdg wit="#Sonnets1827">Of her unrivalled voice? Dost thou not see</rdg></app></l> 
-										<l n="13"><app><rdg wit="#Sonnets1827"><emph rend="italic">Her</emph>look of love, for whose dear sake alone,</rdg></app></l>
+										<l n="13"><app><rdg wit="#Sonnets1827"><hi rend="italics">Her</hi>look of love, for whose dear sake alone,</rdg></app></l>
 							<l n="14"><app><rdg wit="#Sonnets1827">My little book, thou art so dear to me?</rdg></app></l>
 							</lg>
 							</div>
@@ -135,7 +135,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 					
 				<head><lb/>II. 
-					<lb/>ON <persName ref="#Hofland_TC">MRS. HOFLAND</persName>’S<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. Thomas Hofland was a painter; his spouse was a writer.</note> <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF <placeName ref="#Jerusalem">JERUSALEM</placeName></title> AT THE CRUCIFIXION.<note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
+					<lb/><title ref="#HoflandsJerusalem_1827">ON <persName ref="#Hofland_TC">MRS. HOFLAND</persName>’S<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. Thomas Hofland was a painter; his spouse was a writer.</note> <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF <placeName ref="#Jerusalem">JERUSALEM</placeName></title> AT THE CRUCIFIXION.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
 					<lb/>THE TIME OF THE CRUCIFIXION.</head>
 				
 			<lg>	<l n="1"><app><rdg wit="#Sonnets1827"><placeName ref="#Jerusalem">Jerusalem</placeName>! and at the fatal hour!</rdg></app></l>
@@ -161,7 +161,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 							<pb xml:id="p295"/></rdg>
 					</app></fw>
 					<head><lb/>III.
-						<lb/>THE <name ref="#ForgetMeNot">FORGET-ME-NOT</name>.</head> 
+						<lb/><title ref="#ForgetMeNot_1827">THE <name ref="#ForgetMeNot">FORGET-ME-NOT</name>.</title></head> 
 					
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Blossom that lov’st on shadowy banks to lie,</rdg></app></l>
 					<l n="2"><app><rdg wit="#Sonnets1827">Gemming the deep rank grass with flowers so blue,</rdg></app></l>
@@ -186,10 +186,10 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<pb xml:id="p296"/></rdg>
 				</app></fw>
 				
-				<head><lb/>IV. TO <persName ref="#Richardson_H">MR. HENRY RICHARDSON</persName>,
-					<lb/><emph rend="smallcaps">ON HIS PERFORMANCE OF <persName ref="#Admetus_char">ADMETUS</persName> IN THE <title ref="#Alcestis_play">ALCESTIS</title> OF <persName ref="#Euripides">EURIPIDES</persName>, 
+				<head><lb/>IV. <lb/><title ref="#ToHenryRichardson_1827">TO <persName ref="#Richardson_H">MR. HENRY RICHARDSON</persName>,
+					<lb/><hi rend="smallcaps">ON HIS PERFORMANCE OF <persName ref="#Admetus_char">ADMETUS</persName> IN THE <title ref="#Alcestis_play">ALCESTIS</title> OF <persName ref="#Euripides">EURIPIDES</persName>, 
 					<lb/>AS REPRESENTED IN THE ORIGINAL GREEK AT <placeName ref="#Reading_School">READING SCHOOL</placeName>.
-						<lb/><date when="1824-10"><emph rend="italics">October</emph>, 1824</date>.</emph></head>
+						<lb/><date when="1824-10"><hi rend="italics">October</hi>, 1824</date>.</hi></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">For us, on whose sealed ear the classic strain</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Athens">Athens</placeName>’ tenderest <rs type="person" ref="#Euripides">bard</rs>would idly fall</rdg></app></l>
@@ -227,7 +227,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 			
 				<head><lb/>V. 
-					<lb/>WRITTEN <date when="1824-07">JULY, 1824</date>.</head>
+					<lb/><title ref="#WrittenJuly1824_1827">WRITTEN <date when="1824-07">JULY, 1824</date>.</title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">How oft amid the heaped and bedded hay,</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Under the <name ref="#oak">oak</name>’s broad shadow deep and strong,</rdg></app></l>
@@ -253,7 +253,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<pb xml:id="p299"/></rdg>
 				</app></fw>
 				
-				<head><lb/>VI. TO MY <persName ref="#Russell_M">MOTHER</persName> SLEEPING.</head>
+				<head><lb/>VI.<lb/><title ref="#MotherSleeping_1827">TO MY <persName ref="#Russell_M">MOTHER</persName> SLEEPING.</title></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Sleep on, my <persName ref="#Russell_M">mother</persName>! sweet and innocent dreams</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Attend thee, best and dearest! Dreams that gild</rdg></app></l>
@@ -276,7 +276,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p300"/></rdg>
 				</app></fw>
-				<head><lb/>VII. ON A BEAUTIFUL WOMAN.</head>
+				<head><lb/>VII. <lb/><title ref="#BeautifulWoman_1827">ON A BEAUTIFUL WOMAN.</title></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Look where she sits in languid loveliness,</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Her feet upgathered, and her turban’d brow</rdg></app></l>
@@ -301,8 +301,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 				<head> <!-- on poem in Notes and Queries, 1880s:https://books.google.com/books?id=gEhDAQAAMAAJ&newbks=1&newbks_redir=0&dq=%22Proudly%20thy%20sex%20may%20claim%20thee%2C%20young%20and%20fair%22&pg=PA192#v=onepage&q=%22Proudly%20thy%20sex%20may%20claim%20thee,%20young%20and%20fair%22&f=false -->
 					<lb/>VIII.
-					<lb/>TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">*</metamark> My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note>,
-						<lb/><emph rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</emph></head>
+					<lb/><title ref="#ToMissPorden_1827">TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">*</metamark> My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note>,
+						<lb/><hi rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</hi></title></head>
 					<lg><l n="1"><app><rdg wit="#Sonnets1827">Proudly thy sex may claim thee, young and fair</rdg></app></l>
 					<l n="2"><app><rdg wit="#Sonnets1827">And lofty poetess! proudly may tell</rdg></app></l>
 					<l n="3"><app><rdg wit="#Sonnets1827">How thou hast sung the arms invincible</rdg></app></l>
@@ -327,7 +327,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				
 				<!--First published in 1817 Literary Gazette:  https://books.google.com/books?id=FO5woBpKk3MC&pg=RA1-PA41&lpg=RA1-PA41&dq=%22Tears+in+the+eyes+and+on+the+lips+a+sigh%22&source=bl&ots=udTPjB48ys&sig=ACfU3U2kSgUFp5I9XYSxO03OjizbU0C98A&hl=en&sa=X&ved=2ahUKEwibh_OSlcrnAhUEGc0KHTUqCmYQ6AEwAHoECAUQAQ#v=onepage&q=%22Tears%20in%20the%20eyes%20and%20on%20the%20lips%20a%20sigh%22&f=false-->
 
-				<head><lb/>IX. TO <persName ref="#Haydon">MR. HAYDON</persName>, ON A STUDY FROM NATURE.<note resp="#lmw #slc">Haydon study, as yet unidentified, from <date notAfter="1817-05-21">before 21 May 1817</date>, the composition date of the poem. May refer to a preliminary sketch for <name ref="#ChrstEJrslm_Haydon">Christ’s Entry into Jerusalem</name>. </note></head>
+				<head><lb/>IX. <lb/><title ref="#ToMrHaydon_Nature_1827">TO <persName ref="#Haydon">MR. HAYDON</persName>, ON A STUDY FROM NATURE.</title><note resp="#lmw #slc">Haydon study, as yet unidentified, from <date notAfter="1817-05-21">before 21 May 1817</date>, the composition date of the poem. May refer to a preliminary sketch for <name ref="#ChrstEJrslm_Haydon">Christ’s Entry into Jerusalem</name>. </note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827"><q>Tears in the eyes and on the lips a sigh!</q><note resp="#lmw #slc">Likely an inexact quotation from <title ref="#Marmion_WS">Marmion</title>: <q>She look’d down to blush, and she look’d up to sigh,/ With a smile on her lips and a tear in her eye</q>, found in the often-quoted section on young Lochinvar.</note></rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827"><persName ref="#Haydon">Haydon</persName>! the great, the beautiful, the bold,</rdg></app></l>
@@ -353,7 +353,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<pb xml:id="p303"/></rdg>
 				</app></fw>
 				
-				<head><lb/>X. <placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><emph rend="smallcaps">THE SEAT OF <persName ref="#Benyon_R">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</emph></head>
+				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Benyon_R">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a pride, as of an elder day</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">About thee, <placeName ref="#Englefield_House">Englefield</placeName>! Midway thy steep</rdg></app></l>
@@ -380,8 +380,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 						<head>
 						<lb/>XI.
-							<lb/><date when="1819-01-01">NEW YEAR’S DAY. 1819.</date><!-- add note on the specific date, from the journal/letters. Is the Handel song the same as the one mentioned there? -->
-							<lb/><emph rend="smallcaps">TO <persName ref="#Dickinson_Mrs">MRS. DICKINSON</persName>.</emph></head>
+							<lb/><title ref="#NewYearsDay_1827"><date when="1819-01-01">NEW YEAR’S DAY. 1819.</date></title><!-- add note on the specific date, from the journal/letters. Is the Handel song the same as the one mentioned there? -->
+							<lb/><hi rend="smallcaps">TO <persName ref="#Dickinson_Mrs">MRS. DICKINSON</persName>.</hi></head>
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">Banquet and song, and dance and revelry!—</rdg></app></l>
 						<l n="2"><app><rdg wit="#Sonnets1827">Auspicious year born in so fair a light</rdg></app></l>
 						<l n="3"><app><rdg wit="#Sonnets1827">Of gaiety and beauty! happy night</rdg></app></l>
@@ -406,7 +406,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p305"/></rdg>
 				</app></fw>
-				<head><lb/>XII. ON TWO OF <persName ref="#Hofland_TC">MR. HOFLAND</persName>’S LANDSCAPES.<note resp="#lmw">The specific Hofland works referred to here have not yet been identified.</note></head>
+				<head><lb/>XII. <lb/><title ref="#TwoHoflandLandscapes_1827">ON TWO OF <persName ref="#Hofland_TC">MR. HOFLAND</persName>’S LANDSCAPES.</title><note resp="#lmw">The specific Hofland works referred to here have not yet been identified.</note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">A mighty power is in that roaring main</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Broken into huge and foamy waves, which knock</rdg></app></l> 
@@ -433,9 +433,9 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				
 			<head>
 					<lb/>XIII.
-				<lb/>ON HEARING <persName ref="#Talfourd_Thos">MR. TALFOURD</persName> PLEAD IN THE <placeName ref="#AssizeHall_Reading">ASSIZE-
+				<lb/><title ref="#HearingTalfourd_1827">ON HEARING <persName ref="#Talfourd_Thos">MR. TALFOURD</persName> PLEAD IN THE <placeName ref="#AssizeHall_Reading">ASSIZE-
 					<lb/>HALL</placeName> AT <placeName ref="#Reading_city">READING</placeName>, ON HIS FIRST <placeName ref="#Oxford_Circuit">CIRCUIT</placeName>,
-				<lb/><emph rend="smallcaps"><date when="1821-03">March 1821</date>.</emph></head>
+					<lb/><date when="1821-03"><hi rend="italics">March</hi> 1821</date>.</title></head>
 					
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Wherefore this stir? ’Tis but a common cause</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Of Cottage plunder: yet in every eye</rdg></app></l>
@@ -459,7 +459,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 						<pb xml:id="p307"/></rdg>
 				</app></fw>
 				
-				<head><lb/>XIV.  THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.<note resp="#lmw">Mitford encloses a copy of this poem in her <date when="1817-10-11">October 11, 1617</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName>. </note></head>
+				<head><lb/>XIV. <lb/><title ref="#FishingSeat_1827">THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.</title><note resp="#lmw">Mitford encloses a copy of this poem in her <rs type="letter" ref="#MRM1703"><date when="1817-10-11">October 11, 1817</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName></rs>. </note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a sweet according harmony</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">In this fair scene: this quaintly fluted bower,</rdg></app></l>
@@ -484,7 +484,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					</app></fw>
 						<head>	
 						<lb/>XV.
-							<lb/>TO A <rs type="person" ref="#Webb_Jane">FRIEND</rs> ON HER BIRTH-DAY.</head>
+							<lb/><title ref="#FriendBirthday_1827">TO A <rs type="person" ref="#Webb_Jane">FRIEND</rs> ON HER BIRTH-DAY.</title></head>
 						
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">This is the day sacred to love and mirth</rdg></app></l>
 						<l n="2"><app><rdg wit="#Sonnets1827">And tender wishes; this the favoured day</rdg></app></l>
@@ -509,7 +509,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<pb xml:id="p309"/></rdg>
 					</app></fw>
 				
-				<head><lb/>XVI. ON LEAVING A FAVOURITE PICTURE.<!--SLC: This is an actual painting left behind at Bertram House when Mary Russell Mitford was forced to leave her childhood home after her father spent through their considerable family fortune. LMW: Do we know which picture or no? If yes, find it and cite. Or write a general note saying leaving Bertram house, picture unknown.--></head>
+				<head><lb/>XVI. <lb/><title ref="#LeavingPicture_1827">ON LEAVING A FAVOURITE PICTURE.</title><!--SLC: This is an actual painting left behind at Bertram House when Mary Russell Mitford was forced to leave her childhood home after her father spent through their considerable family fortune. LMW: Do we know which picture or no? If yes, find it and cite. Or write a general note saying leaving Bertram house, picture unknown.--></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Young world of peace and loveliness farewell!</rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827">Farewell to the clear lake; the mountains blue;</rdg></app></l>
@@ -533,7 +533,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<pb xml:id="p310"/></rdg>
 					</app></fw>
 					<head>
-					<lb/>XVII. WRITTEN IN A FRIEND’S<note resp="#lmw">Friend unidentified. More research needed.</note> ALBUM</head>
+					<lb/>XVII. <lb/><title ref="#FriendsAlbum_1827">WRITTEN IN A FRIEND’S<note resp="#lmw">Friend unidentified. More research needed.</note> ALBUM</title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Book of memorials fair! I cannot trace</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">On thy white page the quaintly pencilled bower;</rdg></app></l>
@@ -556,9 +556,9 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<pb xml:id="p311"/></rdg>
 					</app></fw>
 				
-				<head><lb/>XVIII.  ON VISITING <placeName ref="#Donnington_Castle">DONNINGTON CASTLE</placeName>,
+				<head><lb/>XVIII.  <lb/><title ref="#DonningtonCastle_1827">ON VISITING <placeName ref="#Donnington_Castle">DONNINGTON CASTLE</placeName>,
 					<!-- first pub 1821: https://books.google.com/books?id=CRR3IEP9VV0C&newbks=1&newbks_redir=0&dq=Grisildi&pg=PA540#v=onepage&q=Grisildi&f=false -->
-					<lb/>Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</head>				
+					<lb/><hi rend="smallcaps">Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, <lb/>and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of <lb/>Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</hi></title></head>				
 				<lg>					
 				<l n="1"><app><rdg wit="#Sonnets1827">Oh, for some gentle spirit to surround</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name>thy high-seated towers,</rdg></app></l>
@@ -586,7 +586,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				</app></fw>
 				
 						<head>
-						<lb/>XIX. WRITTEN AFTER A VISIT FROM SOME FRIENDS.<!--LMW: Do we have a date or who are the friends?--></head>
+						<lb/>XIX. <lb/><title ref="#WrittenAfterVisit_1827">WRITTEN AFTER A VISIT FROM SOME FRIENDS.</title><!--LMW: Do we have a date or who are the friends?--></head>
 						
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">I could have lengthened out one fleeting hour</rdg></app></l>
 						<l n="2"><app><rdg wit="#Sonnets1827">Into an age; sitting at set of sun</rdg></app></l>
@@ -609,7 +609,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
 					<pb xml:id="p314"/></rdg>
 				</app></fw>
-				<head><lb/>XX.  ON AN INTENDED REMOVAL FROM A <rs type="place" ref="#Bertram_house">FAVOURITE RESIDENCE</rs>. <emph rend="smallcaps"><date when="1820-11">November, 1820.</date></emph></head>
+				<head><lb/>XX.  <lb/><title ref="#IntendedRemoval_1827">ON AN INTENDED REMOVAL FROM A <rs type="place" ref="#Bertram_house">FAVOURITE <lb/>RESIDENCE</rs>.<date when="1820-11"> <hi rend="italics">November,</hi> 1820.</date></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Adieu beloved and lovely home! Adieu,</rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827">Thou pleasant mansion, and ye waters bright,</rdg></app></l> 
@@ -634,8 +634,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<pb xml:id="p315"/></rdg>
 				</app></fw>
 							<head>
-								<lb/>XXI. ON THE DEPARTURE OF A <persName ref="#Ramsay_Mary">FRIEND</persName> TO <placeName ref="#Lisbon_city">LISBON</placeName> FOR
-								<lb/>THE RECOVERY OF HER HEALTH. <emph rend="smallcaps"><date when="1813-11">Nov. 1813</date>.</emph></head>
+								<lb/>XXI. <lb/><title ref="#FriendToLisbon_1827">ON THE DEPARTURE OF A <persName ref="#Ramsay_Mary">FRIEND</persName> TO <placeName ref="#Lisbon_city">LISBON</placeName> FOR
+								<lb/>THE RECOVERY OF HER HEALTH. <date when="1813-11"><hi rend="italics">Nov.</hi> 1813</date>.</title></head>
 							<lg><l n="1"><app><rdg wit="#Sonnets1827">Thou freshest spirit, that on <placeName ref="#Lisbon_city">Lisbon</placeName>’s shore</rdg></app></l>
 							<l n="2"><app><rdg wit="#Sonnets1827">Didst shake health-breathing airs so cheerily</rdg></app></l> 
 							<l n="3"><app><rdg wit="#Sonnets1827">From thy soft wing, as oft the murmuring <name ref="#bee">bee</name></rdg></app></l>
@@ -660,7 +660,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-
 					<pb xml:id="p316"/></rdg>
 				</app></fw>
 				
-				<head><lb/>XXII. WRITTEN <date when="1825-10">OCTOBER, 1825</date>.</head>
+				<head><lb/>XXII. <lb/><title ref="#WrittenOct1825_1827">WRITTEN <date when="1825-10">OCTOBER, 1825</date>.</title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Within my little garden is a flower,</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">A tuft of flowers, most like a sheaf of <name ref="#corn">corn</name>,</rdg></app></l>
