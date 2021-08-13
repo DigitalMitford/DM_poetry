@@ -198,10 +198,10 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				<l n="5"><app><rdg wit="#Sonnets1827">I thank thee, wondrous <rs type="person" ref="#Richardson_H">boy</rs>! that not in vain</rdg></app></l>
 				<l n="6"><app><rdg wit="#Sonnets1827">The scene hath overpast which held in thrall</rdg></app></l>
 					<l n="7"><app><rdg wit="#Sonnets1827"><persName ref="#Milton">Milton</persName> <metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">* </metamark>Milton’s allusion to the <title ref="#Alcestis_play">ALCESTIS</title> in the <title ref="#Methought_sonnet23">sonnet</title> on his wife is well known. <persName ref="#Wordsworth_Wm">Mr. Wordsworth</persName> in his <title ref="#Laodamia_WW">Laodamia</title> has the following exquisite lines on the same subject.
-						 <metamark function="ellipsis">——</metamark><q><lg><l>Did not <persName ref="#Hercules">Hercules</persName> by force</l>
+						 <lg><metamark function="ellipsis">——</metamark><l>“Did not <persName ref="#Hercules">Hercules</persName> by force</l>
 							<l>Wrest from the guardian monster of the tomb</l>
 							<l><persName ref="#Alcestis">Alcestis</persName> a reanimated corse,</l>
-							<l>Given back to dwell on earth in beauty’s bloom?</l></lg></q>
+							<l>Given back to dwell on earth in beauty’s bloom?”</l></lg>
 					</note><note resp="#lmw">Lines 79 to 82.</note> and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
 				<l n="8"><app><rdg wit="#Sonnets1827">Living or dead that haunt the <orgName ref="#Muses">Muses</orgName>’ fane!</rdg></app></l></lg>
 			

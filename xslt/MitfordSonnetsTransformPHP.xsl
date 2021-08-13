@@ -202,7 +202,7 @@
     <xsl:template match="change">
        <tr>
           <td><xsl:apply-templates select="(@when, @notBefore)[1]"/></td> 
-          <td><xsl:apply-templates select="$si//person[@xml:id = substring-after(@who, '#')]/persName[1]"/>
+          <td><xsl:apply-templates select="$si//person[@xml:id = substring-after(current()/@who, '#')]/@xml:id"/>
           </td>
            <td><xsl:apply-templates/></td>
        </tr>
@@ -212,6 +212,7 @@
     <xsl:template match="body/div">
         <section class="poem">
             <xsl:apply-templates/>
+            <xsl:apply-templates select="descendant::note[@resp='#MRM']" mode="MRMnotes"/>
         </section>
     </xsl:template>
     
@@ -233,9 +234,8 @@
 
     <xsl:template match="l[not(ancestor::note)]">
         <span class="line" id="P{ancestor::div[1]/@n}-L{@n}">
-            <xsl:value-of select="@n"/>
-            <xsl:text> </xsl:text>
             <xsl:apply-templates/>
+            <span class="lineNumber"><xsl:value-of select="@n"/></span>
             <br/>
         </span>
     </xsl:template>
@@ -274,18 +274,24 @@
 
 
 <xsl:template match="pb">
-   <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> 
-    
+  <!-- <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> -->
 </xsl:template>
 
-    <xsl:template match="note">
-        <span id="Note{count (preceding::note) + 1}" class="anchor">[<xsl:value-of
-                select="count (preceding::note)+ 1"/>] <span class="note"
-                id="n{count (preceding::note) + 1}">
-                <xsl:apply-templates/><xsl:text>&#8212;</xsl:text>
+    <xsl:template match="note[not(@resp='#MRM')]">
+        <span id="Note{count (preceding::note[not(@resp='#MRM')]) + 1}" class="anchor">[<xsl:value-of
+                select="count (preceding::note[not(@resp='#MRM')])+ 1"/>] <span class="note"
+                id="n{count (preceding::note[not(@resp='#MRM')]) + 1}">
+                <xsl:apply-templates/><xsl:text>—</xsl:text>
                     <xsl:value-of select="@resp"/>
             </span>
         </span>
+    </xsl:template>
+    <xsl:template match="note[@resp='#MRM']"/>
+    <xsl:template match="note" mode="MRMnotes">
+        <hr class="#MRMfn"/>
+        <div class="MRMfn"><xsl:apply-templates/><xsl:text>—</xsl:text>
+        <xsl:value-of select="@resp"/></div>
+        
     </xsl:template>
 
    <!-- <xsl:template match="rs">
@@ -385,7 +391,7 @@
             <xsl:value-of select="string-join($siRs/@*, ' - ')"/>
             <xsl:if test="$siRs/note">
                 <br/><xsl:value-of select="$siRs/note"/>
-                    <xsl:text>--</xsl:text>
+                    <xsl:text>—</xsl:text>
                     <xsl:value-of select="$siRs/note/@resp"/>
                 
             </xsl:if>
