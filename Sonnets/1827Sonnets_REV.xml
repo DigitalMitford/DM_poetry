@@ -202,7 +202,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<lb/><date when="1824-10"><hi rend="italics">October</hi>, 1824</date>.</hi></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">For us, on whose sealed ear the classic strain</rdg></app></l>
-				<l n="2"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Athens">Athens</placeName>’ tenderest <rs type="person" ref="#Euripides">bard</rs>would idly fall</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Athens">Athens</placeName>’ tenderest <rs type="person" ref="#Euripides">bard</rs> would idly fall</rdg></app></l>
 				<l n="3"><app><rdg wit="#Sonnets1827">As instrumental music, or the call</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">Of wordless <name ref="#nightingale">nightingale</name>s, for us again</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">I thank thee, wondrous <rs type="person" ref="#Richardson_H">boy</rs>! that not in vain</rdg></app></l>
