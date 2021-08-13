@@ -165,7 +165,8 @@ border-bottom:1px dotted
 
 section.poem {line-height:25px}
 section.poem.on{line-height:normal}
-span.lineNumber{font-size:smaller; color:brown; padding-left:1em;}
+span.lineNumber{font-size:smaller; color:brown; position:absolute; right:25%}
+hr.MRMfn {background-color:black; height:1px; border-radius:50%; margin-right: 30%}
 
 span.pagebreak {font-size: .75em; text-align:center; display:block}
 span.pagebreak.on {display:none;}
@@ -206,7 +207,7 @@ color:blue;
 
 span.si{
 position: absolute;
-right:15%;
+right:5%;
 color: #000041;
 line-height:normal;
 text-decoration:none;
@@ -225,7 +226,7 @@ display:none;
 
 span.anchor span.note {
  position:absolute;
-right:12%;
+left:12%;
     color:black;
     line-height:normal;
     text-decoration:none;
