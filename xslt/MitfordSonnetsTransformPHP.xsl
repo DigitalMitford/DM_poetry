@@ -35,12 +35,14 @@
                         <ul id="siteMenu">
                             <li class="title"><span class="mainTitle">Digital Mitford:</span><br/> <span class="subTitle">The Mary Russell Mitford Archive</span></li>
                             <li class="mainMenu"><ul class="mainMenu"><li class="section" id="Overview"><!--Overview-->
-                                <ul class="subSec"><li class="subMenu"><a href="index.html">Home</a></li>
-                                    <li class="subMenu"><a href="visual.html">Mitford’s Worlds</a></li>
-                                </ul></li>
+                                <span class="menuLarger">Prototype Testing View</span>
+                                <ul class="subSec"><li class="subMenu"><a href="https://digitalmitford.org">Home</a></li>
+                                  <li class="subMenu"><a href="https://digitalmitford.org/visual.html">Mitford’s Worlds</a></li>
+                                </ul>
+                            </li>
                                 <li class="section" id="Editions"><!--Editions-->
                                     <ul class="subSec">
-                                        <li class="subMenu"><a href="letters.html">Letters</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/letters.html">Letters</a></li>
                                         <li class="subMenu">Plays</li>
                                         <li class="subMenu">Poems</li>
                                         <li class="subMenu">Fiction</li>
@@ -49,24 +51,24 @@
                                 
                                 <li class="section" id="Bib"><!--Bibliography &amp; MSS-->
                                     <ul class="subSec">
-                                        <li class="subMenu"><a href="bibliogType.html">Bibliography</a></li>
-                                        <li class="subMenu"><a href="lettersData.html">Manuscript Locations</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/bibliogType.html">Bibliography</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/lettersData.html">Manuscript Locations</a></li>
                                         
                                     </ul>
                                 </li>
                                 
                                 <li class="section" id="Project"><!--Project-->
                                     <ul class="subSec">
-                                        <li class="subMenu"><a href="about.html">Methods &amp; Background</a></li>
-                                        <li class="subMenu"><a href="staff.html">Staff</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/about.html">Methods &amp; Background</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/staff.html">Staff</a></li>
                                         <li class="subMenu">Scholarship</li>
                                     </ul>
                                 </li>
                                 <li class="section" id="Outreach"><!--Outreach-->
                                     <ul class="subSec">
-                                        <li class="subMenu"><a href="workshop.html">Coding School</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/workshop.html">Coding School</a></li>
                                         <li class="subMenu"><a href="https://digitalmitford.wordpress.com/">Blog</a></li>
-                                        <li class="subMenu"><a href="applicationProcess.html">Become a Mitford Editor</a></li>
+                                        <li class="subMenu"><a href="https://digitalmitford.org/applicationProcess.html">Become a Mitford Editor</a></li>
                                     </ul>
                                     
                                 </li>
@@ -248,11 +250,11 @@
     </xsl:template>
 
     <xsl:template match="l[not(ancestor::note)]">
-        <span class="line" id="P{ancestor::div[1]/@n}-L{@n}">
-            <xsl:apply-templates/>
-            <span class="lineNumber"><xsl:value-of select="@n"/></span>
-            <br/>
-        </span>
+       <div class="line"> 
+           <span class="line" id="P{ancestor::div[1]/@n}-L{@n}">
+            <xsl:apply-templates/></span>
+           <span class="lineNumber"><xsl:value-of select="@n"/></span>
+       </div>
     </xsl:template>
     
     <xsl:template match="l[ancestor::note]">
