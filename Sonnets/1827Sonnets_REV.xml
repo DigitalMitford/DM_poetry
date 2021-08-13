@@ -8,7 +8,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Sonnets from <title ref="#DramaticScenes">Dramatic Scenes, Sketches, and Other Poems</title>)</title>
+				<title>Sonnets from <title ref="#DramaticScenes">Dramatic Scenes, Sketches, and Other Poems</title></title>
 				<author ref="#MRM">Mary Russell Mitford</author>
 				<editor ref="#lmw">Lisa M. Wilson</editor>
 				<sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
@@ -33,8 +33,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			</editionStmt>
 			<publicationStmt>
 				<authority>Digital Mitford: The Mary Russell Mitford Archive</authority>
-				<pubPlace>Greensburg, PA, USA</pubPlace>
-				<date>2015</date>
+				<pubPlace>digitalmitford.org</pubPlace>
+				<date>2021</date>
 				<availability>
 					<licence>Distributed under a Creative Commons
 						Attribution-ShareAlike 3.0 Unported License</licence>
@@ -45,7 +45,17 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			</seriesStmt>
 			<sourceDesc>
 				
-				<bibl>1827 versions of sonnets.</bibl>
+				<bibl xml:id="DramaticScenes">
+					<title level="m">Dramatic Scenes, Sonnets, and Other Poems</title>
+					<author ref="#MRM"/>
+					<pubPlace>
+						<placeName ref="#London_city">London</placeName>
+					</pubPlace>
+					<publisher>
+						<orgName ref="#Whittaker_GB_pub">G. B. Whittaker</orgName>
+					</publisher>
+					<date when="1827">1827</date>
+				</bibl>
 				<listWit>
 				
 					<witness xml:id="Sonnets1827">Sonnets in 1827 Dramatic Scenes, Sonnets, and Other Poems </witness>
@@ -109,7 +119,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 										<pb xml:id="p293"/></rdg>
 								</app></fw>
 								<head><lb/>I.
-									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.</title><note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
+									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.<note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></title></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
 							
 							<lg><l n="1"><app><rdg wit="#Sonnets1827">My little book, as o’er thy page so white.</rdg></app></l>
 								<l n="2"><app><rdg wit="#Sonnets1827">With half-closed eyes in idlest mood I lean,</rdg></app></l> 
@@ -135,7 +145,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				</app></fw>
 					
 				<head><lb/>II. 
-					<lb/><title ref="#HoflandsJerusalem_1827">ON MRS.<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. <persName ref="#Hofland_TC">Thomas Hofland </persName>was a painter; his spouse, <persName ref="#Hofland_B">Barbara Hofland</persName>, was a writer.</note> HOFLAND’S <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF JERUSALEM At<lb/>THE TIME OF THE CRUCIFIXION</title>.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
+					<lb/><title ref="#HoflandsJerusalem_1827">ON MRS.<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. <persName ref="#Hofland_TC">Thomas Hofland </persName>was a painter; his spouse, <persName ref="#Hofland_B">Barbara Hofland</persName>, was a writer.</note> HOFLAND’S <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF JERUSALEM AT<lb/>THE TIME OF THE CRUCIFIXION</title>.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
 					</head>
 				
 			<lg>	<l n="1"><app><rdg wit="#Sonnets1827"><placeName ref="#Jerusalem">Jerusalem</placeName>! and at the fatal hour!</rdg></app></l>

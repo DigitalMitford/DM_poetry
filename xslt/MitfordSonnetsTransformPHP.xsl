@@ -128,17 +128,13 @@
     </xsl:template>
     
     <xsl:template match="editionStmt">
-        <p><a href="{tokenize(base-uri(.),'/')[last()]}"><xsl:apply-templates select="edition"/></a>
-        <xsl:value-of select="respStmt[1]/resp[1][not(idno)]"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select="respStmt[1]/resp[1]/following-sibling::orgName"/>
+        <!--2021-08-13 ebb: CHANGE the link constructor below for Digital Mitford site publishing.
+        It is currently set for prototype previewing on the DM_Poetry repo GitHub Pages:-->
+        <p><a href="../Sonnets/{tokenize(base-uri(.),'/')[last()]}"><xsl:apply-templates select="edition"/></a>
+            <!--  <xsl:value-of select="respStmt[1]/resp[1][not(idno)]"/>
             <xsl:text>. </xsl:text>
-            <xsl:if test="respStmt[2]">
-               <xsl:value-of select="respStmt[2]/orgName"/><xsl:text> </xsl:text>
-               <xsl:value-of select="respStmt[2]/orgName/following-sibling::resp/text()"/>
-           </xsl:if> 
-           
-            <xsl:choose>
+    
+          <xsl:choose>
                 <xsl:when test="contains(//msIdentifier/repository, 'Reading Central')"><xsl:for-each select="tokenize(respStmt/resp[idno]/idno, ', ')">       
                 <a href="{current()}"><xsl:value-of select="current()"/> </a><xsl:text>, </xsl:text>
             </xsl:for-each>
@@ -151,7 +147,7 @@
             </xsl:otherwise>
             </xsl:choose>
             
-            <xsl:text>. </xsl:text>
+            <xsl:text>. </xsl:text>-->
         </p>
     </xsl:template>
     
@@ -160,7 +156,7 @@
         <xsl:apply-templates select="authority"/><xsl:text>, </xsl:text>
         <xsl:apply-templates select="pubPlace"/><xsl:text>: </xsl:text>
         <xsl:apply-templates select="date"/><xsl:text>. </xsl:text></p>
-        <xsl:apply-templates select="availability/p"/><xsl:text> </xsl:text> 
+        <xsl:apply-templates select="availability/licence"/><xsl:text> </xsl:text> 
     </xsl:template>
     
     <xsl:template match="seriesStmt">
@@ -168,16 +164,35 @@
     </xsl:template>
     
     <xsl:template match="sourceDesc">
-        <p><xsl:text>Repository: </xsl:text><xsl:apply-templates select=".//repository"/><xsl:text>. </xsl:text>
-            <xsl:text>Shelf mark: </xsl:text> 
-        <xsl:apply-templates select=".//idno"/></p>
+        <xsl:text>Source: </xsl:text>
+        <xsl:apply-templates select="bibl"/>
         
-      <xsl:apply-templates select=".//support"/>
-        
-        <xsl:apply-templates select=".//condition"/>
-        
-        <xsl:apply-templates select=".//sealDesc"/>      
+       <!--ebb: Shutting this off b/c we only have one witness, and a bibl for it.
+           <xsl:choose>
+            <xsl:when test="count(listWit/witness) gt 1">
+                <ul>
+                    <xsl:apply-templates select="descendant::witness" mode="multipleWit"/>
+                </ul>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="descendant::witness"/>
+            </xsl:otherwise>
+            
+        </xsl:choose>        -->
     </xsl:template>
+    <!--Processing the source bibliography info in the TEI Header -->
+    <xsl:template match="sourceDesc/bibl">
+        <span class="sourceBibl">Mitford, Mary Russell. <i><xsl:apply-templates select="title"/></i>. 
+        <xsl:apply-templates select="pubPlace/placeName"/>: <xsl:apply-templates select="publisher"/>, 
+            <xsl:apply-templates select="date"/>.</span>
+    </xsl:template>
+    <xsl:template match="witness" mode="multipleWit">
+        <li><xsl:apply-templates/></li>
+    </xsl:template>
+    <xsl:template match="witness">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+    
     
     <xsl:template match="profileDesc">
         <p><xsl:text>Hands other than Mitford's noted on this manuscript: </xsl:text></p>
@@ -202,7 +217,7 @@
     <xsl:template match="change">
        <tr>
           <td><xsl:apply-templates select="(@when, @notBefore)[1]"/></td> 
-          <td><xsl:apply-templates select="$si//person[@xml:id = substring-after(current()/@who, '#')]/@xml:id"/>
+          <td><xsl:apply-templates select="substring-after(., '#') => string-join(', ')"/>
           </td>
            <td><xsl:apply-templates/></td>
        </tr>
@@ -396,7 +411,7 @@
         </span>
     </xsl:template>-->
     
-    <xsl:template match="body//title | body//bibl">
+    <xsl:template match="body//title[not(ancestor::head)] | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
             <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
             <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
@@ -558,6 +573,13 @@
             <xsl:matching-substring>—</xsl:matching-substring>
             <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
         </xsl:analyze-string>
+    </xsl:template>
+    <xsl:template match="div[@type='section']/head">
+        <span class="poemHeading"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="head//title">
+        <span class="title"><xsl:apply-templates/></span>
     </xsl:template>
    
 </xsl:stylesheet>
