@@ -307,7 +307,7 @@
     <xsl:template match="note" mode="MRMnotes">
         <div class="MRMfn"><hr class="MRMfn"/>
             <xsl:apply-templates/><xsl:text>—</xsl:text>
-        <xsl:value-of select="@resp"/></div>
+        <xsl:value-of select="@resp ! substring-after(., '#')"/></div>
         
     </xsl:template>
 
