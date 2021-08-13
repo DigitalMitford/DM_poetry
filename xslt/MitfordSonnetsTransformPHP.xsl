@@ -219,7 +219,7 @@
     <xsl:template match="change">
        <tr>
           <td><xsl:apply-templates select="(@when, @notBefore)[1]"/></td> 
-          <td><xsl:apply-templates select="substring-after(., '#') => string-join(', ')"/>
+          <td><xsl:apply-templates select="@who ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
           </td>
            <td><xsl:apply-templates/></td>
        </tr>
