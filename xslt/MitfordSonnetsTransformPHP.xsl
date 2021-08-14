@@ -527,8 +527,9 @@
             
             <xsl:if test="$siBibl/note">
                <xsl:for-each select="$siBibl/note"> <br/><xsl:value-of select="current()"/>
+                <xsl:if test="@resp">
                     <xsl:text>—</xsl:text>
-                <xsl:if test="@resp"><xsl:sequence select="dm:respHandler(@resp)"/>
+                    <xsl:sequence select="dm:respHandler(@resp)"/>
                 </xsl:if>
                </xsl:for-each>
             </xsl:if>
