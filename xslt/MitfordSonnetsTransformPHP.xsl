@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:dm="http://digitalmitford.org/nss/dm"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
    <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
@@ -12,6 +13,11 @@
    -->
       
  <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/> 
+ <xsl:function name="dm:respHandler" as="item()">
+     <xsl:param name="resp" as="attribute()"/>
+     <xsl:sequence select="$resp ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
+     
+ </xsl:function>
     
     <xsl:template match="/">
         <html>
@@ -219,7 +225,7 @@
     <xsl:template match="change">
        <tr>
           <td><xsl:apply-templates select="(@when, @notBefore)[1]"/></td> 
-          <td><xsl:apply-templates select="@who ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
+          <td><xsl:sequence select="dm:respHandler(@who)"/>
           </td>
            <td><xsl:apply-templates/></td>
        </tr>
@@ -273,34 +279,19 @@
 
     </xsl:template>
 
-    <xsl:template match="placeName | name[@type='place']">
-        <span class="context" title="place">
-            <xsl:apply-templates/>
-        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
-            <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-        <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
-            <xsl:text>—</xsl:text>
-            <xsl:value-of select="$siPlace/note/@resp"/>
-            <xsl:if test="$siPlace//geo">
-                <xsl:value-of select="$siPlace//geo"/>
-            </xsl:if>          
-        </span></xsl:if>
-        </span>
-    </xsl:template>
-
-
+   
 <xsl:template match="pb">
   <!-- <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> -->
 </xsl:template>
 
+
     <xsl:template match="note[not(@resp='#MRM')][ancestor::div[@type='section']]">
-        <!-- 2021-08-13 ebb: added the last predicate to stop this from outputting SI note elements, which I'm trying to render with apply-templates for their q elements and other kinds of info. -->
+        <!-- 2021-08-13 ebb: added the last predicate to stop this from outputting SI note elements. -->
         <span id="Note{count (preceding::note[not(@resp='#MRM')]) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note[not(@resp='#MRM')])+ 1"/>] <span class="note"
                 id="n{count (preceding::note[not(@resp='#MRM')]) + 1}">
                 <xsl:apply-templates/><xsl:text>—</xsl:text>
-                    <xsl:value-of select="@resp"/>
+                    <xsl:sequence select="dm:respHandler(@resp)"/>
             </span>
         </span>
     </xsl:template>
@@ -308,8 +299,33 @@
     <xsl:template match="note" mode="MRMnotes">
         <div class="MRMfn"><hr class="MRMfn"/>
             <xsl:apply-templates/><xsl:text>—</xsl:text>
-        <xsl:value-of select="@resp ! substring-after(., '#')"/></div>
+        <xsl:value-of select="dm:respHandler(@resp)"/></div>
         
+    </xsl:template>
+    
+      <!-- ******************************************* -->
+     
+  <!-- 2021-08-14 ebb: Updated templates for SI context coding. -->
+    
+    <!-- ******************************************* -->
+    
+
+    <xsl:template match="placeName | name[@type='place']">
+        <span class="context" title="place">
+            <xsl:apply-templates/>
+            
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
+                <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
+                <xsl:value-of select="string-join($siPlace/*[not(self::note)], ' | ')"/>
+                <xsl:if test="$siPlace/note"> <xsl:for-each select="$siPlace/note">
+                    <xsl:apply-templates select="current()"/>
+                    <xsl:if test="@resp"><xsl:text>—</xsl:text>
+                    <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
+                </xsl:for-each>
+                </xsl:if>
+                
+            </span></xsl:if>
+        </span>
     </xsl:template>
 
     <xsl:template match="persName | rs[@type='person'] | sp | author">
@@ -363,9 +379,13 @@
      <xsl:text>. </xsl:text>
  </xsl:if>
      <xsl:if test="$siPers/note">
-         <br/><xsl:apply-templates select="$siPers//note"/>
-         <xsl:text>—</xsl:text>
-             <xsl:value-of select="$siPers//note/@resp"/>
+         <xsl:for-each select="$siPers/note">
+             <br/><xsl:apply-templates select="current()"/>
+        <xsl:if test="@resp"> 
+            <xsl:text>—</xsl:text>
+         <xsl:sequence select="dm:respHandler(@resp)"/>
+        </xsl:if>
+         </xsl:for-each>
          
      </xsl:if>     
     
@@ -381,11 +401,14 @@
             <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
-            <xsl:if test="$siOrg//note">
-                <br/><xsl:apply-templates select="$siOrg//note"/>
+            <xsl:if test="$siOrg/note">
+              <xsl:for-each select="$siOrg/note">  
+                  <br/>
+                  <xsl:apply-templates select="current()"/>
                     <xsl:text>—</xsl:text>
-                    <xsl:value-of select="$siOrg/note/@resp"/>
-                
+               <xsl:if test="@resp"> <xsl:sequence select="dm:respHandler(@resp)"/>
+               </xsl:if>
+                </xsl:for-each>
             </xsl:if>
         </span></xsl:if>
         </span>
@@ -479,18 +502,19 @@
                 
             </xsl:if>
             
-            <xsl:if test="$siBibl//note">
-                <br/><xsl:value-of select="$siBibl//note"/>
+            <xsl:if test="$siBibl/note">
+               <xsl:for-each select="$siBibl/note"> <br/><xsl:value-of select="current()"/>
                     <xsl:text>—</xsl:text>
-                    <xsl:value-of select="$siBibl//note/@resp"/>
-               
+                <xsl:if test="@resp"><xsl:sequence select="dm:respHandler(@resp)"/>
+                </xsl:if>
+               </xsl:for-each>
             </xsl:if>
         </span></xsl:if>
         </span>
     </xsl:template>
     
 <!--2021-08-13 The next template processes markup of plants and animals from the SI -->
-<xsl:template match="name">
+<xsl:template match="name | rs[@type='animal'] | rs[@type='plant']">
     <span class="context" title="nature">
         <xsl:apply-templates/>
         <xsl:if test="$si//item[@xml:id=substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])">
@@ -514,8 +538,10 @@
                  <xsl:for-each select="$siNature/note">
                      <br/>
                      <xsl:apply-templates select="."/>
-                         <xsl:text>—</xsl:text>
-                         <xsl:value-of select="@resp ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
+                       <xsl:if test="@resp">  
+                           <xsl:text>—</xsl:text>
+                     <xsl:sequence select="dm:respHandler(@resp)"/>
+                       </xsl:if>
 
                  </xsl:for-each> 
          </span>  
@@ -533,7 +559,8 @@
       <em><xsl:apply-templates/></em> 
   </xsl:template>
     
-    <xsl:template match="gap | del[not(text())]">
+    <xsl:template match="gap | del[not(matches(., '\S'))]">
+        <!--ebb: 2021-08-14: This template should match an empty del element as well as a gap element. -->
         <span class="damage"><xsl:text>[</xsl:text><xsl:value-of select="name()"/><xsl:text>: </xsl:text>
             <xsl:if test="@quantity">
                 <xsl:value-of select="@quantity"/><xsl:text> </xsl:text><xsl:value-of select="@unit"/>
@@ -557,12 +584,14 @@
         <span class="supplied"><xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text></span>
     </xsl:template>
     
-    <xsl:template match="del">
-        <span class="del"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
-        <!--ebb: Note problem here: If the del span self-closes because of a gap and we could not read the deleted words for whatever reason, the span self closes in the html, BUT the browser (Chrome at least) interprets this as crossing out to the end of the document! 
+    <xsl:template match="del[matches(., '\S')]">
+      <span class="del"><xsl:text>&#xa0;</xsl:text><xsl:value-of select="."/></span>
+         
+        <!--OLD? ebb: Note problem here: If the del span self-closes because of a gap and we could not read the deleted words for whatever reason, the span self closes in the html, BUT the browser (Chrome at least) interprets this as crossing out to the end of the document! 
         Brittle solution is, this time, that I removed the self-closed span elements from the html output. 
         I need to say something, if the span is empty because of a gap, to signal that there *is* a deletion here that we could not read.
         -->
+        <!--2021-08-14 ebb: Answering this by adding preducate to test for non-space characters in the text node of the del element. And revising the predicate on del in the gap + "empty del" template before this. -->
     </xsl:template>
     
     <xsl:template match="add">
