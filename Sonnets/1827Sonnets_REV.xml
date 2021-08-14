@@ -171,7 +171,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 							<pb xml:id="p295"/></rdg>
 					</app></fw>
 					<head><lb/>III.
-						<lb/><title ref="#ForgetMeNot_1827">THE <name ref="#ForgetMeNot">FORGET-ME-NOT</name>.</title></head> 
+						<lb/><title ref="#ForgetMeNot_1827">THE <name ref="#forget_me_not">FORGET-ME-NOT</name>.</title></head> 
 					
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Blossom that lov’st on shadowy banks to lie,</rdg></app></l>
 					<l n="2"><app><rdg wit="#Sonnets1827">Gemming the deep rank grass with flowers so blue,</rdg></app></l>
@@ -363,7 +363,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<pb xml:id="p303"/></rdg>
 				</app></fw>
 				
-				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Beny">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
+				<head><lb/>X. <lb/><title ref="#EnglefieldHouse_1827"><placeName ref="#Englefield_House">ENGLEFIELD HOUSE</placeName>: <lb/><hi rend="smallcaps">THE SEAT OF <persName ref="#Benyon_R">R. BENYON DE BEAUVOIR, ESQ.</persName> NEAR <placeName ref="#Reading_city">READING</placeName>.</hi></title></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a pride, as of an elder day</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">About thee, <placeName ref="#Englefield_House">Englefield</placeName>! Midway thy steep</rdg></app></l>
