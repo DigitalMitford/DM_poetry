@@ -129,12 +129,12 @@
            <xsl:when test="count(descendant::sponsor) gt 1">
             <ul>
         <xsl:for-each select="sponsor">
-            <li><xsl:apply-templates select="current()"/></li>
+            <li><xsl:apply-templates select="current()//text()"/></li>
         </xsl:for-each>
         </ul>
            </xsl:when>
        <xsl:otherwise>
-           <xsl:apply-templates select="sponsor"/>
+           <xsl:apply-templates select="sponsor//text()"/>
        </xsl:otherwise>
        </xsl:choose>
     </xsl:template>
