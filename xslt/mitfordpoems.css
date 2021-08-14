@@ -74,8 +74,8 @@ display:flex; justify-content:space-between; align-items:flex-start; flex-direct
 div#poemsHead{
 font-size: .75em;   
 flex:1;
-padding-left:20px;
-padding-right:20px;
+padding-left:3em;
+padding-right:3em;
 }
 
 div#floatright{flex:1.5;
@@ -116,6 +116,7 @@ text-align:center;
 font-size:38px}
 
 div.closer{text-align:right;}
+
 h1 {
 color:#A04747;
 letter-spacing:3px;
@@ -123,7 +124,7 @@ display:block;
 text-align:center;
 font-size:38px}
 
-h2 {color:#00005C; font-size:20px; padding:0; display:block; text-align:center; 
+h2 {color:/*#00005C*/#A04747; font-size:2em; padding:0; display:block; text-align:center; 
 }
 
 

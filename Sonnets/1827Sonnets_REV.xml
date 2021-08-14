@@ -8,7 +8,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Sonnets from <title ref="#DramaticScenes">Dramatic Scenes, Sketches, and Other Poems</title></title>
+				<title>Sonnets from <title level="m" ref="#DramaticScenes">Dramatic Scenes, Sketches, and Other Poems</title></title>
 				<author ref="#MRM">Mary Russell Mitford</author>
 				<editor ref="#lmw">Lisa M. Wilson</editor>
 				<sponsor><orgName>Mary Russell Mitford Society: Digital Mitford
@@ -41,7 +41,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				</availability>
 			</publicationStmt>
 			<seriesStmt>
-				<title>Digital Mitford: The Mary Russell Mitford Archive</title>
+				<title>Digital Mitford: Poetry</title>
 			</seriesStmt>
 			<sourceDesc>
 				
@@ -211,8 +211,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						 <lg><metamark function="ellipsis">——</metamark><l>“Did not <persName ref="#Hercules">Hercules</persName> by force</l>
 							<l>Wrest from the guardian monster of the tomb</l>
 							<l><persName ref="#Alcestis">Alcestis</persName> a reanimated corse,</l>
-							<l>Given back to dwell on earth in beauty’s bloom?”</l></lg>
-					</note><note resp="#lmw">Lines 79 to 82.</note> and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
+						 	<l>Given back to dwell on earth in beauty’s bloom?”<note resp="#lmw">Lines 79 to 82.</note></l></lg>
+					</note> and <persName ref="#Wordsworth_Wm">Wordsworth</persName>, mightiest names of all</rdg></app></l>
 				<l n="8"><app><rdg wit="#Sonnets1827">Living or dead that haunt the <orgName ref="#Muses">Muses</orgName>’ fane!</rdg></app></l></lg>
 			
 				

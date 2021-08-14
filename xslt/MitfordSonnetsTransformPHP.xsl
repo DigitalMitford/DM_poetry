@@ -88,6 +88,17 @@
                 
               <div id="container">                   
                     <div id="poemsHead">
+                       
+                       <!-- <div id="fieldset">
+                            <fieldset>
+                                <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
+                                <input type="checkbox"
+                                    id="REGtoggle"
+                                    style="cursor:pointer"/>
+                                <br/>
+                            </fieldset>
+                        </div>-->
+                        <xsl:apply-templates select="//teiHeader"/> 
                         <p class="boilerplate">
                             <span>
                                 <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at
@@ -98,16 +109,6 @@
                                 <xsl:value-of select="current-dateTime()"/>
                             </span>  
                         </p> 
-                       <!-- <div id="fieldset">
-                            <fieldset>
-                                <legend><span class="dipNorm">Our default is the Diplomatic view.<br/> Click to toggle the Normalized view</span><span class="dipNormSmall"> (shows conventional spellings;<br/> hides pagebreaks, insertion marks, and deletions):</span></legend>
-                                <input type="checkbox"
-                                    id="REGtoggle"
-                                    style="cursor:pointer"/>
-                                <br/>
-                            </fieldset>
-                        </div>-->
-                        <xsl:apply-templates select="//teiHeader"/>   
                     </div>
                     <div id="floatright">
                         <div id="mainText">
@@ -121,14 +122,21 @@
     </xsl:template>
        
     <xsl:template match="titleStmt">
-        <h3><xsl:apply-templates select="title"/></h3>
+        <h2><xsl:apply-templates select="title"/></h2>
         <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
         <xsl:text>Sponsored by: </xsl:text>
-        <ul>
+       <xsl:choose> 
+           <xsl:when test="count(descendant::sponsor) gt 1">
+            <ul>
         <xsl:for-each select="sponsor">
-        <li><xsl:value-of select=".//text()"/></li>
+            <li><xsl:apply-templates select="current()"/></li>
         </xsl:for-each>
         </ul>
+           </xsl:when>
+       <xsl:otherwise>
+           <xsl:apply-templates select="sponsor"/>
+       </xsl:otherwise>
+       </xsl:choose>
     </xsl:template>
     
     <xsl:template match="principal"/>
@@ -202,6 +210,14 @@
         <p><xsl:apply-templates/></p>
     </xsl:template>
     
+    <!--2021-08-14 ebb: Added to process title levels for source texts in the TEI header -->
+    <xsl:template match="teiHeader//title[@level='m']">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>
+    <xsl:template match="teiHeader//title[@level='a']">
+        <q><xsl:apply-templates/></q>
+    </xsl:template>
+    
     
     <xsl:template match="profileDesc">
         <p><xsl:text>Hands other than Mitford's noted on this manuscript: </xsl:text></p>
@@ -215,7 +231,13 @@
     <xsl:template match="encodingDesc">
         <xsl:apply-templates select="editorialDecl"/>
     </xsl:template>
-    <xsl:template match="revisionDesc">
+    
+    <xsl:template match="revisionDesc"/>
+   
+  <!-- 2021-08-14 ebb: Uncomment this (and comment out the preceding template) to output a change log on the Mitford edition file, if present
+      in a revisionDesc.
+      
+      <xsl:template match="revisionDesc">
         <h3>Change log</h3>
         <table>
             <tr><th>When</th><th>Who</th><th>What</th></tr>
@@ -230,7 +252,7 @@
           </td>
            <td><xsl:apply-templates/></td>
        </tr>
-    </xsl:template>
+    </xsl:template>-->
     
   
     <xsl:template match="body/div">
