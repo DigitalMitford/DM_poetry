@@ -99,11 +99,12 @@
                         <xsl:apply-templates select="//teiHeader"/>  
                         <p class="interfaceInstructions">
                             <h3>About this website edition interface</h3>
+                            <p>For mouse or touchscreen interaction:</p>
                             <ul>
-                                <li>Click, tap, or move your cursor over a highlighted<!--passage or--> number to display an annotation.</li>
-                                <li>Multiple annotations may appear as you click on multiple highlighted passages.</li>
-                                <li>Double-click or double-tap to hide the annotations.</li>
-                                
+                                <li>Click, tap, or move your cursor over a highlighted<!-- passage or--> number to display an annotation.</li>
+                                <li>Multiple annotations may appear as you touch or click on multiple highlighted passages.</li>
+                                <li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
+  
                             </ul>
                         </p>
                         <p class="boilerplate">
