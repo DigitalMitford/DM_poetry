@@ -2,11 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:dm="http://digitalmitford.org/nss/dm"
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes = "dm">
-  
-  <!--2021-08-14 updated output line for XHTML 5 with no XML declaration -->
-    <xsl:output method="xhtml" omit-xml-declaration="yes" html-version="5.0"/>
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0">
+    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
+   <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
+    <!--<xsl:strip-space elements="*"/>-->
       
    <!--2018-01-24 ebb: NOTES on updating this:
    TRANSFORM double-hyphens into proper em dashes, 
