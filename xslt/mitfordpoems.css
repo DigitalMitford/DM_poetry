@@ -60,7 +60,7 @@ li#Bib a:hover {color:white; text-decoration:underline;}
 p.boilerplate span {text-indent:-1em;
     margin-left:1em;
     display:block;
-    font-size:smaller;
+    /*font-size:smaller;*/
     line-height:1.4em;}
     
     p.boilerplate img {position: relative; top:3px; right: -2px }

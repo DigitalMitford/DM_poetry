@@ -101,11 +101,11 @@
                         <xsl:apply-templates select="//teiHeader"/> 
                         <p class="boilerplate">
                             <span>
-                                <strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at
+                               Maintained by: Elisa E. Beshero-Bondar (eeb4 at
                                 psu.edu) <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
                             </span>
                             <span>
-                                <strong>Last modified: </strong>
+                               Last modified: 
                                 <xsl:value-of select="current-dateTime()"/>
                             </span>  
                         </p> 
@@ -351,7 +351,7 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="persName | rs[@type='person'] | sp | author">
+    <xsl:template match="editor | persName | rs[@type='person'] | sp | author">
         <span class="context" title="person">
             <xsl:apply-templates/>
        
