@@ -8,6 +8,7 @@ function init() {
 
         anchors[i].addEventListener('touchenter', show_footnote, false);
         anchors[i].addEventListener('touchleave', hide_footnote, false);
+        anchors[i].addEventListener('touchmove', hide_footnote, false);
 
     }
     var siEnts = document.getElementsByClassName("context");
@@ -19,6 +20,7 @@ function init() {
 
         siEnts[s].addEventListener('touchenter', show_SI, false);
         siEnts[s].addEventListener('touchleave', hide_SI, false);
+        siEnts[s].addEventListener('touchmove', hide_SI, false);
 
     }
 
