@@ -2,15 +2,14 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:dm="http://digitalmitford.org/nss/dm"
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0">
-    <xsl:output method="xhtml" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" omit-xml-declaration="yes"/>
-   <!--2017-06-26 ebb: Note: this seems to work, too, but indent="no" is maybe not all that pretty to look at in the output. <xsl:output method="xml" encoding="UTF-8" indent="no" doctype-system="about:legacy-compat"/>-->
-    <!--<xsl:strip-space elements="*"/>-->
+    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes = "dm">
+  
+  <!--2021-08-14 updated output line for XHTML 5 with no XML declaration -->
+    <xsl:output method="xhtml" omit-xml-declaration="yes" html-version="5.0"/>
       
-   <!--2018-01-24 ebb: NOTES on updating this:
-   TRANSFORM double-hyphens into proper em dashes, 
-   KEEP CHECKING the output of add elements, and generate new span elements to style with CSS for handwritten notes by pen annotator and others.
-   -->
+<!--2021-08-14 Very simple XSLT lacking any processing of SI context tagging from the XML. For use in
+    creating "blank" versions of Mitford files for student web annotation assignments (e.g. hypothes.is). -->
       
  <xsl:variable name="si" select="document('http://digitalmitford.org/si.xml')" as="document-node()+"/> 
  <xsl:function name="dm:respHandler" as="item()">
@@ -214,7 +213,9 @@
     <xsl:template match="encodingDesc">
         <xsl:apply-templates select="editorialDecl"/>
     </xsl:template>
-    <xsl:template match="revisionDesc">
+    
+   <!-- CHANGE LOG 
+       <xsl:template match="revisionDesc">
         <h3>Change log</h3>
         <table>
             <tr><th>When</th><th>Who</th><th>What</th></tr>
@@ -230,6 +231,7 @@
            <td><xsl:apply-templates/></td>
        </tr>
     </xsl:template>
+   -->
     
   
     <xsl:template match="body/div">
@@ -305,249 +307,13 @@
     
       <!-- ******************************************* -->
      
-  <!-- 2021-08-14 ebb: Updated templates for SI context coding. -->
+  <!-- 2021-08-14 ebb: SI CONTEXT CODING TEMPLATES WERE HERE. 
+      THEY HAVE BEEN REMOVED IN THIS STYLESHEET. -->
     
     <!-- ******************************************* -->
     
 
-    <xsl:template match="placeName | name[@type='place']">
-        <span class="context" title="place">
-            <xsl:apply-templates/>
-            
-            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
-                <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-                <xsl:value-of select="string-join($siPlace/*[not(self::note)], ' | ')"/>
-                <xsl:if test="$siPlace/note"> <xsl:for-each select="$siPlace/note">
-                    <xsl:apply-templates select="current()"/>
-                    <xsl:if test="@resp"><xsl:text>—</xsl:text>
-                    <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
-                </xsl:for-each>
-                </xsl:if>
-                
-            </span></xsl:if>
-        </span>
-    </xsl:template>
-
-    <xsl:template match="persName | rs[@type='person'] | sp | author">
-        <span class="context" title="person">
-            <xsl:apply-templates/>
-       
-            <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> 
-           <span class="si">
-               <xsl:variable name="siPers" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
-            
-         <xsl:choose>
-             <xsl:when test="$siPers//forename">  <xsl:value-of select="$si//*[@xml:id = substring-after(current()/@ref, '#')]//forename[1]"/>
-            <xsl:text> </xsl:text>
-            <xsl:if test="$siPers//forename[position() gt 1]"><xsl:value-of select="string-join($siPers//forename[position() gt 1], ' ')"/><xsl:text> </xsl:text></xsl:if>
-            <xsl:if test="count($siPers//surname) gt 1"> <xsl:value-of select="string-join($siPers//surname[2] | surname[@type='maiden'], ' ')"/><xsl:text> </xsl:text></xsl:if>
-            
-            <xsl:value-of select="string-join($siPers//surname[1] | surname[@type='married'], ' ')"/>
-                 <xsl:if test="$siPers//roleName">
-                     <xsl:text>, </xsl:text>
-                     <xsl:value-of select="string-join($siPers//roleName, ', ')"/>
-                 </xsl:if>
-                 
-                 <xsl:if test="$siPers/persName[forename]/following-sibling::persName">
-                 <xsl:text>, or: </xsl:text>
-                     <xsl:value-of select="string-join($siPers/persName[forename]/following-sibling::persName, ', ')"/>
-                 </xsl:if>
-             </xsl:when>
-             
-             <xsl:otherwise>
-                 <xsl:value-of select="string-join($siPers/persName, ' ')"/>
-                 
-             </xsl:otherwise>
-           
-         </xsl:choose>
-            
- <xsl:if test="$siPers/birth"><xsl:text> | Born: </xsl:text>
-            <xsl:value-of select="string-join($siPers/birth/@*, '-')"/>
-            
-            <xsl:if test="$siPers/birth/placeName">
-                <xsl:text> in </xsl:text>
-          <xsl:value-of select="$siPers/birth/placeName"/>
-            </xsl:if>
-           
-            <xsl:text>. Died: </xsl:text>
-            <xsl:value-of select="string-join($siPers/death/@*, '-')"/>
-            
-            <xsl:if test="$siPers/death/placeName">
-                <xsl:text> in </xsl:text>
-                <xsl:value-of select="$siPers/death/placeName"/>
-            </xsl:if>
-     <xsl:text>. </xsl:text>
- </xsl:if>
-     <xsl:if test="$siPers/note">
-         <xsl:for-each select="$siPers/note">
-             <br/><xsl:apply-templates select="current()"/>
-        <xsl:if test="@resp"> 
-            <xsl:text>—</xsl:text>
-         <xsl:sequence select="dm:respHandler(@resp)"/>
-        </xsl:if>
-         </xsl:for-each>
-         
-     </xsl:if>     
     
-        </span>
-       </xsl:if>
-        </span>
-    </xsl:template>
-
-    <xsl:template match="orgName | rs[@type='org']">
-        <span class="context" title="org">
-            <xsl:apply-templates/>
-       
-            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
-            <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-            <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
-            <xsl:if test="$siOrg/note">
-              <xsl:for-each select="$siOrg/note">  
-                  <br/>
-                  <xsl:apply-templates select="current()"/>
-                    <xsl:text>—</xsl:text>
-               <xsl:if test="@resp"> <xsl:sequence select="dm:respHandler(@resp)"/>
-               </xsl:if>
-                </xsl:for-each>
-            </xsl:if>
-        </span></xsl:if>
-        </span>
-    </xsl:template>
-    
-  <!-- 2021-08-13 ebb: This template seems to be generating ambiguous rule matches. I don't think we need it because
-      we seem to be covering this condition of rs with @type values in other ways in other rules.
-      
-      
-      <xsl:template match="rs[not(@type='org')] | name">
-        <span class="context" title="rs">
-            <xsl:apply-templates/>
-       
-        
-        <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
-            <xsl:variable name="siRs" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
-            <xsl:value-of select="string-join($siRs/label, ' | ')"/>
-            <xsl:value-of select="string-join($siRs/@*, ' - ')"/>
-            <xsl:if test="$siRs/note">
-                <br/><xsl:value-of select="$siRs/note"/>
-                    <xsl:text>—</xsl:text>
-                    <xsl:value-of select="$siRs/note/@resp"/>
-                
-            </xsl:if>
-        </span></xsl:if>
-        </span>
-    </xsl:template>-->
-    
-    <xsl:template match="body//title[not(parent::head)] | body//bibl">
-        <span class="context" title="title"><xsl:apply-templates/>
-            <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
-            <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
-            <xsl:if test="$siBibl/title"><xsl:value-of select="string-join($siBibl/title, ', ')"/>
-            <xsl:text>. </xsl:text>
-            </xsl:if>
-            <xsl:if test="$siBibl/bibl">
-                <xsl:value-of select="string-join($siBibl/bibl/title, ', ')"/>
-                    <xsl:text>. </xsl:text>
-            </xsl:if>
-            <xsl:choose>
-                <xsl:when test="$siBibl/author/text()">
-                    <xsl:value-of select="string-join($siBibl//author, ', ')"/>
-                    <xsl:text>. </xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:variable name="AuthorLookup" select="$siBibl//author/@ref"/> 
-                    
-                    <xsl:if test="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName[forename]">
-                        <xsl:value-of select="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/forename[1]"/>
-                    <xsl:text> </xsl:text>
-                        <xsl:if test="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/forename[position() gt 1]"><xsl:value-of select="string-join($si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/forename[position() gt 1], ' ')"/>
-                        <xsl:text> </xsl:text>
-                        </xsl:if>
-                        
-                        <xsl:if test="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/surname[position() gt 1]">
-                        
-                        <xsl:value-of select="string-join($si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/surname[position() gt 1], ' ')"/>
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                        <xsl:value-of select="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName/surname[1]"/>
-                        <xsl:text>. </xsl:text>
-                    
-                    </xsl:if>               
-                    <xsl:if test="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName[not(forename)]">
-                        <xsl:value-of select="$si//*[@xml:id= substring-after($AuthorLookup, '#')]/persName"/><xsl:text>. </xsl:text>
-                        
-                    </xsl:if>
-                    
-                </xsl:otherwise> 
-            
-            </xsl:choose>
-            
-            <xsl:if test="$siBibl/pubPlace">
-                <xsl:value-of select="$siBibl/pubPlace"/>
-                    <xsl:text>: </xsl:text>
-            </xsl:if>
-            <xsl:if test="$siBibl/publisher">
-                <xsl:value-of select="$siBibl/publisher"/>
-                <xsl:text>. </xsl:text>
-            </xsl:if>
-            <xsl:if test="$siBibl/date">
-                
-                <xsl:choose><xsl:when test="$siBibl/date/@*">
-                    <xsl:value-of select="string-join($siBibl/date/@*, '-')"/><xsl:text>. </xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="$siBibl/date"/>
-                    <xsl:text>. </xsl:text>
-                </xsl:otherwise>
-                </xsl:choose>
-                
-            </xsl:if>
-            
-            <xsl:if test="$siBibl/note">
-               <xsl:for-each select="$siBibl/note"> <br/><xsl:value-of select="current()"/>
-                    <xsl:text>—</xsl:text>
-                <xsl:if test="@resp"><xsl:sequence select="dm:respHandler(@resp)"/>
-                </xsl:if>
-               </xsl:for-each>
-            </xsl:if>
-        </span></xsl:if>
-        </span>
-    </xsl:template>
-    
-<!--2021-08-13 The next template processes markup of plants and animals from the SI -->
-<xsl:template match="name | rs[@type='animal'] | rs[@type='plant']">
-    <span class="context" title="nature">
-        <xsl:apply-templates/>
-        <xsl:if test="$si//item[@xml:id=substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])">
-         <span class="si">
-             <xsl:variable name="siNature" as="element()" select="$si//item[@xml:id=substring-after(current()/@ref, '#')]"/>
-             <xsl:text>Name: </xsl:text>
-             <xsl:value-of select="$siNature/name[not(@type)] => string-join(' or ')"/>
-             <xsl:if test="$siNature/name[@type='genus']">
-                 <xsl:text> | Genus: </xsl:text>
-                 <xsl:value-of select="$siNature/name[@type='genus']"/>
-             </xsl:if>
-             <xsl:if test="$siNature/name[@type='family']">
-                 <xsl:text> | Family: </xsl:text>
-                 <xsl:value-of select="$siNature/name[@type='family']"/>
-             </xsl:if>
-             <xsl:if test="$siNature/name[@type='species']">
-                 <xsl:text> | Species: </xsl:text>
-                 <xsl:value-of select="$siNature/name[@type='species']"/>
-             </xsl:if>
-             <xsl:text>. </xsl:text>
-                 <xsl:for-each select="$siNature/note">
-                     <br/>
-                     <xsl:apply-templates select="."/>
-                       <xsl:if test="@resp">  
-                           <xsl:text>—</xsl:text>
-                     <xsl:sequence select="dm:respHandler(@resp)"/>
-                       </xsl:if>
-
-                 </xsl:for-each> 
-         </span>  
-        </xsl:if>
-    </span>
-</xsl:template>
 
 <xsl:template match="date">
         <span class="date" title="{string-join(@*, '-')}">
