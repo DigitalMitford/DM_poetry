@@ -97,6 +97,15 @@
                             </fieldset>
                         </div>-->
                         <xsl:apply-templates select="//teiHeader"/>  
+                        <p class="interfaceInstructions">
+                            <h3>About this website edition interface</h3>
+                            <ul>
+                                <li>Click, tap, or move your cursor over a highlighted<!--passage or--> number to display an annotation.</li>
+                                <li>Multiple annotations may appear as you click on multiple highlighted passages.</li>
+                                <li>Double-click or double-tap to hide the annotations.</li>
+                                
+                            </ul>
+                        </p>
                         <p class="boilerplate">
                             <span>
                                 Maintained by: Elisa E. Beshero-Bondar (eeb4 at
