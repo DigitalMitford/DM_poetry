@@ -103,7 +103,7 @@
                         <xsl:apply-templates select="//teiHeader"/>   
                     </div>
                     <div id="floatright">
-                        <div id="letter">
+                        <div id="mainText">
                          <xsl:apply-templates select="//body"/>
                         </div>
                        <hr/>
@@ -280,7 +280,7 @@
         <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
             <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
         <xsl:value-of select="string-join($siPlace/*, ' | ')"/>
-            <xsl:text>--</xsl:text>
+            <xsl:text>—</xsl:text>
             <xsl:value-of select="$siPlace/note/@resp"/>
             <xsl:if test="$siPlace//geo">
                 <xsl:value-of select="$siPlace//geo"/>
@@ -294,7 +294,8 @@
   <!-- <span class="pagebreak"><xsl:text>page&#xa0;</xsl:text><xsl:value-of select="@n"/><br/></span> -->
 </xsl:template>
 
-    <xsl:template match="note[not(@resp='#MRM')]">
+    <xsl:template match="note[not(@resp='#MRM')][ancestor::div[@type='section']]">
+        <!-- 2021-08-13 ebb: added the last predicate to stop this from outputting SI note elements, which I'm trying to render with apply-templates for their q elements and other kinds of info. -->
         <span id="Note{count (preceding::note[not(@resp='#MRM')]) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note[not(@resp='#MRM')])+ 1"/>] <span class="note"
                 id="n{count (preceding::note[not(@resp='#MRM')]) + 1}">
@@ -362,8 +363,8 @@
      <xsl:text>. </xsl:text>
  </xsl:if>
      <xsl:if test="$siPers/note">
-         <br/><xsl:value-of select="$siPers//note"/>
-         <xsl:text>--</xsl:text>
+         <br/><xsl:apply-templates select="$siPers//note"/>
+         <xsl:text>—</xsl:text>
              <xsl:value-of select="$siPers//note/@resp"/>
          
      </xsl:if>     
@@ -381,8 +382,8 @@
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
             <xsl:if test="$siOrg//note">
-                <br/><xsl:value-of select="$siOrg//note"/>
-                    <xsl:text>--</xsl:text>
+                <br/><xsl:apply-templates select="$siOrg//note"/>
+                    <xsl:text>—</xsl:text>
                     <xsl:value-of select="$siOrg/note/@resp"/>
                 
             </xsl:if>
@@ -413,7 +414,7 @@
         </span>
     </xsl:template>-->
     
-    <xsl:template match="body//title[not(ancestor::head)] | body//bibl">
+    <xsl:template match="body//title[not(parent::head)] | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
             <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
             <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
@@ -423,7 +424,6 @@
             <xsl:if test="$siBibl/bibl">
                 <xsl:value-of select="string-join($siBibl/bibl/title, ', ')"/>
                     <xsl:text>. </xsl:text>
-              
             </xsl:if>
             <xsl:choose>
                 <xsl:when test="$siBibl/author/text()">
@@ -481,13 +481,47 @@
             
             <xsl:if test="$siBibl//note">
                 <br/><xsl:value-of select="$siBibl//note"/>
-                    <xsl:text>--</xsl:text>
+                    <xsl:text>—</xsl:text>
                     <xsl:value-of select="$siBibl//note/@resp"/>
                
             </xsl:if>
         </span></xsl:if>
         </span>
     </xsl:template>
+    
+<!--2021-08-13 The next template processes markup of plants and animals from the SI -->
+<xsl:template match="name">
+    <span class="context" title="nature">
+        <xsl:apply-templates/>
+        <xsl:if test="$si//item[@xml:id=substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])">
+         <span class="si">
+             <xsl:variable name="siNature" as="element()" select="$si//item[@xml:id=substring-after(current()/@ref, '#')]"/>
+             <xsl:text>Name: </xsl:text>
+             <xsl:value-of select="$siNature/name[not(@type)] => string-join(' or ')"/>
+             <xsl:if test="$siNature/name[@type='genus']">
+                 <xsl:text> | Genus: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='genus']"/>
+             </xsl:if>
+             <xsl:if test="$siNature/name[@type='family']">
+                 <xsl:text> | Family: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='family']"/>
+             </xsl:if>
+             <xsl:if test="$siNature/name[@type='species']">
+                 <xsl:text> | Species: </xsl:text>
+                 <xsl:value-of select="$siNature/name[@type='species']"/>
+             </xsl:if>
+             <xsl:text>. </xsl:text>
+                 <xsl:for-each select="$siNature/note">
+                     <br/>
+                     <xsl:apply-templates select="."/>
+                         <xsl:text>—</xsl:text>
+                         <xsl:value-of select="@resp ! tokenize(., '\s+') ! substring-after(., '#') => string-join(', ')"/>
+
+                 </xsl:for-each> 
+         </span>  
+        </xsl:if>
+    </span>
+</xsl:template>
 
 <xsl:template match="date">
         <span class="date" title="{string-join(@*, '-')}">
@@ -580,9 +614,16 @@
         <span class="poemHeading"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="head//title">
+    <xsl:template match="head/title">
         <span class="title"><xsl:apply-templates/></span>
     </xsl:template>
+   <!-- 2021-08-13 ebb: These templates should match ref and ptr elements in the site index and render them as hyperlinks in the output HTML. -->
+   <xsl:template match="ref">
+       <a href="{@target}"><xsl:apply-templates/></a>
+   </xsl:template>
+   <xsl:template match="ptr">
+       <a href="{@target}"><xsl:value-of select="@target"/></a>
+   </xsl:template>
    
 </xsl:stylesheet>
 

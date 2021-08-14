@@ -151,7 +151,7 @@ border-bottom:1px dotted;
 
 
 span.context[title=org] {
-color: #006600;
+color: #3b0099 /* dark green: #006600*/ ;
  border-bottom:1px dotted    
     
 }
@@ -165,6 +165,8 @@ span.context[title=title] {
 color:#CC0000;
 border-bottom:1px dotted 
 }
+
+span.context[title=nature] {color:/*#006600*/#004d00; border-bottom:1px dotted}
 
 section.poem {line-height:25px; width:70%}
 section.poem.on{line-height:normal; width:70%}

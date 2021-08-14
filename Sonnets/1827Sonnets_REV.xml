@@ -133,7 +133,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 							<l n="10"><app><rdg wit="#Sonnets1827">Thy mistress? She it is, the only she!</rdg></app></l>
 									<l n="11"><app><rdg wit="#Sonnets1827">Dost thou not listen for the one sweet tone</rdg></app></l>
 							<l n="12"><app><rdg wit="#Sonnets1827">Of her unrivalled voice? Dost thou not see</rdg></app></l> 
-										<l n="13"><app><rdg wit="#Sonnets1827"><hi rend="italics">Her</hi>look of love, for whose dear sake alone,</rdg></app></l>
+										<l n="13"><app><rdg wit="#Sonnets1827"><hi rend="italics">Her</hi> look of love, for whose dear sake alone,</rdg></app></l>
 							<l n="14"><app><rdg wit="#Sonnets1827">My little book, thou art so dear to me?</rdg></app></l>
 							</lg>
 							</div>
@@ -571,7 +571,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<lb/><hi rend="smallcaps">Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, <lb/>and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of <lb/>Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</hi></title></head>				
 				<lg>					
 				<l n="1"><app><rdg wit="#Sonnets1827">Oh, for some gentle spirit to surround</rdg></app></l>
-				<l n="2"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name>thy high-seated towers,</rdg></app></l>
+				<l n="2"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name> thy high-seated towers,</rdg></app></l>
 				<l n="3"><app><rdg wit="#Sonnets1827">Fair <placeName ref="#Donnington_Castle">Donnington,</placeName> and wipe from <persName ref="#Chaucer">Chaucer</persName>’s bowers</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">The last rude touch of war! All sight, all sound</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">Of the old strife boon nature from the ground</rdg></app></l>
@@ -607,7 +607,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<l n="7"><app><rdg wit="#Sonnets1827">By those young sister voices poured along</rdg></app></l>
 						<l n="8"><app><rdg wit="#Sonnets1827">So wild, so pure, so clear, full of sweet power</rdg></app></l>
 						<l n="9"><app><rdg wit="#Sonnets1827">Ringing and vibrating. It was a lay</rdg></app></l>
-						<l n="10"><app><rdg wit="#Sonnets1827">That sent a smile into the very heart;</rdg></app>That sent a smile into the very heart;</l>
+						<l n="10"><app><rdg wit="#Sonnets1827">That sent a smile into the very heart;</rdg></app></l>
 						<l n="11"><app><rdg wit="#Sonnets1827">As when the early <name ref="#lark">lark</name> shoots up in May</rdg></app></l>
 						<l n="12"><app><rdg wit="#Sonnets1827">With his blithe matins, rarer than all art</rdg></app></l>
 						<l n="13"><app><rdg wit="#Sonnets1827">Save this. Oh happiest and most fleeting day.</rdg></app></l>
