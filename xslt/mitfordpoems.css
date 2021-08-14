@@ -1,8 +1,8 @@
 @media screen {
 /** {
     touch-action: manipulation;
-    /\* 2021-08-14 ebb: This might prevent double-tap zooming, which may be disruptive to dismissing notes on mobile / touchscreen devices. *\/*/
-}
+    /\* 2021-08-14 ebb: This might prevent double-tap zooming, which may be disruptive to dismissing notes on mobile / touchscreen devices. *\/
+}*/
 html{
     background-color: #F8F8FF; 
    color: #580000;
