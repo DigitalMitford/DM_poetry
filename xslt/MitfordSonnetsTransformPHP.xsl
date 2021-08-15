@@ -100,8 +100,8 @@
                         </div>-->
                         <xsl:apply-templates select="//teiHeader"/> 
                         <section class="interfaceInstructions">
-                            <h3>About this website edition interface</h3>
-                            <p>For mouse or touchscreen interaction:</p>
+                            <h3>For mouse or touchscreen interaction:</h3>
+               
                             <ul>
                                 <li>Click, tap, or move your cursor over a highlighted passage or number to display an annotation.</li>
                                 <li>Multiple annotations may appear as you touch or click on multiple highlighted passages.</li>
@@ -334,6 +334,14 @@
             <xsl:apply-templates/><xsl:text>—</xsl:text>
         <xsl:value-of select="dm:respHandler(@resp)"/></div>
         
+    </xsl:template>
+    <!-- 2021-08-14 ebb: For processing SI notes:-->
+    <xsl:template match="note[ancestor::*[@sortKey]]">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="*[@sortKey]//p">
+        <!-- 2021-08-15 ebb: For site index <p> in note elements -->
+        <xsl:apply-templates/><br/>
     </xsl:template>
     
       <!-- ******************************************* -->
