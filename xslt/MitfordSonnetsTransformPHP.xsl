@@ -26,7 +26,7 @@
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
                <!-- <meta charset="UTF-8"/>-->
                 <meta name="Description"
-                    content="Supported by the University of Pittsburgh at Greensburg and the Mary Russell Mitford Society."/>
+                    content="Supported by the Mary Russell Mitford Society and Penn State Erie, The Behrend College."/>
                 <meta name="keywords"
                     content="Mitford, Mary Russell Mitford, Digital Mitford, Digital Mary Russell Mitford, Digital Mary Russell Mitford Archive, Mitford Archive, TEI, Text Encoding Initiative, digital edition, electronic edition, electronic text, Romanticism, Romantic literature, Victorianism, Victorian literature, humanities computing, electronic editing, Beshero-Bondar"/>
                 <link rel="stylesheet" type="text/css" href="mitfordpoems.css"/>
@@ -99,7 +99,7 @@
                             </fieldset>
                         </div>-->
                         <xsl:apply-templates select="//teiHeader"/> 
-                        <p class="interfaceInstructions">
+                        <section class="interfaceInstructions">
                             <h3>About this website edition interface</h3>
                             <p>For mouse or touchscreen interaction:</p>
                             <ul>
@@ -108,7 +108,7 @@
                                 <li>To hide an annotation, double-click with the mouse, or drag your finger out of the annotation box.</li>
                                 
                             </ul>
-                        </p>
+                        </section>
                         <p class="boilerplate">
                             <span>
                                Maintained by: Elisa E. Beshero-Bondar (eeb4 at
@@ -134,7 +134,7 @@
     <xsl:template match="titleStmt">
         <h2><xsl:apply-templates select="title"/></h2>
         <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
-        <xsl:text>Sponsored by: </xsl:text>
+        <p><xsl:text>Sponsored by: </xsl:text></p>
        <xsl:choose> 
            <xsl:when test="count(descendant::sponsor) gt 1">
             <ul>
@@ -323,8 +323,8 @@
         <span id="Note{count (preceding::note[not(@resp='#MRM')]) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note[not(@resp='#MRM')])+ 1"/>] <span class="note"
                 id="n{count (preceding::note[not(@resp='#MRM')]) + 1}">
-                <xsl:apply-templates/><xsl:text>—</xsl:text>
-                    <xsl:sequence select="dm:respHandler(@resp)"/>
+               <xsl:if test="@resp"> <xsl:apply-templates/><xsl:text>—</xsl:text>
+                    <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
             </span>
         </span>
     </xsl:template>
