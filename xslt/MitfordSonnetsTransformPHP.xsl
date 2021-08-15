@@ -21,7 +21,7 @@
  </xsl:function>
     
     <xsl:template match="/">
-        <html>
+        <html lang="en">
             <head>
                 <title>Digital Mitford: The Mary Russell Mitford Archive</title>
                <!-- <meta charset="UTF-8"/>-->
@@ -674,7 +674,7 @@
         </xsl:analyze-string>
     </xsl:template>
     <xsl:template match="div[@type='section']/head">
-        <span class="poemHeading"><xsl:apply-templates/></span>
+        <h3 class="poemHeading"><xsl:apply-templates/></h3>
     </xsl:template>
     
     <xsl:template match="head/title">
