@@ -133,7 +133,7 @@
        
     <xsl:template match="titleStmt">
         <h2><xsl:apply-templates select="title"/></h2>
-        <p><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></p>
+        <h3><xsl:text>Edited by </xsl:text><xsl:apply-templates select="editor"/><xsl:text>. </xsl:text></h3>
         <p><xsl:text>Sponsored by: </xsl:text></p>
        <xsl:choose> 
            <xsl:when test="count(descendant::sponsor) gt 1">
