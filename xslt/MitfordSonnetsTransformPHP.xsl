@@ -322,7 +322,7 @@
         <!-- 2021-08-13 ebb: added the last predicate to stop this from outputting SI note elements. -->
         <span id="Note{count (preceding::note[not(@resp='#MRM')]) + 1}" class="anchor">[<xsl:value-of
                 select="count (preceding::note[not(@resp='#MRM')])+ 1"/>] <span class="note"
-                id="n{count (preceding::note[not(@resp='#MRM')]) + 1}">
+                    id="n{count (preceding::note[not(@resp='#MRM')]) + 1}"><xsl:sequence select="$clickTop"/>
                <xsl:if test="@resp"> <xsl:apply-templates/><xsl:text>—</xsl:text>
                     <xsl:sequence select="dm:respHandler(@resp)"/></xsl:if>
             </span>
@@ -350,12 +350,16 @@
     
     <!-- ******************************************* -->
     
+   <xsl:variable name="clickTop" as="element()"> 
+       <span class="topBox">  <span class="clickAway">☐</span></span>
+   </xsl:variable>
 
     <xsl:template match="placeName | name[@type='place']">
         <span class="context" title="place">
             <xsl:apply-templates/>
             
-            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"><span class="si">
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])">
+                <span class="si"><xsl:sequence select="$clickTop"/>
                 <xsl:variable name="siPlace" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
                 <xsl:value-of select="string-join($siPlace/*[not(self::note)], ' | ')"/>
                 <xsl:if test="$siPlace/note"> <xsl:for-each select="$siPlace/note">
@@ -374,7 +378,7 @@
             <xsl:apply-templates/>
        
             <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> 
-           <span class="si">
+                <span class="si"><xsl:sequence select="$clickTop"/>
                <xsl:variable name="siPers" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@who, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             
          <xsl:choose>
@@ -439,7 +443,8 @@
         <span class="context" title="org">
             <xsl:apply-templates/>
        
-            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
+            <xsl:if test="$si//*[@xml:id = substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])"> 
+                <span class="si"> <xsl:sequence select="$clickTop"/>
             <xsl:variable name="siOrg" select="$si//*[@xml:id = substring-after(current()/@ref, '#')]"/>
             <xsl:value-of select="string-join($siOrg/orgName, ' | ')"/>
             <xsl:if test="$siOrg/note">
@@ -480,7 +485,8 @@
     
     <xsl:template match="body//title[not(parent::head)] | body//bibl">
         <span class="context" title="title"><xsl:apply-templates/>
-            <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> <span class="si">
+            <xsl:if test="($si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]) and not(ancestor::note[not(@resp='#MRM')])"> 
+                <span class="si"><xsl:sequence select="$clickTop"/>
             <xsl:variable name="siBibl" select="$si//*[@xml:id = substring-after(current()/@ref, '#')] | $si//*[@xml:id = substring-after(current()/@corresp, '#')]"/>
             <xsl:if test="$siBibl/title"><xsl:value-of select="string-join($siBibl/title, ', ')"/>
             <xsl:text>. </xsl:text>
@@ -560,7 +566,7 @@
     <span class="context" title="nature">
         <xsl:apply-templates/>
         <xsl:if test="$si//item[@xml:id=substring-after(current()/@ref, '#')] and not(ancestor::note[not(@resp='#MRM')])">
-         <span class="si">
+            <span class="si"><xsl:sequence select="$clickTop"/>
              <xsl:variable name="siNature" as="element()" select="$si//item[@xml:id=substring-after(current()/@ref, '#')]"/>
              <xsl:text>Name: </xsl:text>
              <xsl:value-of select="$siNature/name[not(@type)] => string-join(' or ')"/>

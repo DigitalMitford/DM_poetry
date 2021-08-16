@@ -254,8 +254,9 @@ left:18%;
     overflow-y:scroll;
    display:none;
     }
-    }
- 
+span.topBox{display:block; background-color:#50b9f2; width:100%; border-bottom:black 1px solid; }
+span.clickAway{padding-left:95%; font-size:larger; font-weight:700;}
+ }
  @media print {
  div#menubar {display:none}
   div#fieldset{display:none}
