@@ -173,13 +173,13 @@ border-bottom:1px dotted
 
 span.context[title=nature] {color:/*#006600*/#004d00; border-bottom:1px dotted}
 
-section.poem {line-height:25px; width:70%}
-section.poem.on{line-height:normal; width:70%}
+section.poem {line-height:25px; font-size:larger;}
+section.poem.on{line-height:normal;font-size:larger;}
 h3.poemHeading{font-size:1.1em; font-weight:100; text-align:center; margin-right:20em; padding-bottom:.5em; }
 /*span.title{display:block; text-align:center; margin-right:20em;}*/
 div.line {display:flex; flex-direction:row; justify-content:left; line-height:1.8em;}
 span.line {flex:3;}
-span.lineNumber{flex: 1; font-size:smaller; color:brown; padding-left: 1em; }
+span.lineNumber{flex: 1; font-size:smaller; color:brown; padding-left:1em;}
 hr.MRMfn {background-color:black; height:1px; border-radius:50%; margin-right: 30%}
 
 span.pagebreak {font-size: .75em; text-align:center; display:block}
