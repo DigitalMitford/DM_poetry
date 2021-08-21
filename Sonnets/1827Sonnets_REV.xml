@@ -121,7 +121,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 										<pb xml:id="p293"/></rdg>
 								</app></fw>
 								<head><lb/>I.
-									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.<note resp="#lmw">The friend and the date of this poem are as yet unidentified.</note></title></head> <!--Can we figure out who the friend is, based on first pub date and letters or journal?-->
+									<lb/><title ref="#BlankPaperBook_1827">WRITTEN IN A BLANK-PAPER BOOK GIVEN TO THE AUTHOR BY A FRIEND.</title><note resp="#lmw">Also appeared in the <bibl><date when="1821">1821</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> as <title level="a">Sonnet. Written in a Blank Paper Book Given To the Author by a Friend</title><biblScope unit="pp">(page 387)</biblScope></bibl>.</note></head>
 							
 							<lg><l n="1"><app><rdg wit="#Sonnets1827">My little book, as o’er thy page so white.</rdg></app></l>
 								<l n="2"><app><rdg wit="#Sonnets1827">With half-closed eyes in idlest mood I lean,</rdg></app></l> 
@@ -147,7 +147,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				</app></fw>
 					
 				<head><lb/>II. 
-					<lb/><title ref="#HoflandsJerusalem_1827">ON MRS.<note resp="#slc">Apparently an 1827 printer’s error that should read MR., rather than MRS., Hofland. <persName ref="#Hofland_TC">Thomas Hofland </persName>was a painter; his spouse, <persName ref="#Hofland_B">Barbara Hofland</persName>, was a writer.</note> HOFLAND’S <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF JERUSALEM AT<lb/>THE TIME OF THE CRUCIFIXION</title>.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
+					<lb/><title ref="#HoflandsJerusalem_1827">ON MRS.<note resp="#slc">Likely a 1827 printer’s error that should read MR., rather than MRS., Hofland. <persName ref="#Hofland_TC">Thomas Hofland </persName>was a painter; his spouse, <persName ref="#Hofland_B">Barbara Hofland</persName>, was a writer.</note> HOFLAND’S <title ref="#Jerusalem_Crucifixion_TCH">PICTURE OF JERUSALEM AT<lb/>THE TIME OF THE CRUCIFIXION</title>.</title><note resp="#lmw">This poem first appears in print in <title ref="#Lit_Gazette">The Literary Gazette and Journal of Belles Lettres, Arts, Sciences</title>, Part 1, 59 (7 March 1818): 155 in the column <q>Original Poetry</q>. There, the poem is dated <date when="1818-02-24">24 February 1818</date>. This periodical also contains, on page 105, a review of Hofland’s painting as exhibited at the British Institution. In <title ref="#La_Belle_Assemblee">La Belle Assemblee</title>’s review of the <title ref="#DramaticScenes">1827 Dramatic Scenes</title> volume, this poem was chosen to be reprinted in full in the review (See 5 (Jan. to June 1827): 246).</note>
 					</head>
 				
 			<lg>	<l n="1"><app><rdg wit="#Sonnets1827"><placeName ref="#Jerusalem">Jerusalem</placeName>! and at the fatal hour!</rdg></app></l>
@@ -288,7 +288,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p300"/></rdg>
 				</app></fw>
-				<head><lb/>VII. <lb/><title ref="#BeautifulWoman_1827">ON A BEAUTIFUL WOMAN.</title></head>
+				<head><lb/>VII. <lb/><title ref="#BeautifulWoman_1827">ON A BEAUTIFUL WOMAN.</title><note resp="#lmw">Also appeared in the <bibl><date when="1822">1822</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> as Sonnet. <biblScope unit="pp">(page 192)</biblScope></bibl>.</note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Look where she sits in languid loveliness,</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">Her feet upgathered, and her turban’d brow</rdg></app></l>
@@ -311,10 +311,10 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p301"/></rdg>
 				</app></fw>
-				<head> <!-- on poem in Notes and Queries, 1880s:https://books.google.com/books?id=gEhDAQAAMAAJ&newbks=1&newbks_redir=0&dq=%22Proudly%20thy%20sex%20may%20claim%20thee%2C%20young%20and%20fair%22&pg=PA192#v=onepage&q=%22Proudly%20thy%20sex%20may%20claim%20thee,%20young%20and%20fair%22&f=false -->
+				<head>
 					<lb/>VIII.
 					<lb/><title ref="#ToMissPorden_1827">TO <persName ref="#Franklin_Eleanor">MISS PORDEN</persName><metamark function="fn">*</metamark><note place="bottom" resp="#MRM"><metamark function="note">*</metamark> My late dear and lamented friend <persName ref="#Franklin_Eleanor">Mrs. <choice><sic>Francklin</sic><reg>Franklin</reg></choice></persName>.</note>,
-						<lb/><hi rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</hi></title></head>
+						<lb/><hi rend="smallcaps">ON HER POEM OF <title ref="#Coeur_de_Lion_poem">COEUR DE LION</title>.</hi></title><note resp="#lmw">Also appeared in the <bibl><date when="1822-08-17">August 17, 1822</date> <title ref="#Lit_Gazette">Literary Gazette</title> under the same title, dated <date when="1822-06-10">June 10, 1822</date> <biblScope unit="pp">(page 519)</biblScope></bibl>.</note><!--LMW: 1880s entry on poem in Notes and Queries, 1880s in google books: https://books.google.com/books?id=gEhDAQAAMAAJ--></head>
 					<lg><l n="1"><app><rdg wit="#Sonnets1827">Proudly thy sex may claim thee, young and fair</rdg></app></l>
 					<l n="2"><app><rdg wit="#Sonnets1827">And lofty poetess! proudly may tell</rdg></app></l>
 					<l n="3"><app><rdg wit="#Sonnets1827">How thou hast sung the arms invincible</rdg></app></l>
@@ -336,10 +336,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<rdg wit="#Sonnets1827">
 						<pb xml:id="p302"/></rdg>
 				</app></fw>
-				
-				<!--First published in 1817 Literary Gazette:  https://books.google.com/books?id=FO5woBpKk3MC&pg=RA1-PA41&lpg=RA1-PA41&dq=%22Tears+in+the+eyes+and+on+the+lips+a+sigh%22&source=bl&ots=udTPjB48ys&sig=ACfU3U2kSgUFp5I9XYSxO03OjizbU0C98A&hl=en&sa=X&ved=2ahUKEwibh_OSlcrnAhUEGc0KHTUqCmYQ6AEwAHoECAUQAQ#v=onepage&q=%22Tears%20in%20the%20eyes%20and%20on%20the%20lips%20a%20sigh%22&f=false-->
-
-				<head><lb/>IX. <lb/><title ref="#ToMrHaydon_Nature_1827">TO <persName ref="#Haydon">MR. HAYDON</persName>, ON A STUDY FROM NATURE.</title><note resp="#lmw #slc">Haydon study, as yet unidentified, from <date notAfter="1817-05-21">before 21 May 1817</date>, the composition date of the poem. May refer to a preliminary sketch for <name ref="#ChrstEJrslm_Haydon">Christ’s Entry into Jerusalem</name>. </note></head>
+				<head><lb/>IX. <lb/><title ref="#ToMrHaydon_Nature_1827">TO <persName ref="#Haydon">MR. HAYDON</persName>, ON A STUDY FROM NATURE.</title><note resp="#lmw #slc">Haydon study, as yet unidentified, from <date notAfter="1817-05-21">before 21 May 1817</date>, the first publication date of the poem. May refer to a preliminary sketch for <name ref="#ChrstEJrslm_Haydon">Christ’s Entry into Jerusalem</name>.</note><note resp="#lmw">Also appeared in the <bibl><date when="1817-07-19">July 19, 1817</date> <title ref="#Lit_Gazette">Literary Gazette</title> as <title level="a">To Mr. Haydon</title> dated <date when="1817-05-21">21st May, 1817</date> <biblScope unit="pp">(page 41)</biblScope></bibl>.</note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827"><q>Tears in the eyes and on the lips a sigh!</q><note resp="#lmw #slc">Likely an inexact quotation from <title ref="#Marmion_WS">Marmion</title>: <q>She look’d down to blush, and she look’d up to sigh,/ With a smile on her lips and a tear in her eye</q>, found in the often-quoted section on young Lochinvar.</note></rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827"><persName ref="#Haydon">Haydon</persName>! the great, the beautiful, the bold,</rdg></app></l>
@@ -471,7 +468,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<pb xml:id="p307"/></rdg>
 				</app></fw>
 				
-				<head><lb/>XIV. <lb/><title ref="#FishingSeat_1827">THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.</title><note resp="#lmw">Mitford encloses a copy of this poem in her <rs type="letter" ref="#MRM1703"><date when="1817-10-11">October 11, 1817</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName></rs>. </note></head>
+				<head><lb/>XIV. <lb/><title ref="#FishingSeat_1827">THE FISHING-SEAT, <placeName ref="#Whiteknights">WHITEKNIGHTS</placeName>.</title><note resp="#lmw">Mitford encloses a copy of this poem in her <rs type="letter" ref="#MRM1703"><date when="1817-10-11">October 11, 1817</date> letter to <persName ref="#Elford_SirWm">Sir William Elford</persName></rs>.</note><note resp="#lmw">Also appeared in the <bibl><date when="1827">1827</date> <title ref="#Lit_Souvenir">Literary Souvenir</title> <biblScope unit="pp">(page 287)</biblScope></bibl>.</note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">There is a sweet according harmony</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">In this fair scene: this quaintly fluted bower,</rdg></app></l>
@@ -496,7 +493,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					</app></fw>
 						<head>	
 						<lb/>XV.
-							<lb/><title ref="#FriendBirthday_1827">TO A <rs type="person" ref="#Webb_Jane">FRIEND</rs> ON HER BIRTH-DAY.</title></head>
+							<lb/><title ref="#FriendBirthday_1827">TO A <rs type="person" ref="#Webb_Jane">FRIEND</rs> ON HER BIRTH-DAY.</title><note resp="#lmw">Also appeared in the <bibl><date when="1822">1822</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> <biblScope unit="pp">(page 369)</biblScope></bibl> signed <q>M</q>.</note></head>
 						
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">This is the day sacred to love and mirth</rdg></app></l>
 						<l n="2"><app><rdg wit="#Sonnets1827">And tender wishes; this the favoured day</rdg></app></l>
@@ -521,7 +518,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<pb xml:id="p309"/></rdg>
 					</app></fw>
 				
-				<head><lb/>XVI. <lb/><title ref="#LeavingPicture_1827">ON LEAVING A FAVOURITE PICTURE.</title><!--SLC: This is an actual painting left behind at Bertram House when Mary Russell Mitford was forced to leave her childhood home after her father spent through their considerable family fortune. LMW: Do we know which picture or no? If yes, find it and cite. Or write a general note saying leaving Bertram house, picture unknown.--></head>
+				<head><lb/>XVI. <lb/><title ref="#LeavingPicture_1827">ON LEAVING A FAVOURITE PICTURE.</title><note resp="#lmw">Appeared in the <bibl><date when="1821">1821</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> as <title level="a">Sonnet. On a Landscape by Mr. Hofland</title><biblScope unit="pp">(page 392)</biblScope></bibl>. Later appeared in the <bibl><date when="1827">1827</date> <title ref="#Lit_Souvenir">Literary Souvenir</title> <biblScope unit="pp">(page 233)</biblScope>.</bibl><!--LMW: Date and painting as yet unknown. 2020.--></note></head>
 				
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Young world of peace and loveliness farewell!</rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827">Farewell to the clear lake; the mountains blue;</rdg></app></l>
@@ -545,7 +542,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<pb xml:id="p310"/></rdg>
 					</app></fw>
 					<head>
-					<lb/>XVII. <lb/><title ref="#FriendsAlbum_1827">WRITTEN IN A FRIEND’S<note resp="#lmw">Friend unidentified. More research needed.</note> ALBUM</title></head>
+						<lb/>XVII. <lb/><title ref="#FriendsAlbum_1827">WRITTEN IN A FRIEND’S  ALBUM</title><note resp="#lmw">Also appeared in <bibl><title ref="#Marshalls_Christmas">Marshall's Christmas Box</title> in <date when="1831">1831</date></bibl>.</note></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Book of memorials fair! I cannot trace</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">On thy white page the quaintly pencilled bower;</rdg></app></l>
@@ -569,8 +566,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					</app></fw>
 				
 				<head><lb/>XVIII.  <lb/><title ref="#DonningtonCastle_1827">ON VISITING <placeName ref="#Donnington_Castle">DONNINGTON CASTLE</placeName>,
-					<!-- first pub 1821: https://books.google.com/books?id=CRR3IEP9VV0C&newbks=1&newbks_redir=0&dq=Grisildi&pg=PA540#v=onepage&q=Grisildi&f=false -->
-					<lb/><hi rend="smallcaps">Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, <lb/>and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of <lb/>Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</hi></title></head>				
+					<lb/><hi rend="smallcaps">Said to have been the latest residence of <persName ref="#Chaucer">Chaucer</persName>, <lb/>and celebrated for its resistance to the <orgName ref="#Parliamentarians">army of <lb/>Parliament</orgName> during the <rs type="event" ref="#EngCivilWar">civil wars</rs>.</hi></title><note resp="#lmw">Also appeared in the <bibl><date when="1821">1821</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> as <title level="a">Sonnet on Visiting Donnington Castle</title><biblScope unit="pp">(page 532)</biblScope></bibl>.</note></head>				
 				<lg>					
 				<l n="1"><app><rdg wit="#Sonnets1827">Oh, for some gentle spirit to surround</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name> thy high-seated towers,</rdg></app></l>
@@ -621,7 +617,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				<fw type="pageNum"><app><rdg wit="#Sonnets1827">
 					<pb xml:id="p314"/></rdg>
 				</app></fw>
-				<head><lb/>XX.  <lb/><title ref="#IntendedRemoval_1827">ON AN INTENDED REMOVAL FROM A <rs type="place" ref="#Bertram_house">FAVOURITE <lb/>RESIDENCE</rs>.<date when="1820-11"> <hi rend="italics">November,</hi> 1820.</date></title></head>
+				<head><lb/>XX.  <lb/><title ref="#IntendedRemoval_1827">ON AN INTENDED REMOVAL FROM A <rs type="place" ref="#Bertram_house">FAVOURITE <lb/>RESIDENCE</rs>.<date when="1820-11"> <hi rend="italics">November,</hi> 1820.</date></title><note resp="#lmw">Also appeared in the <bibl><date when="1822">1822</date> <title ref="#New_Monthly_Mag">New Monthly Magazine</title> <biblScope unit="pp">(page 81)</biblScope></bibl> signed <q>M</q>.</note></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Adieu beloved and lovely home! Adieu,</rdg></app></l> 
 				<l n="2"><app><rdg wit="#Sonnets1827">Thou pleasant mansion, and ye waters bright,</rdg></app></l> 
@@ -672,7 +668,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<pb xml:id="p316"/></rdg>
 				</app></fw>
 				
-				<head><lb/>XXII. <lb/><title ref="#WrittenOct1825_1827">WRITTEN <date when="1825-10">OCTOBER, 1825</date>.</title></head>
+				<head><lb/>XXII. <lb/><title ref="#WrittenOct1825_1827">WRITTEN <date when="1825-10">OCTOBER, 1825</date>.</title><note resp="#lmw">Also appeared in the <bibl><date when="1827">1827</date> <title ref="#Amulet">Amulet</title> as <title level="a">Sonnet. By Miss Mitford</title><biblScope unit="pp">(page 236)</biblScope></bibl>.</note></head>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">Within my little garden is a flower,</rdg></app></l>
 				<l n="2"><app><rdg wit="#Sonnets1827">A tuft of flowers, most like a sheaf of <name ref="#corn">corn</name>,</rdg></app></l>
