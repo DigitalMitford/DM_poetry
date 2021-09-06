@@ -291,9 +291,19 @@
 
     <xsl:template match="l[not(ancestor::note)]">
        <div class="line"> 
-           <span class="line" id="P{ancestor::div[1]/@n}-L{@n}">
-            <xsl:apply-templates/></span>
-           <span class="lineNumber"><xsl:value-of select="@n"/></span>
+           <xsl:choose>
+               <xsl:when test="@rend">
+                   <span class="line {@rend ! translate(., '+)', '') ! translate(., '(', '-')}" id="P{ancestor::div[1]/@n}-L{@n}">
+                       <xsl:apply-templates/></span>
+                   <span class="lineNumber"><xsl:value-of select="@n"/></span>
+                   
+               </xsl:when>
+               <xsl:otherwise>
+                   <span class="line" id="P{ancestor::div[1]/@n}-L{@n}">
+                       <xsl:apply-templates/></span>
+                   <span class="lineNumber"><xsl:value-of select="@n"/></span>
+               </xsl:otherwise>
+           </xsl:choose>
        </div>
     </xsl:template>
     
