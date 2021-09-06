@@ -68,6 +68,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			<p>TEI P5 conformant: We have prepared this encoding to compare the 1827 edition of the sonnets in <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl> to other versions, using the witness encoding apparatus provided by the TEI. Page breaks recorded here are shown in the 1827 publication of <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl>.</p>
 		</encodingDesc>
 		<revisionDesc>
+			<change when="2021-09-06" who="#ebb">Restored lost indent information.</change>
 			<change when="2021-08-10" who="#ebb">Revised encoding of linegroups, pagination of 1827, and footnotes. Spot corrections to some refs to the site index.</change>
 			<change when="2020-02-23" who="#lmw">backlist removed to si-add</change>
 			<!--LMW: last worked on in Sept. 2016. Need to check this version against most immediate previous version and version EBB worked on?? where?. -->
