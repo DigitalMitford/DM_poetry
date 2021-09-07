@@ -186,7 +186,7 @@ span.lineNumber{flex: 1; font-size:smaller; color:brown; justify-content:right; 
 div.line {display:grid; grid-template-columns: 75% 25%}
 span.line {grid-column-start: 1; grid-column-end: 1;}
 .indent-2 {padding-left:2vw}
-span.lineNumber{font-size:smaller; color:brown; grid-column-start:2; grid-column-end:2;}
+span.lineNumber{font-size:smaller; color:brown; grid-column-start:2; grid-column-end:2; text-align:right;}
 
 hr.MRMfn {background-color:black; height:1px; border-radius:50%; margin-right: 30%}
 
