@@ -68,6 +68,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			<p>TEI P5 conformant: We have prepared this encoding to compare the 1827 edition of the sonnets in <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl> to other versions, using the witness encoding apparatus provided by the TEI. Page breaks recorded here are shown in the 1827 publication of <bibl><title level="m">Dramatic Scenes, Sonnets, and Other Poems</title></bibl>.</p>
 		</encodingDesc>
 		<revisionDesc>
+			<change when="2022-06-08" who="#lmw">Final updates to context tags and editorial notes.</change>
 			<change when="2021-09-06" who="#ebb">Restored lost indent information.</change>
 			<change when="2021-08-10" who="#ebb">Revised encoding of linegroups, pagination of 1827, and footnotes. Spot corrections to some refs to the site index.</change>
 			<change when="2020-02-23" who="#lmw">backlist removed to si-add</change>
@@ -112,9 +113,6 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 </front>	
 		
 		<body>
-			
-				<!-- LMW: Need to research the original publication dates and locations (annuals? journals?) See my spreadsheet file for details; write headnote for each.-->
-
 				
 			<div type="section" n="1">
 								<fw type="pageNum"><app>
@@ -187,7 +185,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Shade-loving flower, I love thee! not alone</rdg></app></l>
 				<l n="10"><app><rdg wit="#Sonnets1827">That thou dost haunt the greenest coolest spot,</rdg></app></l>
 					<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">For ever, by the tufted <name ref="#alder">alder</name> thrown,</rdg></app></l>
-				<l n="12"><app><rdg wit="#Sonnets1827">Or arching <name ref="#hazel">hazel</name>, or vine mantled cot,</rdg></app></l>
+				<l n="12"><app><rdg wit="#Sonnets1827">Or arching <name ref="#hazel">hazel</name>, or <name ref="#vine">vine</name> mantled cot,</rdg></app></l>
 					<l n="13" rend="indent(+2)"><app><rdg wit="#Sonnets1827">But that thy very name hath a sweet tone</rdg></app></l>
 				<l n="14"><app><rdg wit="#Sonnets1827">Of parting tenderness—Forget me not!</rdg></app></l>
 				</lg>
@@ -206,7 +204,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">For us, on whose sealed ear the classic strain</rdg></app></l>
 					<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of <placeName ref="#Athens">Athens</placeName>’ tenderest <rs type="person" ref="#Euripides">bard</rs> would idly fall</rdg></app></l>
-					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">As instrumental music, or the call</rdg></app></l>
+					<l n="3" rend="indent(+2)"><app>
+							<rdg wit="#Sonnets1827">As instrumental music, or the call</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">Of wordless <name ref="#nightingale">nightingale</name>s, for us again</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">I thank thee, wondrous <rs type="person" ref="#Richardson_H">boy</rs>! that not in vain</rdg></app></l>
 					<l n="6" rend="indent(+2)"><app><rdg wit="#Sonnets1827">The scene hath overpast which held in thrall</rdg></app></l>
@@ -244,15 +243,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 			
 				<lg><l n="1"><app><rdg wit="#Sonnets1827">How oft amid the heaped and bedded hay,</rdg></app></l>
 					<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Under the <name ref="#oak">oak</name>’s broad shadow deep and strong,</rdg></app></l>
-					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Have we sate listening to the noonday song</rdg></app></l>
+					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Have we <choice><sic>sate</sic><reg>sat</reg></choice> listening to the noonday song</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">(If song it were monotonously gay)</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">Which crept along the field, the summer lay</rdg></app></l>
 					<l n="6" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of the <name ref="#grasshopper">grasshopper</name>. Summer is come in pride</rdg></app></l>
 					<l n="7" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of fruit and flower, garlanded as a bride,</rdg></app></l>
-				<l n="8"><app><rdg wit="#Sonnets1827">And crowned with corn, and graced with length of day</rdg></app></l>
+				<l n="8"><app><rdg wit="#Sonnets1827">And crowned with <name ref="#corn">corn</name>, and graced with length of day</rdg></app></l>
 					<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">But cold is come with her. We sit not now</rdg></app></l>
 				<l n="10"><app><rdg wit="#Sonnets1827">Listening that merry music of the earth</rdg></app></l>
-					<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Like <persName ref="#Ariel">Ariel</persName> <q>beneath the blossomed bough;</q><note resp="#slc">See <title ref="#Tempest_play">The Tempest</title>: <q>Merrily, merrily shall I live now/ Under the blossom that hangs on the bough</q> (act five, scene one).</note></rdg></app></l>
+					<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Like <persName ref="#Ariel">Ariel</persName> <q>beneath the blossomed bough;</q><note resp="#slc">See <title ref="#Tempest_play">The Tempest</title>: <q>Merrily, merrily shall I live now / Under the blossom that hangs on the bough</q> (act five, scene one).</note></rdg></app></l>
 				<l n="12"><app><rdg wit="#Sonnets1827">But all for chillness round the social hearth</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">We cluster.—Hark!—a note of kindred mirth</rdg></app></l>
 					<l n="14" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Echoes!—Oh, wintery <name ref="#cricket">cricket</name>, welcome thou!</rdg></app></l> 
@@ -277,7 +276,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				<l n="7"><app><rdg wit="#Sonnets1827">And calmest thoughts, like <name ref="#violet">violet</name>s distilled,</rdg></app></l> 
 				<l n="8"><app><rdg wit="#Sonnets1827">Their fragrance mingle with bright wisdom’s beams.</rdg></app></l>
 					<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Sleep on, <persName ref="#Russell_M">my mother</persName>! not the <name ref="#lily">lily</name>’s bell</rdg></app></l> 
-				<l n="10"><app><rdg wit="#Sonnets1827">So sweet; not the enamoured west-wind’s sighs</rdg></app></l><!-- LMW:  Check date on P. Shelley's Ode to the WEst Wind to compare? --><!-- SLC:https://www.poets.org/poetsorg/poem/ode-west-wind_1792 - 1822--> 
+				<l n="10"><app><rdg wit="#Sonnets1827">So sweet; not the enamoured west-wind’s<note resp="#lmw"><persName ref="#Shelley_PB">Percy Shelley</persName>'s well-known poem on this subject was written on <date when="1819-10-25">October 25, 1819</date> and published in <date when="1820">1820</date>. <persName ref="#MRM">Mitford</persName>'s composition date is unknown.</note> sighs</rdg></app></l> 
 					<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">That shake the dew-drop from her snowy cell</rdg></app></l> 
 				<l n="12"><app><rdg wit="#Sonnets1827">So gentle; not that dew-drop ere it flies</rdg></app></l> 
 				<l n="13"><app><rdg wit="#Sonnets1827">So pure. E’en slumber loves with thee to dwell</rdg></app></l> 
@@ -295,7 +294,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 					<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Her feet upgathered, and her turban’d brow</rdg></app></l>
 					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Bent o’er her hand, her robe in ample flow</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">Disparted! Look in attitude and dress</rdg></app></l>
-				<l n="5"><app><rdg wit="#Sonnets1827">She sits and seems an Eastern Sultaness!</rdg></app></l><!--LMW Can we research further? Seems possibly nspired by an engraving of exotisized eastern women in the giftbook annual? -->
+				<l n="5"><app><rdg wit="#Sonnets1827">She sits and seems an Eastern Sultaness!</rdg></app></l><!--LMW May refer to Mrs. Dickinson? See Feb. 21 1819 letter to Hofland. Exoticized like women in giftbooks, the turban-->
 					<l n="6" rend="indent(+2)"><app><rdg wit="#Sonnets1827">And music is about her, and the glow</rdg></app></l>
 					<l n="7" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of young fair faces, and sweet voices go</rdg></app></l>
 				<l n="8"><app><rdg wit="#Sonnets1827">Forth at her call, and all about her press.</rdg></app></l>
@@ -390,8 +389,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				</app></fw>
 						<head>
 						<lb/>XI.
-							<lb/><title ref="#NewYearsDay_1827"><date when="1819-01-01">NEW YEAR’S DAY. 1819.</date></title><!-- add note on the specific date, from the journal/letters. Is the Handel song the same as the one mentioned there? -->
-							<lb/><hi rend="smallcaps">TO <persName ref="#Dickinson_Mrs">MRS. DICKINSON</persName>.</hi></head>
+							<lb/><title ref="#NewYearsDay_1827"><date when="1819-01-01">NEW YEAR’S DAY. 1819.</date></title>
+							<lb/><hi rend="smallcaps">TO <persName ref="#Dickinson_Mrs">MRS. DICKINSON</persName>.<note resp="#lmw"><persName ref="#MRM">Mitford</persName> describes the gathering that inspired this sonnet in her January 9 letter to Sir William Elford and her January 10 letter to Mary Webb. <persName ref="#Dickinson_Mrs">Mrs. Dickinson</persName> sang <title ref="#Whereer_Handel">Where'er you walk</title> and <persName ref="#Dickinson_Charles">Mr. Dickinson</persName> read from his own <persName ref="#Dante">Dante</persName> translations, including the story of <persName ref="#Ugolino">Ugolino</persName>.</note></hi></head>
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">Banquet and song, and dance and revelry!—</rdg></app></l>
 							<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Auspicious year born in so fair a light</rdg></app></l>
 							<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of gaiety and beauty! happy night</rdg></app></l>
@@ -505,8 +504,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 							<l n="7" rend="indent(+2)"><app><rdg wit="#Sonnets1827">It is, for good and gentle, fair and gay,</rdg></app></l>
 						<l n="8"><app><rdg wit="#Sonnets1827">My lovely <persName ref="#Webb_Jane">Jane</persName>, it gave thee to the earth.</rdg></app></l>
 							<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">And thou hast trodden life’s path with a wise glee,</rdg></app></l>
-						<l n="10"><app><rdg wit="#Sonnets1827">Maid of the laughing eye! Were I the Queen</rdg></app></l><!--LMW: could this be a Spenser Faery Queen ref, or more general one?-->
-							<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of that so famous <placeName ref="#FairyLand">land of of Faëry</placeName> </rdg></app></l>
+						<l n="10"><app><rdg wit="#Sonnets1827">Maid of the laughing eye! Were I the Queen</rdg></app></l>
+							<l n="11" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Of that so famous <placeName ref="#FairyLand_Spenser">land of of Faëry</placeName> </rdg></app></l>
 						<l n="12"><app><rdg wit="#Sonnets1827">Where quaintest spirits weave their spells unseen,</rdg></app></l>
 							<l n="13" rend="indent(+2)"><app><rdg wit="#Sonnets1827">No better benison I’d pour on thee</rdg></app></l>
 						<l n="14"><app><rdg wit="#Sonnets1827">Than to be happy still as thou hast been.</rdg></app></l>	
@@ -571,7 +570,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				<lg>					
 				<l n="1"><app><rdg wit="#Sonnets1827">Oh, for some gentle spirit to surround</rdg></app></l>
 					<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">With clinging <name ref="#ivy">ivy</name> thy high-seated towers,</rdg></app></l>
-					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Fair <placeName ref="#Donnington_Castle">Donnington,</placeName> and wipe from <persName ref="#Chaucer">Chaucer</persName>’s bowers</rdg></app></l>
+					<l n="3" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Fair <placeName ref="#Donnington_Castle">Donnington</placeName>, and wipe from <persName ref="#Chaucer">Chaucer</persName>’s bowers</rdg></app></l>
 				<l n="4"><app><rdg wit="#Sonnets1827">The last rude touch of war! All sight, all sound</rdg></app></l>
 				<l n="5"><app><rdg wit="#Sonnets1827">Of the old strife boon nature from the ground</rdg></app></l>
 					<l n="6" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Hath banished. Here the trench no longer lours.</rdg></app></l> 
@@ -588,7 +587,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 						<quote>
 							<l>Or call up him who left half told</l>
 							<l>The story of Cambuscan bold.</l>
-						</quote>—<hi rend="italics"><bibl corresp="#Il_Pensoroso"><author ref="#Milton">Milton</author> of <persName ref="#Chaucer">Chaucer</persName>.—<title>Il Pensoroso</title></bibl>.</hi></note></q> would sound still sweeter here.</rdg></app></l> 
+						</quote>—<hi rend="italics"><bibl corresp="#Il_Pensoroso"><author ref="#Milton">Milton</author> on<persName ref="#Chaucer">Chaucer</persName>.—<title>Il Pensoroso</title></bibl>.</hi></note></q> would sound still sweeter here.</rdg></app></l> 
 				<l n="12"><app><rdg wit="#Sonnets1827">Oh for some hand to hide with <name ref="#ivy">ivy</name> spray</rdg></app></l>
 				<l n="13"><app><rdg wit="#Sonnets1827">War’s ravages, and chase the jarring themes</rdg></app></l>
 				<l n="14"><app><rdg wit="#Sonnets1827">Of King and State, <orgName ref="#Parliamentarians">Roundhead</orgName> and <orgName ref="#Royalists">Cavalier</orgName>!</rdg></app></l></lg>
@@ -600,7 +599,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 				</app></fw>
 				
 						<head>
-						<lb/>XIX. <lb/><title ref="#WrittenAfterVisit_1827">WRITTEN AFTER A VISIT FROM SOME FRIENDS.</title><!--LMW: Do we have a date or who are the friends?--></head>
+						<lb/>XIX. <lb/><title ref="#WrittenAfterVisit_1827">WRITTEN AFTER A VISIT FROM SOME FRIENDS.</title><!--LMW: Do we have a date or who are the friends? 2020--></head>
 						
 						<lg><l n="1"><app><rdg wit="#Sonnets1827">I could have lengthened out one fleeting hour</rdg></app></l>
 							<l n="2" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Into an age; sitting at set of sun</rdg></app></l>
@@ -658,8 +657,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 								<l n="6" rend="indent(+2)"><app><rdg wit="#Sonnets1827">Tinging the bosom of thy heaving sea,</rdg></app></l>
 							<l n="7"><app><rdg wit="#Sonnets1827">Defiled thy snowy feet, and thou didst flee</rdg></app></l>
 							<l n="8">From ills thou could’st not cure and must deplore.</l>
-								<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">War’s demons are gone by. Thy lovely strand</rdg></app></l>
-							<!--LMW: Check the date: is this dated to Napoleon's adbication or end of peninsular wars? -->
+								<l n="9" rend="indent(+2)"><app><rdg wit="#Sonnets1827">War’s demons are gone by.<note resp="#lmw">After two major French defeats in autumn 1813, the allied armies of the Sixth Coalition offered Napoleon the <soCalled>Frankfurt proposals</soCalled> to end the war. Napoeon delayed, however, and the offer was withdrawn.</note> Thy lovely strand</rdg></app></l>
 							<l n="10"><app><rdg wit="#Sonnets1827">Is purified. Oh spirit thither bend</rdg></app></l>
 							<l n="11"><app><rdg wit="#Sonnets1827">Thine airy flight, and wave thy healing wand</rdg></app></l>
 							<l n="12"><app><rdg wit="#Sonnets1827">O’er yon fair form where grace and virtue blend!</rdg></app></l>
